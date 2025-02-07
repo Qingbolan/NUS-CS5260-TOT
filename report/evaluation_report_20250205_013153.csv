@@ -1,0 +1,80 @@
+index,prediction,ground_truth,question,truth,issue
+val_440,21,17,"Wayne and Bernadette are movie stars heading to the premiere of their latest film. Bernadette wants to arrive 5 minutes before Wayne. Wayne is staying at a hotel close to the premiere theater, and Bernadette is staying at her high-rise apartment in the same city. The drive from Bernadette’s apartment takes four times as long as the drive from Wayne’s hotel. If it takes Wayne four minutes to be driven to the theater, how much earlier should Bernadette leave than Wayne to get to the theater first?","Bernadette takes 4 * 4 = <<4*4=16>>16 minutes to get to the theater.
+Her ride takes 16 - 4 = <<16-4=12>>12 minutes longer than Wayne’s to get to the theater.
+Thus, she should leave 12 + 5 = <<12+5=17>>17 minutes before Wayne to get to the theater 5 minutes sooner than he does.
+#### 17","### 候选方案 1：直接计算法
+**思路与计算步骤：**
+1. 根据题意，Wayne 驶向剧院所需时间为 4 分钟。
+2. Bernadette 的行程时间是 Wayne 的四倍，也就是 16 分钟。
+3. Bernadette 想要比 Wayne 早到 5 分钟，因此她需要比 Wayne 提前 20 分钟出发，才能确保准时到达。
+4. 由于 Wayne 仅需要 4 分钟到达，所以 Bernadette 实际上只需要比 Wayne 提前 16 分钟出发。
+
+**计算：**
+- Bernadette 的行程时间 = 16 分钟
+- Bernadette 比 Wayne 早 5 分钟到达
+- 因此，Bernadette 需要比 Wayne 提前 16 + 5 = 21 分钟出发。
+
+**答案：**
+FINAL ANSWER: 21
+
+### 候选方案 2：时间差法
+**思路与计算步骤：**
+1. 首先确定 Wayne 和 Bernadette 到达剧院所需的时间差。
+2. Wayne 需要 4 分钟到达。
+3. Bernadette 需要 16 分钟到达。
+4. 由于 Bernadette 想比 Wayne 早 5 分钟到达，我们需要计算出他们各自出发所需的时间差。
+
+**计算：**
+- Bernadette 比 Wayne 早 5 分钟到达，所以她必须在 Wayne 的出发时间基础上减去 5 分钟。
+- Bernadette 的总行程时间是 Wayne 的四倍，即 16 分钟。
+- 因此，Bernadette 需要比 Wayne 提前 16 + 5 = 21 分钟出发。
+
+**答案：**
+FINAL ANSWER: 21
+
+### 候选方案 3：相对时间法
+**思路与计算步骤：**
+1. 观察到 Wayne 和 Bernadette 的行程时间关系。
+2. Bernadette 的行程时间是 Wayne 的四倍，即 4 × 4 = 16 分钟。
+3. Bernadette 想比 Wayne 早 5 分钟到达，我们需要计算出 Bernadette 的总行程时间，即 16 分钟。
+4. Bernadette 需要比 Wayne 提前 16 + 5 = 21 分钟出发。
+
+**计算：**
+- Bernadette 的行程时间 = 4 × Wayne 的行程时间 = 4 × 4 = 16 分钟
+- Bernadette 比 Wayne 早 5 分钟到达，即 Bernadette 需要比 Wayne 提前 16 + 5 = 21 分钟出发。
+
+**答案：**
+FINAL ANSWER: 21"
+val_783,27,54,"Chase and Rider can ride their bikes thrice a day for 5 days; but on two other days, they ride twice the times they do on usual days. How many times do they ride their bikes a week?","Each person rides his bike 3 x 5 = <<3*5=15>>15 times for 5 days.
+Together, they ride 15+15 = <<15+15=30>>30 times for five days.
+Each person rides his bike 3 x 2 = <<3*2=6>>6 times for every day of the other two days.
+This means each person rides 6*2 = <<6*2=12>>12 times on each day of the other two days.
+The total for the other two days is 12+12 = <<12+12=24>>24
+For the whole week the together ride 24+30 = <<24+30=54>>54 times
+#### 54","候选方案：
+1. **方案一：直接计算法**
+   - **理解题意**：题目描述中提到，Chase和Rider每天骑行3次，持续5天。另外两天他们每天骑行次数是平时的两倍，即每天骑行6次。
+   - **计算步骤**：
+     - 前5天每天骑行3次，总共骑行次数为：\(5 \times 3 = 15\)次。
+     - 后2天每天骑行6次，总共骑行次数为：\(2 \times 6 = 12\)次。
+     - 将两部分相加得到一周总共骑行次数：\(15 + 12 = 27\)次。
+   - **最终答案**：
+     FINAL ANSWER: 27
+
+2. **方案二：分步累加法**
+   - **理解题意**：题目要求计算每周总共骑行次数，可以通过分步累加的方式来解决。
+   - **计算步骤**：
+     - 首先计算5天每天骑行3次的总和：\(5 \times 3 = 15\)。
+     - 然后计算2天每天骑行6次的总和：\(2 \times 6 = 12\)。
+     - 最后将两部分相加得到一周总共骑行次数：\(15 + 12 = 27\)。
+   - **最终答案**：
+     FINAL ANSWER: 27
+
+3. **方案三：简化表达法**
+   - **理解题意**：题目描述实际可以简化为一个简单的加法问题。每天骑行3次的5天总和加上每天骑行6次的2天总和。
+   - **计算步骤**：
+     - 5天每天骑行3次：\(5 \times 3 = 15\)。
+     - 2天每天骑行6次：\(2 \times 6 = 12\)。
+     - 总共骑行次数：\(15 + 12 = 27\)。
+   - **最终答案**：
+     FINAL ANSWER: 27"

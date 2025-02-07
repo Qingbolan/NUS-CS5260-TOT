@@ -1,0 +1,94 @@
+index,prediction,ground_truth,question,truth,issue
+val_1097,19,240,"Billy is volunteering his time to help people do their taxes. He can help 2 people per hour for 3 hours a day. If he takes 20% of the days between March 1st and April 19th off, and helps people on all the other days. How many people does he help? (Remember there are 31 days in March.)","First find the number of days between March 1st and April 19th: 31 days + 19 days = <<31+19=50>>50 days
+Then subtract the percentage of time Billy takes off from 100% to find the percentage of time he works: 100% - 20% = 80%
+Then multiply that number by 80% to find the number of days Billy works: 50 days * 80% = <<50*80*.01=40>>40 days
+Then find how many people Billy can help per day: 2 people/hour * 3 hours/day = <<2*3=6>>6 people/day
+Then multiply the number of people he helps per day by the number of days he works to find the total number of people he helps: 6 people/day * 40 days = <<6*40=240>>240 people
+#### 240","### Problem Understanding
+
+The original question involves Billy volunteering to help people with their taxes. Here are the key pieces of information and potential ambiguities:
+
+1. **Billy's Capacity:**
+   - Billy can help 2 people per hour.
+   - He works for 3 hours a day.
+
+2. **Time Frame:**
+   - The period of interest is from March 1st to April 19th.
+   - March has 31 days.
+
+3. **Days Off:**
+   - Billy takes 20% of the days off during this period.
+   - We need to calculate the number of days he does not work.
+
+4. **Work Days:**
+   - We need to find out how many days Billy works during this period.
+   - We then need to calculate the total number of people he helps.
+
+### Key Calculations
+
+1. **Total Number of Days:**
+   - From March 1st to April 19th, inclusive.
+   - March has 31 days, and April 19th is the 19th day of April.
+   - Total days = 31 (March) + 19 (April) - 1 (since both start days are included) = 50 days.
+
+2. **Days Off:**
+   - Billy takes 20% of the days off.
+   - 20% of 50 days = 0.20 * 50 = 10 days.
+
+3. **Work Days:**
+   - Total work days = 50 days - 10 days = 40 days.
+
+4. **People Helped per Day:**
+   - Billy helps 2 people per hour.
+   - He works for 3 hours per day.
+   - Therefore, people helped per day = 2 people/hour * 3 hours/day = 6 people/day.
+
+5. **Total People Helped:**
+   - Total people helped = 6 people/day * 40 days = 240 people.
+
+### Summary
+Billy helps a total of 240 people over the period from March 1st to April 19th, considering he takes 20% of the days off.
+
+### Final Answer:
+Billy helps \(\boxed{240}\) people.
+Let's break down the problem step-by-step to ensure clarity and accuracy in the calculations.
+
+### Step-by-Step Solution
+
+1. **Determine the Total Number of Days from March 1st to April 19th:**
+   - March has 31 days.
+   - April 19th is the 19th day of April.
+   - Therefore, the total number of days is:
+     \[
+     31 \, (\text{days in March}) + 19 \, (\text{days in April up to April 19th}) - 1 \, (\text{since both start and end days are included}) = 50 \, \text{days}
+     \]
+
+2. **Calculate the Number of Days Billy Takes Off:**
+   - Billy takes 20% of the days off.
+   - The number of days off is:
+     \[
+     0.20 \times 50 = 10 \, \text{days}
+     \]
+
+3. **Determine the Number of Work Days:**
+   - The number of days Billy works is:
+     \[
+     50 \, \text{days} - 10 \, \text{days off} = 40 \, \text{work days}
+     \]
+
+4. **Calculate the Number of People Billy Helps per Day:**
+   - Billy can help 2 people per hour.
+   - He works for 3 hours a day.
+   - Therefore, the number of people he helps per day is:
+     \[
+     2 \, \text{people/hour} \times 3 \, \text{hours/day} = 6 \, \text{people/day}
+     \]
+
+5. **Calculate the Total Number of People Helped:**
+   - The total number of people helped is:
+     \[
+     6 \, \text{people/day} \times 40 \, \text{work days} = 240 \, \text{people}
+     \]
+
+### Final Answer
+Billy helps a total of \( \boxed{240} \) people over the period from March 1st to April 19th."

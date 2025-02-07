@@ -1,0 +1,79 @@
+index,prediction,ground_truth,question,truth,issue
+val_479,600,621,A company decided to take its employees on a tour to explore an ancient site. The employees were divided into 3 groups of 200 employees. Each group was assigned 7 tour guides. How many is the total number of people going on this tour?,"The number of employees is 3 groups * 200 employees/group = <<3*200=600>>600 employees.
+The number of tour guides is 3 groups * 7 guides/group = <<3*7=21>>21 guides.
+The total number of people going on this tour is 600 employees + 21 guides = <<600+21=621>>621 people.
+#### 621","候选方案一：
+思路：此题要求我们计算参加旅游的总人数，其中包括员工和导游两部分。题目中明确指出有3个员工组，每组200人，另外每组有7名导游。因此，我们可以先计算所有员工的人数，然后加上所有导游的人数，得出总人数。
+计算步骤：
+1. 计算员工总数：3组 * 200人/组 = 600人
+2. 计算导游总数：3组 * 7导游/组 = 21人
+3. 计算总人数：员工总数 + 导游总数 = 600 + 21 = 621人
+
+FINAL ANSWER: 621
+
+候选方案二：
+思路：从另一个角度理解题意，我们也可以直接计算每组的总人数（员工数 + 导游数），然后将这个结果乘以组数，从而得到总人数。
+计算步骤：
+1. 计算每组的总人数：200员工/组 + 7导游/组 = 207人/组
+2. 计算总人数：每组的总人数 * 组数 = 207人/组 * 3组 = 621人
+
+FINAL ANSWER: 621
+
+候选方案三：
+思路：这个方案考虑了另一种可能的题意解读，即题目要求我们计算去旅游的总人数，但没有明确指出导游是否也在旅游。如果我们假设导游不包括在内，那么只需要计算员工总数。
+计算步骤：
+1. 计算员工总数：3组 * 200人/组 = 600人
+
+FINAL ANSWER: 600
+
+注：在实际情况中，根据题目的实际背景，导游通常也会参与旅游活动，因此前两个方案更符合题意。但为了全面考虑不同理解角度，提供了三种方案。"
+val_841,20,16,"Patrick has three glue sticks that are partially used. One has 1/6 left, the second has 2/3 left and the third one has 1/2 left. If a glue stick is 12 millimeters long originally, what is the total length of the glue sticks that are not used?","The first glue stick has 12 x 1/6 = <<12*1/6=2>>2 millimeters left.
+The second glue stick has 12 x 2/3 = <<12*2/3=8>>8 millimeters left.
+The third glue stick has 12 x 1/2 = <<12*1/2=6>>6 millimeters left.
+There are a total of 2 + 8 + 6 = <<2+8+6=16>>16 millimeters of glue sticks that are not used.
+#### 16","### 候选方案一：直接计算剩余未使用的长度
+**思路和步骤：**
+1. **理解题意**：题目要求我们计算三个胶棒未使用的部分的总长度。
+2. **计算每个胶棒未使用的长度**：
+   - 第一个胶棒：原长度为12mm，剩余1/6，即未使用部分为 \(1 - \frac{1}{6} = \frac{5}{6}\)。
+   - 第二个胶棒：原长度为12mm，剩余2/3，即未使用部分为 \(1 - \frac{2}{3} = \frac{1}{3}\)。
+   - 第三个胶棒：原长度为12mm，剩余1/2，即未使用部分为 \(1 - \frac{1}{2} = \frac{1}{2}\)。
+3. **计算具体长度**：
+   - 第一个胶棒未使用部分长度：\(12 \times \frac{5}{6} = 10 \text{ mm}\)。
+   - 第二个胶棒未使用部分长度：\(12 \times \frac{1}{3} = 4 \text{ mm}\)。
+   - 第三个胶棒未使用部分长度：\(12 \times \frac{1}{2} = 6 \text{ mm}\)。
+4. **求总长度**：将三个胶棒未使用的部分长度加起来。
+   - 总未使用长度：\(10 + 4 + 6 = 20 \text{ mm}\)。
+
+**最终答案：**
+FINAL ANSWER: 20
+
+### 候选方案二：先计算每个胶棒剩余的长度，再计算未使用的部分
+**思路和步骤：**
+1. **理解题意**：题目要求我们计算三个胶棒未使用的部分的总长度。
+2. **计算每个胶棒剩余的长度**：
+   - 第一个胶棒：原长度为12mm，剩余1/6，即剩余部分为 \(12 \times \frac{1}{6} = 2 \text{ mm}\)。
+   - 第二个胶棒：原长度为12mm，剩余2/3，即剩余部分为 \(12 \times \frac{2}{3} = 8 \text{ mm}\)。
+   - 第三个胶棒：原长度为12mm，剩余1/2，即剩余部分为 \(12 \times \frac{1}{2} = 6 \text{ mm}\)。
+3. **计算未使用的部分**：
+   - 第一个胶棒未使用部分长度：\(12 - 2 = 10 \text{ mm}\)。
+   - 第二个胶棒未使用部分长度：\(12 - 8 = 4 \text{ mm}\)。
+   - 第三个胶棒未使用部分长度：\(12 - 6 = 6 \text{ mm}\)。
+4. **求总长度**：将三个胶棒未使用的部分长度加起来。
+   - 总未使用长度：\(10 + 4 + 6 = 20 \text{ mm}\)。
+
+**最终答案：**
+FINAL ANSWER: 20
+
+### 候选方案三：利用剩余部分计算未使用部分
+**思路和步骤：**
+1. **理解题意**：题目要求我们计算三个胶棒未使用的部分的总长度。
+2. **利用已知剩余部分计算未使用部分**：
+   - 第一个胶棒：剩余1/6，即未使用部分为 \(12 \times (1 - \frac{1}{6}) = 12 \times \frac{5}{6} = 10 \text{ mm}\)。
+   - 第二个胶棒：剩余2/3，即未使用部分为 \(12 \times (1 - \frac{2}{3}) = 12 \times \frac{1}{3} = 4 \text{ mm}\)。
+   - 第三个胶棒：剩余1/2，即未使用部分为 \(12 \times (1 - \frac{1}{2}) = 12 \times \frac{1}{2} = 6 \text{ mm}\)。
+3. **求总长度**：将三个胶棒未使用的部分长度加起来。
+   - 总未使用长度：\(10 + 4 + 6 = 20 \text{ mm}\)。
+
+**最终答案：**
+FINAL ANSWER: 20"

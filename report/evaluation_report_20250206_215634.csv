@@ -1,0 +1,72 @@
+index,prediction,ground_truth,question,truth,issue
+val_307,5,10,A bakery produces 60 loaves of bread each day. Two-thirds of the loaves are sold in the morning and half of what is left is sold equally in the afternoon and evening. How many loaves of bread are sold in the afternoon?,"60 x 2/3 = <<60*2/3=40>>40 loaves of bread are sold in the morning.
+60 - 40 = <<60-40=20>>20 loaves of bread are sold in the afternoon and evening.
+Therefore, 20/2 = <<20/2=10>>10 loaves of bread are sold in the afternoon.
+#### 10","Understanding:
+- The bakery produces 60 loaves of bread each day.
+- Two-thirds of the loaves are sold in the morning.
+- Half of what is left after the morning sales is sold in the afternoon and evening combined.
+- We need to determine the number of loaves sold in the afternoon.
+
+Step-by-Step Solution:
+1. Calculate the number of loaves sold in the morning:
+   - Two-thirds of 60 loaves = \( \frac{2}{3} \times 60 = 40 \) loaves.
+
+2. Determine the number of loaves remaining after the morning sales:
+   - Remaining loaves = Total loaves - Morning sales = 60 - 40 = 20 loaves.
+
+3. Calculate the number of loaves sold in the afternoon and evening combined:
+   - Half of the remaining loaves = \( \frac{1}{2} \times 20 = 10 \) loaves.
+
+4. Since the loaves sold in the afternoon and evening are equally divided, the number of loaves sold in the afternoon is:
+   - Loaves sold in the afternoon = \( \frac{1}{2} \times 10 = 5 \) loaves.
+
+Final Answer: 5"
+val_781,215,25,"Ava and Emma want to know who is better at the new video game Ava got for her birthday. They are each going to play one level and whoever has the highest score wins. They receive 10 points for every enemy they jump on, 5 points for each berry they collect, and 30 points for every second left on the timer when they finish the level. If Ava jumps on 8 more enemies than Emma and collects 3 more berries, but finishes the level 4 seconds slower, what is the difference between their two scores?","For jumping on enemies, Emma earns 8 * 10 = <<8*10=80>>80 fewer points than Ava.
+For collecting berries, Emma earns 3 * 5 = <<3*5=15>>15 fewer points than Ava.
+For finishing the level faster, Emma earns 4 * 30 = <<4*30=120>>120 more points than Ava.
+Overall, Emma has 120 – 80 - 15 = <<120-80-15=25>>25 more points than Ava.
+#### 25","Understanding the problem:
+- Ava and Emma are playing one level each in a video game.
+- Ava jumps on 8 more enemies than Emma.
+- Ava collects 3 more berries than Emma.
+- Emma finishes the level 4 seconds faster than Ava.
+- We need to calculate the difference in their scores.
+
+Step-by-step solution:
+1. Let's denote:
+   - Emma's number of enemies jumped on as \( E_e \).
+   - Ava's number of enemies jumped on as \( A_e = E_e + 8 \).
+   - Emma's number of berries collected as \( E_b \).
+   - Ava's number of berries collected as \( A_b = E_b + 3 \).
+   - Emma's time in seconds as \( E_t \).
+   - Ava's time in seconds as \( A_t = E_t + 4 \).
+
+2. Calculate the score for each player:
+   - Emma's score: \( 10 \times E_e + 5 \times E_b + 30 \times E_t \).
+   - Ava's score: \( 10 \times (E_e + 8) + 5 \times (E_b + 3) + 30 \times (E_t + 4) \).
+
+3. Simplify Ava's score:
+   - \( 10 \times (E_e + 8) + 5 \times (E_b + 3) + 30 \times (E_t + 4) \)
+   - \( = 10E_e + 80 + 5E_b + 15 + 30E_t + 120 \)
+   - \( = 10E_e + 5E_b + 30E_t + 215 \).
+
+4. Calculate the difference between their scores:
+   - Difference = Ava's score - Emma's score
+   - \( = (10E_e + 5E_b + 30E_t + 215) - (10E_e + 5E_b + 30E_t) \)
+   - \( = 215 \).
+
+Final Answer: 215"
+val_963,600,1000,"Jen decides to travel to 3 different countries.  He has to pay $400 for the supplies he needs, in total.  The tickets for travel cost, in total, 50% more than the supplies.  How much does travel cost?","He pays 400*.5=$<<400*.5=200>>200 more for tickets than supplies
+That means the tickets cost 400+200=$<<400+200=600>>600
+So it cost 600+400=$<<600+400=1000>>1000 in total.
+#### 1000","Understanding the problem:
+- Jen needs to pay $400 for the supplies.
+- The total cost of travel tickets is 50% more than the cost of the supplies.
+
+Step-by-step solution:
+1. Determine the cost of the supplies: $400.
+2. Calculate 50% of the cost of the supplies: \( 50\% \times 400 = 0.5 \times 400 = 200 \).
+3. Add this amount to the cost of the supplies to get the total travel cost: \( 400 + 200 = 600 \).
+
+Final Answer: 600"

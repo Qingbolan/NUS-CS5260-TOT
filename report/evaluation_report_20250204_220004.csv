@@ -1,0 +1,134 @@
+index,prediction,ground_truth,question,truth,issue
+val_728,48,112,"Hannah has a mental breakdown while studying for finals and starts smashing windows in the high school's parking lot. She smashes a quarter of the students' cars' windows and 3/4ths of the teachers' cars' windows. If there are 64 students' cars with four windows each and 32 teachers' cars with two windows each, how many windows does Hannah smash?","First find how many student cars Hannah smashed: 64 cars * 1/4 = <<64*1/4=16>>16 cars
+Then find how many teacher cars Hannah smashed: 32 cars * 3/4 = <<32*3/4=24>>24 cars
+Then find how many windows the students' cars had smashed: 16 cars * 4 windows/car = <<16*4=64>>64 windows
+Then find how many windows the teachers' cars had smashed: 24 cars * 2 windows/car = <<24*2=48>>48 windows
+Then add the number of students' and teachers' windows smashed to find the total number of windows smashed: 64 windows + 48 windows = <<64+48=112>>112 windows
+#### 112","### Step 1: Construct a Logical Tree
+
+**Base Entities:**
+- Students' cars: 64 cars, 4 windows each
+- Teachers' cars: 32 cars, 2 windows each
+
+**Logical Relationships:**
+1. Calculate the total number of windows for students' cars.
+2. Calculate the total number of windows for teachers' cars.
+3. Calculate the number of windows smashed for students' cars (1/4 of the total windows).
+4. Calculate the number of windows smashed for teachers' cars (3/4 of the total windows).
+5. Sum the windows smashed from both groups to get the final answer.
+
+### Step 2: Time and Sequential Reasoning
+
+- The problem does not specify a time period, so all calculations are sequential and do not depend on timing.
+
+### Step 3: Quantity and Numerical Relationships
+
+**Branch 1: Students' Cars**
+1. Total windows in students' cars: \(64 \text{ cars} \times 4 \text{ windows/car} = 256 \text{ windows}\)
+2. Windows smashed (1/4 of total windows): \( \frac{1}{4} \times 256 = 64 \text{ windows}\)
+
+**Branch 2: Teachers' Cars**
+1. Total windows in teachers' cars: \(32 \text{ cars} \times 2 \text{ windows/car} = 64 \text{ windows}\)
+2. Windows smashed (3/4 of total windows): \( \frac{3}{4} \times 64 = 48 \text{ windows}\)
+
+### Step 4: Branching and Conditional Logic
+
+**Branch 1: Students' Cars**
+- Calculated: \(256 \text{ windows}\) total, \(64 \text{ windows}\) smashed.
+
+**Branch 2: Teachers' Cars**
+- Calculated: \(64 \text{ windows}\) total, \(48 \text{ windows}\) smashed.
+
+### Step 5: Final Answer Extraction
+
+- Sum the windows smashed from both groups: \(64 + 48 = 112 \text{ windows}\)
+
+**Final Answer:**
+FINAL ANSWER: 112
+### Step 1: Construct a Logical Tree
+
+**Base Entities:**
+- Students' cars: 64 cars, 4 windows each
+- Teachers' cars: 32 cars, 2 windows each
+
+**Logical Relationships:**
+1. Calculate the total number of windows for students' cars.
+2. Calculate the total number of windows for teachers' cars.
+3. Calculate the number of windows smashed for students' cars (1/4 of the total windows).
+4. Calculate the number of windows smashed for teachers' cars (3/4 of the total windows).
+5. Sum the windows smashed from both groups to get the final answer.
+
+### Step 2: Time and Sequential Reasoning
+
+- The problem does not specify a time period, so all calculations are sequential and do not depend on timing.
+
+### Step 3: Quantity and Numerical Relationships
+
+**Branch 1: Students' Cars**
+1. Total windows in students' cars: \(64 \text{ cars} \times 4 \text{ windows/car} = 256 \text{ windows}\)
+2. Windows smashed (1/4 of total windows): \( \frac{1}{4} \times 256 = 64 \text{ windows}\)
+
+**Branch 2: Teachers' Cars**
+1. Total windows in teachers' cars: \(32 \text{ cars} \times 2 \text{ windows/car} = 64 \text{ windows}\)
+2. Windows smashed (3/4 of total windows): \( \frac{3}{4} \times 64 = 48 \text{ windows}\)
+
+### Step 4: Branching and Conditional Logic
+
+**Branch 1: Students' Cars**
+- Calculated: \(256 \text{ windows}\) total, \(64 \text{ windows}\) smashed.
+
+**Branch 2: Teachers' Cars**
+- Calculated: \(64 \text{ windows}\) total, \(48 \text{ windows}\) smashed.
+
+### Step 5: Final Answer Extraction
+
+- Sum the windows smashed from both groups: \(64 + 48 = 112 \text{ windows}\)
+
+**Final Answer:**
+FINAL ANSWER: 112
+
+### Additional Branching (Just for Completeness, Not Necessary for Solution)
+- **Branch 3: Alternative Calculation for Students' Cars**
+  1. Verify total windows in students' cars: \(64 \text{ cars} \times 4 \text{ windows/car} = 256 \text{ windows}\)
+  2. Windows smashed (1/4 of total windows): \( \frac{1}{4} \times 256 = 64 \text{ windows}\)
+- **Branch 4: Alternative Calculation for Teachers' Cars**
+  1. Verify total windows in teachers' cars: \(32 \text{ cars} \times 2 \text{ windows/car} = 64 \text{ windows}\)
+  2. Windows smashed (3/4 of total windows): \( \frac{3}{4} \times 64 = 48 \text{ windows}\)
+
+These branches confirm the calculations and the final answer."
+val_973,100,120,Mrs. Harrington bought 12 boxes of oranges at the market. She gave her mom and her sister 2 boxes of oranges each. Then she kept 1/4 of the oranges and sold the rest. How many oranges did Mrs. Harrington sell if each box contains 20 oranges?,"Mrs. Harrington gave a total of 2 x 2 = <<2*2=4>>4 boxes of oranges to her mom and sister.
+She then had 12 - 4 = <<12-4=8>>8 boxes of oranges left.
+She kept 8 x 1/4 = <<8*1/4=2>>2 boxes of oranges.
+So, she had 8 - 2 = <<8-2=6>>6 boxes of oranges to be sold.
+Hence, Mrs. Harrington sold 6 boxes x 20 oranges = <<6*20=120>>120 oranges.
+#### 120","**Construct a Logical Tree:**
+
+1. **Base Entities:**
+   - Mrs. Harrington bought 12 boxes of oranges.
+   - Each box contains 20 oranges.
+   - She gave 2 boxes to her mom and 2 boxes to her sister.
+   - She kept 1/4 of the oranges.
+   - She sold the rest.
+
+2. **Interpretation and Relationships:**
+   - Total oranges = 12 boxes * 20 oranges/box.
+   - Oranges given to mom and sister = 2 boxes + 2 boxes = 4 boxes.
+   - Oranges kept by Mrs. Harrington = 1/4 of the total oranges.
+   - Oranges sold = Total oranges - Oranges given - Oranges kept.
+
+3. **Time and Sequential Reasoning:**
+   - The sequence is straightforward: purchase, give away, keep, and then sell.
+
+4. **Quantity and Numerical Relationships:**
+   - Total oranges = 12 * 20 = 240 oranges.
+   - Oranges given to mom and sister = 4 * 20 = 80 oranges.
+   - Oranges kept by Mrs. Harrington = 1/4 * 240 = 60 oranges.
+   - Oranges sold = 240 - 80 - 60 = 100 oranges.
+
+**Branching and Conditional Logic:**
+- No branching is necessary in this problem as the steps are linear and there are no conditions that change the outcome.
+
+**Final Answer Extraction:**
+- The number of oranges Mrs. Harrington sold is 100.
+
+FINAL ANSWER: 100"

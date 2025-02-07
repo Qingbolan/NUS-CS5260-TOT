@@ -1,0 +1,32 @@
+index,prediction,ground_truth,question,truth,issue
+val_1095,22.22,25,"Ellen decided to play a prank on her friend. She got a case of 12 sodas and shook 3 of them up. Then she took 1 unshaken soda for herself and left. Ellen's brother stopped by and took 1 of the shaken sodas and 2 of the unshaken sodas, then Ellen's friend came along. What is the likelihood, expressed as a percentage, that Ellen's friend gets sprayed with soda from a shaken can?","First figure out how many unshaken sodas were in the case when Ellen left the room: 12 total sodas - 3 shaken sodas - 1 taken soda = <<12-3-1=8>>8 unshaken sodas.
+Next, figure out how many unshaken sodas were left after Ellen's brother came: 8 - 2 = <<8-2=6>>6 unshaken sodas.
+Then figure out how many shaken sodas were left after Ellen's brother came: 3 - 1 = <<3-1=2>>2 shaken sodas.
+Now add the number of shaken and unshaken sodas to find the total number of sodas left when Ellen's friend came along: 2 + 6 = <<2+6=8>>8 sodas
+Now divide the number of shaken sodas by the total number of sodas to find the decimal probability Ellen's friend gets sprayed: 2/8 = <<2/8=0.25>>0.25
+Now multiply the decimal probability by 100 to express it as a percentage: .25 * 100 = <<.25*100=25>>25%
+#### 25","**Reasoning:**
+
+1. **Initial Setup:**
+   - Total sodas: 12
+   - Shaken sodas: 3
+   - Unshaken sodas: 12 - 3 = 9 (after taking 1 unshaken soda for herself, there are 8 unshaken sodas left, but initially, there were 9 unshaken sodas).
+
+2. **After Ellen's Brother's Actions:**
+   - Shaken sodas left: 3 - 1 = 2
+   - Unshaken sodas left: 9 - 2 = 7
+
+3. **Ellen's Friend's Actions:**
+   - The friend takes 1 soda at random from the remaining 9 sodas.
+
+4. **Probability Calculation:**
+   - Number of shaken sodas: 2
+   - Total number of sodas left: 9
+
+The probability that the soda is shaken:
+\[ P(\text{shaken soda}) = \frac{2}{9} \]
+
+To express this probability as a percentage:
+\[ \frac{2}{9} \times 100\% \approx 22.22\% \]
+
+**Final Answer: 22.22**"

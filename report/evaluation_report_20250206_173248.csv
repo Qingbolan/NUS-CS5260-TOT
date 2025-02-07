@@ -1,0 +1,75 @@
+index,prediction,ground_truth,question,truth,issue
+val_424,6,8,"Cole wanted to buy new jeans for a dance contest. At the store, he couldn't decide between tattered jeans and jogger jeans. Since the jeans were on sale, he decided to buy them both. The tattered jeans cost $28 while the jogger jeans cost $6 less than the tattered jeans. He saved a total of $6. If he saved 1/3 of the total savings from the jogger jeans and the rest from the tattered jeans, how much more do jogger jeans originally cost than the tattered jeans?","Cole saved $6 x 1/3 = $<<6*1/3=2>>2 on the jogger jeans.
+So, he saved $6 - $2 = $<<6-2=4>>4 on the tattered jeans.
+The original price of the jogger jeans is $22 + $2 = $<<22+2=24>>24.
+Cole bought the tattered jeans for $<<28=28>>28
+Hence, the original price of the tattered jeans is $28 + $4 = $<<28+4=32>>32.
+Therefore, jogger jeans originally cost $32 - $24 = $<<32-24=8>>8 more than the tattered jeans.
+#### 8","### Understanding the Problem
+Cole wants to buy both tattered and jogger jeans. The tattered jeans cost $28, and the jogger jeans cost $6 less than the tattered jeans. He saved a total of $6, with 1/3 of the savings coming from the jogger jeans and the rest from the tattered jeans. We need to find out how much more the jogger jeans originally cost compared to the tattered jeans.
+
+### Step-by-Step Solution
+1. **Determine the cost of jogger jeans:**
+   - Tattered jeans cost = $28.
+   - Jogger jeans cost = $28 - $6 = $22.
+
+2. **Calculate the total savings:**
+   - Total savings = $6.
+
+3. **Determine the individual savings:**
+   - Savings from jogger jeans = 1/3 of total savings = 1/3 * $6 = $2.
+   - Savings from tattered jeans = Total savings - Savings from jogger jeans = $6 - $2 = $4.
+
+4. **Verify the calculations:**
+   - Savings from jogger jeans = $2.
+   - Savings from tattered jeans = $4.
+   - Total savings = $2 + $4 = $6 (consistent).
+
+5. **Determine the original cost difference:**
+   - Original cost of tattered jeans = $28.
+   - Original cost of jogger jeans = $22.
+   - Difference in original cost = $28 - $22 = $6.
+
+### Final Answer
+The jogger jeans originally cost $6 more than the tattered jeans.
+
+FINAL ANSWER: 6"
+val_1049,9867.78,7400,Ben bought a car for $20000 in 2007. The price of the car depreciates at a constant rate of 21% per year. Find the price of the car in the year 2010.,"The price of the car depreciates of 20000 * 21% = $<<20000*21*.01=4200>>4200 per year.
+Ben had the car for 2010 - 2007 = <<2010-2007=3>>3 years.
+The price of the car depreciates 4200 * 3 = $<<4200*3=12600>>12600 from 2007 to 2010.
+So the price of the car in the year 2010 is $20000 - $12600 = $<<20000-12600=7400>>7400.
+#### 7400","### Understanding the Problem
+Ben bought a car for $20000 in 2007. The car depreciates at a constant rate of 21% per year. We need to find the price of the car in the year 2010.
+
+### Step-by-Step Solution
+1. **Determine the number of years the car depreciates:**
+   - From 2007 to 2010 is a span of 3 years.
+
+2. **Calculate the annual depreciation:**
+   - The car depreciates by 21% each year. Therefore, each year, the car retains 79% (100% - 21%) of its value from the previous year.
+
+3. **Apply the depreciation for each year:**
+   - **End of 2007 (initial value):** $20000
+   - **End of 2008:**
+     \[
+     20000 \times 0.79 = 15800
+     \]
+   - **End of 2009:**
+     \[
+     15800 \times 0.79 = 12482
+     \]
+   - **End of 2010:**
+     \[
+     12482 \times 0.79 = 9867.78
+     \]
+
+### Check and Consistency of Calculations
+- Initial value: $20000
+- After 1 year (2008): $20000 \times 0.79 = 15800
+- After 2 years (2009): $15800 \times 0.79 = 12482
+- After 3 years (2010): $12482 \times 0.79 = 9867.78
+
+All calculations are consistent and follow the depreciation rate correctly.
+
+### Final Answer
+FINAL ANSWER: 9867.78"

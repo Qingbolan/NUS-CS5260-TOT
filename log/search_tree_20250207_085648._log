@@ -1,0 +1,42 @@
+TOT Search Tree (Final Best Score: 1.00)
+└── Round 1
+    ├── Generated Candidate Thoughts
+    │   ├── Candidate 1: Revised Candidate Thought:
+    │   │   **Understanding the Problem:**
+    │   │   Iris spent $400 on her hair, 1/4 as much on a manicure, and 3/4 as much as the manicure on a pedicure. The task is to find out the total amoun... 
+    │   │   (Score: 1.00)
+    │   ├── Candidate 2: **Understanding the Problem:**
+    │   │   
+    │   │   Iris spent $400 on her hair, 1/4 of that amount on a manicure, and 3/4 of the manicure amount on a pedicure. We need to calculate the total amount she 
+    │   │   spent at the spa.... (Score: 0.42)
+    │   └── Candidate 3: To solve this problem, we need to determine the total amount of money Iris spent at the spa based on the given information about her hair,
+    │       manicure, and pedicure expenses.
+    │       
+    │       1. **Understanding the Prob... (Score: 0.42)
+    ├── Calculation Issues
+    │   ├── Candidate 1 Issue: ['I find no issues with the provided answer. The candidate correctly interpreted the problem and followed the steps accurately to 
+    │   │   determine the total amount Iris spent at the spa. The calculations are consistent and correct. Therefore, the final answer is:\n\n**Final Answer: 
+    │   │   575**']
+    │   ├── Candidate 2 Issue: ["There may be a problem, I can't find it.\n\nThe provided answer correctly interprets the problem and calculates the costs step by 
+    │   │   step. The total cost is accurately calculated as $400 (hair) + $100 (manicure) + $75 (pedicure) = $575. The calculations and the final answer are 
+    │   │   consistent and correct based on the given problem."]
+    │   └── Candidate 3 Issue: ["There may be a problem, I can't find it.\n\nThe provided candidate answer is logically sound and accurately follows the problem 
+    │       statement. The steps to calculate the costs of the manicure and pedicure, as well as the total amount spent, are correct. The final answer of $575 is 
+    │       consistent with the calculations."]
+    ├── Refutation Feedback
+    │   └── Candidate 1 Refutation: ### Refutation Points and Suggestions
+    │       
+    │       **1. Understanding of the Problem:**
+    │          - **Issue:** The candidate correctly identifies the amounts spent on the hair treatment and the manicure, but there is a ...
+    ├── Revised Candidate Thoughts
+    │   └── Candidate 1 Revised: Revised Candidate Thought:
+    │       **Understanding the Problem:**
+    │       Iris spent $400 on her hair, 1/4 as much on a manicure, and 3/4 as much as the manicure on a pedicure. The task is to find out the total amoun...
+    ├── Evaluation Scores
+    │   ├── Candidate 1 Score: 1.00
+    │   ├── Candidate 2 Score: 0.42
+    │   └── Candidate 3 Score: 0.42
+    └── Selected Candidates for Next Round
+        └── Candidate 1: Revised Candidate Thought:
+            **Understanding the Problem:**
+            Iris spent $400 on her hair, 1/4 as much on a manicure, and 3/4 as much as the manicure on a pedicure. The task is to find out the total amoun...

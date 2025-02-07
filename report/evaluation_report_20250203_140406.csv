@@ -1,0 +1,103 @@
+index,prediction,ground_truth,question,truth,issue
+val_1033,50,450,"Grandpa loves to eat jelly beans, but how many jelly beans he can eat depends on the size of the beans.  It takes 75 large jelly beans to fill Grandpa up. He can eat twice as many medium-sized beans as large beans.  And eating 3 small beans is the same as eating 1 medium-sized bean.  How many small beans can Grandpa eat?","If Grandpa can eat twice as many medium beans as large beans, then eating 75 large beans is the same as eating 75*2=<<75*2=150>>150 medium-sized jelly beans.
+If 1 medium-sized bean is the same as 3 small beans, then 150 medium-sized beans are equal to 150*3=<<150*3=450>>450 small jelly beans.
+#### 450","To solve this problem, we need to establish the relationships between the different sizes of jelly beans and how many Grandpa can eat. Let's break it down step-by-step.
+
+### Step 1: Establish Base Information
+- 75 large jelly beans fill Grandpa up.
+- Grandpa can eat twice as many medium-sized jelly beans as large jelly beans.
+- Eating 3 small jelly beans is equivalent to eating 1 medium-sized jelly bean.
+
+### Step 2: Define Variables
+- Let \( L \) represent the number of large jelly beans.
+- Let \( M \) represent the number of medium jelly beans.
+- Let \( S \) represent the number of small jelly beans.
+
+### Step 3: Set Up Relationships
+- \( L = 75 \) (base information)
+- \( M = 2L \) (twice as many medium as large)
+- \( 3S = M \) (equivalent to 1 medium jelly bean)
+
+### Step 4: Substitute Known Values
+1. Substitute \( L = 75 \) into the equation for \( M \):
+   \[
+   M = 2L = 2 \times 75 = 150
+   \]
+2. Substitute \( M = 150 \) into the equation for \( S \):
+   \[
+   3S = M \implies 3S = 150 \implies S = \frac{150}{3} = 50
+   \]
+
+### Step 5: Verify and Validate
+- We have established that Grandpa can eat 150 medium jelly beans, and this is equivalent to eating 150/3 = 50 small jelly beans.
+- There are no contradictions or inconsistencies in the relationships given.
+
+### Step 6: Final Answer
+Grandpa can eat 50 small jelly beans.
+
+#### Final Answer: 50 small jelly beans."
+val_1241,110,2,"Elly is organizing her books on the new bookcases her parents bought her. Each of the middle 2 shelves can hold 10 books. The bottom shelf can hold twice as many books as a middle shelf. The top shelf can hold 5 fewer books than the bottom shelf. If she has 110 books, how many bookcases does she need to hold all of them?","The bottom shelf can hold 2 * 10 = <<2*10=20>>20 books.
+The 2 middle shelves can hold a total of 2 * 10 = <<2*10=20>>20 books.
+The top shelf can hold 20 – 5 = <<20-5=15>>15 books.
+Each bookcase can hold a total of 20 books + 20 books + 15 books = <<20+20+15=55>>55 books.
+To hold all of her books, she needs 110 / 55 = <<110/55=2>>2 bookcases.
+#### 2","Let's break down the problem step by step following the guidelines provided.
+
+### Step 1: Logic Chain Analysis
+
+#### Base Entities:
+- Middle Shelf (M)
+- Bottom Shelf (B)
+- Top Shelf (T)
+
+#### Relationships:
+- Middle Shelf can hold 10 books (M = 10)
+- Bottom Shelf can hold twice as many books as a middle shelf (B = 2 × M)
+- Top Shelf can hold 5 fewer books than the bottom shelf (T = B - 5)
+- Total books Elly has (Total = 110)
+
+#### Relationships and Dependencies:
+- M = 10
+- B = 2 × M = 2 × 10 = 20
+- T = B - 5 = 20 - 5 = 15
+
+### Step 2: Time and Age Relationships (Not relevant in this problem)
+Since there are no age or time-related parts in this problem, we can skip this step.
+
+### Step 3: Quantity Relationships
+- Calculate the capacity of each shelf.
+- Middle Shelf: 10 books
+- Bottom Shelf: 20 books
+- Top Shelf: 15 books
+
+### Step 4: Sequential Logic (Not relevant in this problem)
+Since there are no sequential or conditional parts to the problem, we can skip this step.
+
+### Step 5: Validation Steps
+
+#### Logical Consistency:
+- Check if the shelf capacities make logical sense.
+- Middle shelf: 10 books
+- Bottom shelf: 20 books (twice the middle)
+- Top shelf: 15 books (5 fewer than the bottom)
+
+#### Numeric Validation:
+- Calculate the total capacity of one bookcase.
+- Total capacity of one bookcase = M + B + T = 10 + 20 + 15 = 45 books
+
+#### Timeline Check:
+- Since the problem does not involve time, this step is not applicable.
+
+### Step 6: Answer Format
+
+To find out how many bookcases Elly needs:
+- Total books Elly has = 110
+- Total capacity of one bookcase = 45 books
+
+Number of bookcases needed = Total books / Total capacity of one bookcase
+\[ \text{Number of bookcases} = \frac{110}{45} \approx 2.44 \]
+
+Since Elly cannot have a fraction of a bookcase, she needs to round up to the next whole number.
+
+#### Marker Answer:
+Elly needs \(\boxed{3}\) bookcases to hold all of her 110 books."

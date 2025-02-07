@@ -1,0 +1,321 @@
+index,prediction,ground_truth,question,truth,issue
+val_236,11,10,"John orders some pizzas to share with his friends.  There are 20 friends in total, and John wants to make sure each can have 4 slices.  Pizzas are only sold sliced into 8 portions.  How many Pizzas does John need to order?","John's 20 friends each need 4 slices, so that means 4*20= <<4*20=80>>80 slices are needed
+Each pizza has 8 slices, so to get 80 slices in total 80/8= <<80/8=10>>10 pizzas are needed
+#### 10","Let's break down the problem using the Tree-of-Thoughts (TOT) method.
+
+### 1. Construct a Logical Tree
+- **Base Entities:**
+  - Total number of people: 20 friends + 1 John = 21 people
+  - Slices each person should have: 4 slices
+  - Slices per pizza: 8 slices
+
+- **Relationships and Dependencies:**
+  - Total slices needed: Total people × Slices per person
+  - Total pizzas needed: Total slices needed ÷ Slices per pizza
+
+### 2. Time and Sequential Reasoning
+- The problem does not specify a time frame for ordering pizzas, so we will focus on the calculation needed to determine the number of pizzas John needs to order.
+
+### 3. Quantity and Numerical Relationships
+- Calculate the total slices needed:
+  - Total slices needed = 21 people × 4 slices/person = 84 slices
+- Calculate the number of pizzas needed:
+  - Total pizzas needed = Total slices needed ÷ Slices per pizza = 84 slices ÷ 8 slices/pizza
+
+### 4. Branching and Conditional Logic
+- There are no conditional branches in this problem. We need to calculate the exact number of pizzas needed.
+
+### 5. Final Answer Extraction
+- Perform the division to find the number of pizzas:
+  - 84 ÷ 8 = 10.5
+- Since John cannot order half a pizza, he needs to round up to the nearest whole number.
+
+Final Calculation:
+- Total pizzas needed = 11
+
+FINAL ANSWER: 11
+### 1. Construct a Logical Tree
+- **Base Entities:**
+  - Total number of people: 20 friends + 1 John = 21 people
+  - Slices each person should have: 4 slices
+  - Slices per pizza: 8 slices
+
+- **Relationships and Dependencies:**
+  - Total slices needed: Total people × Slices per person
+  - Total pizzas needed: Total slices needed ÷ Slices per pizza
+
+### 2. Time and Sequential Reasoning
+- The problem does not specify a time frame for ordering pizzas, so we will focus on the calculation needed to determine the number of pizzas John needs to order. The sequence here is straightforward: first calculate the total slices needed, then determine the number of pizzas required.
+
+### 3. Quantity and Numerical Relationships
+- Calculate the total slices needed:
+  - Total slices needed = 21 people × 4 slices/person = 84 slices
+- Calculate the number of pizzas needed:
+  - Total pizzas needed = Total slices needed ÷ Slices per pizza = 84 slices ÷ 8 slices/pizza
+
+### 4. Branching and Conditional Logic
+- There are two possible branches here:
+  - **Branch 1:** If the result is a whole number, John needs that many pizzas.
+  - **Branch 2:** If the result is not a whole number, John needs to round up to the next whole number because he cannot order a fraction of a pizza.
+
+### 5. Final Answer Extraction
+- Perform the division to find the number of pizzas:
+  - 84 ÷ 8 = 10.5
+- Since John cannot order half a pizza, he needs to round up to the nearest whole number.
+
+Final Calculation:
+- Total pizzas needed = 11
+
+FINAL ANSWER: 11
+
+### Branch 1: If the result were a whole number
+- If the result of 84 ÷ 8 were a whole number, John would need exactly 10 pizzas. However, since the division results in 10.5, this branch is not applicable.
+
+### Branch 2: If the result is not a whole number
+- Since 84 ÷ 8 = 10.5, John needs to round up to 11 pizzas to ensure everyone gets at least 4 slices.
+
+Final Answer: 11
+### 1. Construct a Logical Tree
+- **Base Entities:**
+  - Total number of people: 20 friends + 1 John = 21 people
+  - Slices each person should have: 4 slices
+  - Slices per pizza: 8 slices
+
+- **Relationships and Dependencies:**
+  - Total slices needed: Total people × Slices per person
+  - Total pizzas needed: Total slices needed ÷ Slices per pizza
+
+### 2. Time and Sequential Reasoning
+- The problem does not specify a time frame for ordering pizzas, so we will focus on the calculation needed to determine the number of pizzas John needs to order. The sequence here is straightforward: first calculate the total slices needed, then determine the number of pizzas required.
+
+### 3. Quantity and Numerical Relationships
+- Calculate the total slices needed:
+  - Total slices needed = 21 people × 4 slices/person = 84 slices
+- Calculate the number of pizzas needed:
+  - Total pizzas needed = Total slices needed ÷ Slices per pizza = 84 slices ÷ 8 slices/pizza
+
+### 4. Branching and Conditional Logic
+- There are two possible branches here:
+  - **Branch 1:** If the result is a whole number, John needs that many pizzas.
+  - **Branch 2:** If the result is not a whole number, John needs to round up to the next whole number because he cannot order a fraction of a pizza.
+
+### 5. Final Answer Extraction
+- Perform the division to find the number of pizzas:
+  - 84 ÷ 8 = 10.5
+- Since John cannot order half a pizza, he needs to round up to the nearest whole number.
+
+#### Branch 1: If the result were a whole number
+- If the result of 84 ÷ 8 were a whole number, John would need exactly 10 pizzas. However, since the division results in 10.5, this branch is not applicable.
+
+#### Branch 2: If the result is not a whole number
+- Since 84 ÷ 8 = 10.5, John needs to round up to 11 pizzas to ensure everyone gets at least 4 slices.
+
+Final Calculation:
+- Total pizzas needed = 11
+
+### Final Answer
+- Since 10.5 rounds up to 11, John needs to order 11 pizzas.
+
+FINAL ANSWER: 11"
+val_455,240,150,Marin and his neighbor Nancy each eat 4 apples a day. How many apples do they eat in 30 days?,"In one day, Marin and Nancy eat 4 + 1 = <<4+1=5>>5 apples.
+In 30 days, they eat 30 * 5 = <<30*5=150>>150 apples.
+#### 150","### Construct a Logical Tree
+
+1. **Base Entities and Relationships:**
+   - Marin eats 4 apples a day.
+   - Nancy eats 4 apples a day.
+   - They eat apples together for 30 days.
+
+2. **Temporal Reference Points:**
+   - The period of 30 days is a specific timeframe.
+
+3. **Numerical Relationships:**
+   - Daily apple consumption per person: 4 apples.
+   - Number of people: 2 (Marin and Nancy).
+   - Total number of days: 30.
+
+4. **Branching and Conditional Logic:**
+   - Branch 1: Calculate the total apples consumed by Marin in 30 days.
+   - Branch 2: Calculate the total apples consumed by Nancy in 30 days.
+   - Branch 3: Sum the total apples consumed by both to get the final answer.
+
+### Branch 1: Calculate Total Apples for Marin
+- Marin's daily consumption: 4 apples.
+- Number of days: 30.
+- Total apples for Marin = \( 4 \text{ apples/day} \times 30 \text{ days} \).
+
+### Branch 2: Calculate Total Apples for Nancy
+- Nancy's daily consumption: 4 apples.
+- Number of days: 30.
+- Total apples for Nancy = \( 4 \text{ apples/day} \times 30 \text{ days} \).
+
+### Branch 3: Sum the Total Apples
+- Total apples for both = Total apples for Marin + Total apples for Nancy.
+- Total apples for both = \( 4 \times 30 + 4 \times 30 \).
+
+### Time and Sequential Reasoning
+- Both individuals consume apples independently but over the same period.
+- The calculation of individual totals can be done simultaneously, and the final sum is computed sequentially.
+
+### Final Answer Extraction
+- Total apples for Marin = \( 4 \times 30 = 120 \) apples.
+- Total apples for Nancy = \( 4 \times 30 = 120 \) apples.
+- Total apples for both = \( 120 + 120 = 240 \) apples.
+
+FINAL ANSWER: 240"
+val_1120,21,18,"Amalia, Megan, and Dior divided the home chores so that each person had something to do while the others were working. Amalia's work was to mow the lawn, which took her 4 hours. Megan had to walk the dog and this took her 2 hours longer than Amalia to complete her chore. Dior's work was to do laundry and she took well over 4 hours longer than the time Amalia took to mow the lawn. Calculate the total time they all took to do their chores altogether.","Megan took 2 hours longer than Amalia to do her work, a total of 4+2 = 6 hours.
+Amalia and Megan's total time to finish their work is 6+4 = <<6+4=10>>10 hours.
+If Amalia took 4 hours to mow the lawn, and Dior took 4 hours longer than her while doing laundry, Dior took 4+4 = <<4+4=8>>8 hours to do the laundry.
+In total, they took 10+8 = <<10+8=18>>18 hours together doing their chores.
+#### 18","Let's break down the problem and solve it step by step using Tree-of-Thoughts (TOT) reasoning.
+
+### Step 1: Construct a Logical Tree
+
+1. **Base Entities and Relationships:**
+   - Amalia: Mowed the lawn (4 hours)
+   - Megan: Walked the dog (2 hours longer than Amalia)
+   - Dior: Did laundry (took over 4 hours longer than Amalia)
+
+2. **Numerical Relationships and Calculations:**
+   - Time taken by Megan = Time taken by Amalia + 2 hours
+   - Time taken by Dior > Time taken by Amalia + 4 hours
+
+3. **Temporal Sequencing:**
+   - Note that the sequence of tasks is not specified, so we assume they worked on their chores sequentially or simultaneously.
+
+### Step 2: Time and Sequential Reasoning
+
+1. **Time Taken by Each:**
+   - Amalia: 4 hours (mowed the lawn)
+   - Megan: \(4 + 2 = 6\) hours (walked the dog)
+   - Dior: More than \(4 + 4 = 8\) hours (did laundry)
+
+2. **Total Time Calculation:**
+   - Since the exact time for Dior is not specified, we consider the minimum time Dior took, which is just over 8 hours. Let's denote it as \(8 + x\) where \(x\) is a positive number.
+
+### Step 3: Quantity and Numerical Relationships
+
+1. **Time Taken by Dior:**
+   - Minimum time for Dior is \(8 + x\) hours, where \(x > 0\).
+
+2. **Total Time Calculation:**
+   - Total time = Time taken by Amalia + Time taken by Megan + Time taken by Dior
+   - Total time = \(4 + 6 + (8 + x) = 18 + x\)
+
+### Step 4: Branching and Conditional Logic
+
+1. **Branch 1:**
+   - Assume Dior took exactly 9 hours (minimum over 8 hours).
+   - Total time = \(4 + 6 + 9 = 19\) hours
+
+2. **Branch 2:**
+   - Assume Dior took more than 9 hours, say 10 hours.
+   - Total time = \(4 + 6 + 10 = 20\) hours
+
+3. **Branch 3:**
+   - Assume Dior took more than 10 hours, say 11 hours.
+   - Total time = \(4 + 6 + 11 = 21\) hours
+
+### Step 5: Final Answer Extraction
+
+Since the problem does not specify the exact time Dior took, we consider the minimum time over 8 hours, which is 9 hours. Therefore, the total time can be stated as:
+
+\[
+\text{Total time} = 18 + x \quad \text{where} \quad x > 0
+\]
+
+For the most conservative and typical assumption, we take \(x = 1\):
+
+\[
+\text{Total time} = 18 + 1 = 19 \text{ hours}
+\]
+
+Thus, the final answer is:
+
+FINAL ANSWER: 19 hours
+### Step 1: Construct a Logical Tree
+
+1. **Base Entities and Relationships:**
+   - Amalia: Mowed the lawn (4 hours)
+   - Megan: Walked the dog (2 hours longer than Amalia)
+   - Dior: Did laundry (took over 4 hours longer than Amalia)
+
+2. **Numerical Relationships and Calculations:**
+   - Time taken by Megan = Time taken by Amalia + 2 hours
+   - Time taken by Dior > Time taken by Amalia + 4 hours
+
+3. **Temporal Sequencing:**
+   - The sequence of tasks is not specified, so we assume they worked on their chores sequentially or simultaneously.
+
+### Step 2: Time and Sequential Reasoning
+
+1. **Time Taken by Each:**
+   - Amalia: 4 hours (mowed the lawn)
+   - Megan: \(4 + 2 = 6\) hours (walked the dog)
+   - Dior: More than \(4 + 4 = 8\) hours (did laundry)
+
+2. **Total Time Calculation:**
+   - Since the exact time for Dior is not specified, we consider the minimum time Dior took, which is just over 8 hours. Let's denote it as \(8 + x\) where \(x > 0\).
+
+### Step 3: Quantity and Numerical Relationships
+
+1. **Time Taken by Dior:**
+   - Minimum time for Dior is \(8 + x\) hours, where \(x > 0\).
+
+2. **Total Time Calculation:**
+   - Total time = Time taken by Amalia + Time taken by Megan + Time taken by Dior
+   - Total time = \(4 + 6 + (8 + x) = 18 + x\)
+
+### Step 4: Branching and Conditional Logic
+
+1. **Branch 1:**
+   - Assume Dior took exactly 9 hours (minimum over 8 hours).
+   - Total time = \(4 + 6 + 9 = 19\) hours
+
+2. **Branch 2:**
+   - Assume Dior took more than 9 hours, say 10 hours.
+   - Total time = \(4 + 6 + 10 = 20\) hours
+
+3. **Branch 3:**
+   - Assume Dior took more than 10 hours, say 11 hours.
+   - Total time = \(4 + 6 + 11 = 21\) hours
+
+### Step 5: Final Answer Extraction
+
+Since the problem does not specify the exact time Dior took, we consider the minimum time over 8 hours, which is 9 hours. Therefore, the total time can be stated as:
+
+\[
+\text{Total time} = 18 + x \quad \text{where} \quad x > 0
+\]
+
+For the most conservative and typical assumption, we take \(x = 1\):
+
+\[
+\text{Total time} = 18 + 1 = 19 \text{ hours}
+\]
+
+Thus, the final answer is:
+
+FINAL ANSWER: 19 hours
+
+### Additional Reasoning Branches
+
+1. **Branch 1:**
+   - If Dior takes 9 hours:
+     \[
+     \text{Total time} = 4 + 6 + 9 = 19 \text{ hours}
+     \]
+
+2. **Branch 2:**
+   - If Dior takes 10 hours:
+     \[
+     \text{Total time} = 4 + 6 + 10 = 20 \text{ hours}
+     \]
+
+3. **Branch 3:**
+   - If Dior takes 11 hours:
+     \[
+     \text{Total time} = 4 + 6 + 11 = 21 \text{ hours}
+     \]
+
+In summary, the total time taken by Amalia, Megan, and Dior to complete their chores can be 19 hours, 20 hours, or 21 hours, depending on the exact time Dior took."

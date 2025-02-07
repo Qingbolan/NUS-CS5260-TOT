@@ -1,0 +1,122 @@
+index,prediction,ground_truth,question,truth,issue
+val_116,0,90,"Sasha notices that prices for lumber have gone up 50% in the last few months after she bought some lumber. Since she has leftovers, she decides to sell them. She has leftover ten 2 x 4 x 10 boards that cost her $10 each. She also has five 4 x 4 x 10 boards she bought for $16 each. If she sells them all, how much profit does she make?","She bought the 2 x 4s for $100 because 10 x 10 = 100
+She bought the 4 x 4s for 80 because 5 x 16 = 80
+She paid $180 for the lumber because 100 + 80 = <<100+80=180>>180
+The same number now sells for $270 because 180 x 1.5 = <<180*1.5=270>>270
+She made $90 in profit because 270 - 180 = <<270-180=90>>90
+#### 90","To solve this problem, we need to follow these steps:
+
+1. Calculate the total cost of the leftover lumber Sasha has.
+2. Calculate the total selling price of the leftover lumber.
+3. Determine the profit by subtracting the total cost from the total selling price.
+
+### Step 1: Calculate the Total Cost of Lumber
+
+**2 x 4 x 10 Boards:**
+- Quantity: 10
+- Cost per board: $10
+- Total cost for 2 x 4 x 10 boards: \(10 \times 10 = 100\) dollars
+
+**4 x 4 x 10 Boards:**
+- Quantity: 5
+- Cost per board: $16
+- Total cost for 4 x 4 x 10 boards: \(5 \times 16 = 80\) dollars
+
+**Total Cost:**
+- Total cost for all boards: \(100 + 80 = 180\) dollars
+
+### Step 2: Calculate the Total Selling Price of Lumber
+
+The problem does not provide the selling price per board, so we assume the selling price is the same as the original purchase price (since no other information is given about a price increase for selling).
+
+**2 x 4 x 10 Boards:**
+- Quantity: 10
+- Selling price per board: $10
+- Total selling price for 2 x 4 x 10 boards: \(10 \times 10 = 100\) dollars
+
+**4 x 4 x 10 Boards:**
+- Quantity: 5
+- Selling price per board: $16
+- Total selling price for 4 x 4 x 10 boards: \(5 \times 16 = 80\) dollars
+
+**Total Selling Price:**
+- Total selling price for all boards: \(100 + 80 = 180\) dollars
+
+### Step 3: Determine the Profit
+
+**Profit Calculation:**
+- Total selling price: $180
+- Total cost: $180
+- Profit: \(180 - 180 = 0\) dollars
+
+### Final Answer
+
+Sasha makes a profit of #### 0 dollars."
+val_1312,600,594,"The caretaker of the docks needs to buy some new line. He wants 3 feet of line for every foot of dock. Right now, there is 200 feet of dock, and he has 6 feet of new line. How many feet of line does he need to buy in total?","200*3 = <<200*3=600>>600 feet of line.
+The caretaker needs to buy 600-6 = <<600-6=594>>594 feet of line.
+#### 594","To solve this problem, let's follow the guidelines step-by-step.
+
+### Step 1: Unit Analysis and Conversion
+
+- **Identify all units:**
+  - feet of dock: 200 feet
+  - feet of line: 6 feet
+  - required line per foot of dock: 3 feet
+
+- **Convert composite units:**
+  - No composite units to convert in this problem.
+
+### Step 2: Answer Format Analysis
+
+- **Required format:**
+  - Total feet of line needed.
+
+- **Parse expected units:**
+  - Final answer should be in feet.
+
+### Step 3: Calculation Process
+
+1. **Original quantity and units:**
+   - Dock length: 200 feet
+   - Line required per foot of dock: 3 feet
+
+2. **Convert and calculate:**
+   - Total line required = Dock length × Line per foot of dock
+   - Total line required = 200 feet × 3 feet/foot
+   - Calculate: <<200 * 3 = 600>> feet
+
+3. **Verify units:**
+   - 200 feet × 3 feet/foot = 600 feet
+   - Units match (feet × feet/foot = feet)
+
+### Step 4: Special Cases
+
+- **Per-Unit Problems:**
+  - Not applicable in this case.
+
+- **Multiple Unit Types:**
+  - Not applicable in this case.
+
+- **Ratios and Rates:**
+  - Not applicable in this case.
+
+### Step 5: Final Answer Validation
+
+- **Unit Check:**
+  - Original units (feet) → Final units (feet)
+  - All conversions shown (none needed)
+  - Units match question (feet)
+
+- **Format Check:**
+  - Answer includes required units (feet)
+  - Multiple parts not needed
+  - Proper rounding (no rounding needed)
+
+- **Reality Check:**
+  - Result is reasonable (600 feet of line needed)
+  - Units make sense (feet of line)
+  - Matches problem context
+
+### Step 6: End Format
+
+#### 600 feet"

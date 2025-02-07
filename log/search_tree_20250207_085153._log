@@ -1,0 +1,40 @@
+TOT Search Tree (Final Best Score: 1.05)
+└── Round 1
+    ├── Generated Candidate Thoughts
+    │   ├── Candidate 1: Understanding the problem:
+    │   │   - Aleena pays $140 per month for the streaming service.
+    │   │   - The first half of the year (6 months) she pays the full amount.
+    │   │   - The second half of the year (6 months) she pays 1... (Score: 1.05)
+    │   ├── Candidate 2: Let's break down the problem step by step.
+    │   │   
+    │   │   1. **Understanding the Problem:**
+    │   │      - Aleena's streaming service charges $140 per month.
+    │   │      - The first half of the year (6 months) charges the full amount... (Score: 1.05)
+    │   └── Candidate 3: **Understanding the Problem:**
+    │       Aleena subscribes to a streaming service that charges her $140 per month. The service charges the initial rate for the first half of the year, and then
+    │       charges 10% less ... (Score: 1.05)
+    ├── Calculation Issues
+    │   ├── Candidate 1 Issue: [None]
+    │   ├── Candidate 2 Issue: [None]
+    │   └── Candidate 3 Issue: [None]
+    ├── Refutation Feedback
+    │   └── Candidate 1 Refutation: ### Refutation Points
+    │       
+    │       1. **Understanding the Problem:**
+    │          - **Candidate's Understanding:**
+    │            - The candidate correctly identifies the full monthly rate as $140.
+    │            - The candidate correctly ide...
+    ├── Revised Candidate Thoughts
+    │   └── Candidate 1 Revised: Understanding the problem:
+    │       - Aleena pays $140 per month for the streaming service.
+    │       - The first half of the year (6 months) she pays the full amount.
+    │       - The second half of the year (6 months) she pays 1...
+    ├── Evaluation Scores
+    │   ├── Candidate 1 Score: 1.05
+    │   ├── Candidate 2 Score: 1.05
+    │   └── Candidate 3 Score: 1.05
+    └── Selected Candidates for Next Round
+        └── Candidate 1: Understanding the problem:
+            - Aleena pays $140 per month for the streaming service.
+            - The first half of the year (6 months) she pays the full amount.
+            - The second half of the year (6 months) she pays 1...

@@ -1,0 +1,31 @@
+index,prediction,ground_truth,question,truth,issue
+val_902,2,1,"Calvin is making soup for his family for dinner. He has a pot with enough soup to fill four adult's bowls or eight child's bowls. He is an adult and will be eating with his adult wife and their two children. If everyone eats one bowl at a meal, how many times will each child be able to have a bowl of soup for lunch from the leftover soup?","Four adult bowls equal eight children’s bowls, so each adult bowl is 8 / 4 = <<8/4=2>>2 children’s bowls.
+Calvin and his wife will eat two adult bowls, so they will eat the equivalent of 2 * 2 = <<2*2=4>>4 children’s bowls.
+Thus, he, his wife, and their children will eat 4 + 2 = <<4+2=6>>6 children’s bowls at dinner.
+After dinner, there will be 8 - 6 = <<8-6=2>>2 children’s bowls left over.
+There are 2 children, so each child will be able to eat a bowl of leftover soup for lunch 2 / 2 = <<2/2=1>>1 time.
+#### 1","To determine how many times each child will be able to have a bowl of soup for lunch from the leftover soup, we need to follow these steps:
+
+1. **Calculate the total amount of soup available in terms of child's bowls:**
+   - The pot can fill 4 adult's bowls.
+   - Since each adult's bowl is equivalent to 2 child's bowls (because 8 child's bowls = 4 adult's bowls), the pot can fill \(4 \times 2 = 8\) child's bowls.
+
+2. **Determine the total amount of soup consumed by the family:**
+   - Calvin and his wife each eat 1 bowl, so they consume \(2\) bowls.
+   - Each child eats 1 bowl, so the two children consume \(2\) bowls.
+   - Therefore, the total amount of soup consumed by the family is \(2 + 2 = 4\) child's bowls.
+
+3. **Calculate the amount of soup left after the family eats:**
+   - The pot initially has 8 child's bowls.
+   - The family consumes 4 child's bowls.
+   - Therefore, the amount of soup left is \(8 - 4 = 4\) child's bowls.
+
+4. **Determine how many times each child can have a bowl of soup for lunch:**
+   - There are 4 child's bowls left.
+   - There are 2 children.
+   - Therefore, each child can have \(\frac{4}{2} = 2\) bowls of soup for lunch.
+
+The final answer is:
+\[
+\boxed{2}
+\]"

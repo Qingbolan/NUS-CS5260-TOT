@@ -1,0 +1,48 @@
+index,prediction,ground_truth,question,truth,issue
+val_407,240,200,"At Allan's house, there is twice as much corn as cannolis. He has a total of 40 cannolis in his house. Allan bought 60 more cannolis at the store and 40 fewer corns than the number of cannolis. Find the combined total of the number of corns and cannolis Allan has in the house?","Before buying any corn and cannoli, Allan had twice as much corn as cannoli, which is 40 cannoli * 2 corn/cannoli = <<40*2=80>>80 corns
+The total number of corns and cannolis that Allan had before is 80 corn + 40 corn = <<80+40=120>>120 corn
+When he bought 40 fewer corns than cannolis, he bought 60 corn - 40 corn = <<60-40=20>>20 corns
+In total, he bought 20 corns + 60 cannolis = <<20+60=80>>80 items
+After the purchases, Allan has 120 items + 80 items = <<120+80=200>>200 total corns and cannolis combined.
+#### 200","Let's break down the problem step by step.
+
+1. **Understanding the Initial Condition:**
+   - Allan has 40 cannolis.
+   - The number of corns is twice the number of cannolis.
+     \[
+     \text{Number of corns} = 2 \times 40 = 80
+     \]
+
+2. **Calculating After Purchases:**
+   - Allan buys 60 more cannolis.
+     \[
+     \text{New total of cannolis} = 40 + 60 = 100
+     \]
+   - Allan also buys 40 fewer corns than the number of cannolis he just bought.
+     \[
+     \text{Number of corns bought} = 100 - 40 = 60
+     \]
+   - The new total of corns is:
+     \[
+     \text{New total of corns} = 80 + 60 = 140
+     \]
+
+3. **Calculating the Combined Total:**
+   - The combined total of corns and cannolis is:
+     \[
+     \text{Combined total} = 100 + 140 = 240
+     \]
+
+4. **Final Check:**
+   - Recalculate the total to ensure accuracy:
+     \[
+     \text{Number of corns} = 80 + 60 = 140
+     \]
+     \[
+     \text{Number of cannolis} = 40 + 60 = 100
+     \]
+     \[
+     \text{Combined total} = 140 + 100 = 240
+     \]
+
+Final Answer: 240"

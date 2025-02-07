@@ -1,0 +1,56 @@
+TOT Search Tree (Final Best Score: 1.05)
+└── Round 1
+    ├── Generated Candidate Thoughts
+    │   ├── Candidate 1: To solve this problem, we need to break it down into parts and calculate the scores for both Ava and Emma, then find the difference 
+    │   │   between their scores.
+    │   │   
+    │   │   1. **Understanding the Problem:**
+    │   │      - Points... (Score: 0.90)
+    │   ├── Candidate 2: Let's break down the problem into clear steps and calculate the scores for Ava and Emma.
+    │   │   
+    │   │   **Step 1: Define variables and given data**
+    │   │   - Let \( E_e \) be the number of enemies Emma jumps on.
+    │   │   - Let \( E... (Score: 1.05)
+    │   └── Candidate 3: Let's break down the problem and calculate the scores for Ava and Emma.
+    │       
+    │       1. **Understanding the Problem:**
+    │          - Ava and Emma play a level in the game.
+    │          - Points are awarded for:
+    │            - Enemies jumpe... (Score: 0.90)
+    ├── Calculation Issues
+    │   ├── Candidate 1 Issue: ["There may be a problem, I can't find it.\n\nThe provided answer appears to follow the logical steps to calculate the difference in
+    │   │   scores between Ava and Emma. The calculations seem accurate and the simplification from the score formulas correctly results in a difference of 15 
+    │   │   points. Given the problem statement and the derived formulas, the steps and the final answer of 15 are consistent and logically sound."]
+    │   ├── Candidate 2 Issue: [None]
+    │   └── Candidate 3 Issue: ["I find the key issue in the former answer is in the calculation of the seconds left on the timer for Ava.\n\nThe problem states 
+    │       that Emma finishes the level 4 seconds slower than the base time of 30 seconds, meaning her time is \\(30 + 4 = 34\\) seconds. However, for Ava, who 
+    │       finishes 4 seconds slower than Emma, her time would be \\(34 + 4 = 38\\) seconds, not \\(30 - 34\\) seconds as incorrectly calculated.\n\nHere is the 
+    │       corrected calculation for Ava's score:\n\n4. **Calculate Ava's Score:**\n   - Enemies jumped on: \\( 10(E_e + 8) \\)\n   - Berries collected: \\( 5(E_b
+    │       + 3) \\)\n   - Seconds left: \\( 30(34 - 38) = 30 \\times (-4) = -120 \\) (Note: This is negative, meaning Ava uses up 120 seconds of the timer, but 
+    │       since the base time is 30 seconds, we should consider the effective points as 0 for the timer since she finishes the level 38 seconds after the base 30
+    │       seconds.)\n   - Total score for Ava:\n     \[\n     S_A = 10(E_e + 8) + 5(E_b + 3) + 30 \\times 0 = 10E_e + 80 + 5E_b + 15 = 10E_e + 5E_b + 95\n     
+    │       \\]\n\n5. **Calculate the Difference in Scores:**\n   - Difference: \\( S_A - S_E \\)\n   - Substitute the expressions:\n     \[\n     S_A - S_E = 
+    │       (10E_e + 5E_b + 95) - (10E_e + 5E_b + 780) = 95 - 780 = -685\n     \\]\n\n6. **Final Calculation:**\n   - The difference is \\(-685\\), which means 
+    │       Emma's score is 685 points higher than Ava's.\n\n**Final Answer: -685**"]
+    ├── Refutation Feedback
+    │   └── Candidate 1 Refutation: ### Refutation Points and Improvements
+    │       
+    │       #### 1. Understanding of the Original Question
+    │       - **Candidate Understanding:**
+    │         The candidate has correctly identified the variables and given data, and has cor...
+    ├── Revised Candidate Thoughts
+    │   └── Candidate 1 Revised: Let's break down the problem into clear steps and calculate the scores for Ava and Emma.
+    │       
+    │       **Step 1: Define variables and given data**
+    │       - Let \( E_e \) be the number of enemies Emma jumps on.
+    │       - Let \( E...
+    ├── Evaluation Scores
+    │   ├── Candidate 1 Score: 0.90
+    │   ├── Candidate 2 Score: 1.05
+    │   └── Candidate 3 Score: 0.90
+    └── Selected Candidates for Next Round
+        └── Candidate 1: Let's break down the problem into clear steps and calculate the scores for Ava and Emma.
+            
+            **Step 1: Define variables and given data**
+            - Let \( E_e \) be the number of enemies Emma jumps on.
+            - Let \( E...

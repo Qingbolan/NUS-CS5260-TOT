@@ -1,0 +1,209 @@
+index,prediction,ground_truth,question,truth,issue
+val_204,27,31,Carl’s favorite food is cheese. He ate a sandwich every day this week for lunch and used 2 slices of cheese on each sandwich. He ate cheese and egg omelets for breakfast 3 days in the week using one more slice per omelet than he did per sandwich. He made a big dish of macaroni and cheese to last him several dinners for the week and used 8 slices of cheese in it. How many slices of cheese did he use?,"His 2-slice sandwiches used 2 * 7 = <<2*7=14>>14 slices of cheese for all 7 days of the week.
+His cheese and egg omelets used one more slice than his sandwiches, so they used 2 + 1 = <<2+1=3>>3 slices of cheese each.
+He made 3 omelets, so they used 3 * 3 = <<3*3=9>>9 slices of cheese.
+Carl’s sandwiches, omelets, and macaroni used 14 + 9 + 8 = <<14+9+8=31>>31 slices of cheese in all.
+#### 31","### 候选方案一：直接计算法
+1. **午餐中的奶酪使用量**：
+    - Carl每天吃一个三明治，一周5天。
+    - 每个三明治使用2片奶酪。
+    - 一周的三明治使用奶酪：\(5 \text{天} \times 2 \text{片/天} = 10 \text{片}\)。
+
+2. **早餐中的奶酪使用量**：
+    - Carl一周有3天吃奶酪蛋饼。
+    - 每个奶酪蛋饼使用奶酪片数为每个三明治的奶酪片数加1，即 \(2 + 1 = 3 \text{片}\)。
+    - 一周的奶酪蛋饼使用奶酪：\(3 \text{天} \times 3 \text{片/天} = 9 \text{片}\)。
+
+3. **晚餐中的奶酪使用量**：
+    - Carl做了大量奶酪通心粉，使用了8片奶酪。
+
+4. **总奶酪使用量**：
+    - 总使用量：\(10 \text{片} + 9 \text{片} + 8 \text{片} = 27 \text{片}\)。
+
+**最终答案**：
+FINAL ANSWER: 27
+
+### 候选方案二：分步计算法
+1. **计算午餐中的奶酪使用量**：
+    - Carl每天吃一个三明治，使用2片奶酪。
+    - 一周5天吃三明治，总奶酪量：\(5 \text{天} \times 2 \text{片/天} = 10 \text{片}\)。
+
+2. **计算早餐中的奶酪使用量**：
+    - Carl一周有3天吃奶酪蛋饼，每个蛋饼比三明治多用1片奶酪，即3片。
+    - 一周的奶酪蛋饼使用奶酪：\(3 \text{天} \times 3 \text{片/天} = 9 \text{片}\)。
+
+3. **计算晚餐中的奶酪使用量**：
+    - Carl晚餐用了8片奶酪。
+
+4. **总奶酪使用量**：
+    - 总使用量：\(10 \text{片} + 9 \text{片} + 8 \text{片} = 27 \text{片}\)。
+
+**最终答案**：
+FINAL ANSWER: 27
+
+### 候选方案三：列表法
+1. **列表午餐中的奶酪使用量**：
+    - 三明治：\(5 \text{天} \times 2 \text{片/天} = 10 \text{片}\)。
+
+2. **列表早餐中的奶酪使用量**：
+    - 奶酪蛋饼：\(3 \text{天} \times 3 \text{片/天} = 9 \text{片}\)。
+
+3. **列表晚餐中的奶酪使用量**：
+    - 奶酪通心粉：8片。
+
+4. **总奶酪使用量**：
+    - 总使用量：\(10 \text{片} + 9 \text{片} + 8 \text{片} = 27 \text{片}\)。
+
+**最终答案**：
+FINAL ANSWER: 27"
+val_407,240,200,"At Allan's house, there is twice as much corn as cannolis. He has a total of 40 cannolis in his house. Allan bought 60 more cannolis at the store and 40 fewer corns than the number of cannolis. Find the combined total of the number of corns and cannolis Allan has in the house?","Before buying any corn and cannoli, Allan had twice as much corn as cannoli, which is 40 cannoli * 2 corn/cannoli = <<40*2=80>>80 corns
+The total number of corns and cannolis that Allan had before is 80 corn + 40 corn = <<80+40=120>>120 corn
+When he bought 40 fewer corns than cannolis, he bought 60 corn - 40 corn = <<60-40=20>>20 corns
+In total, he bought 20 corns + 60 cannolis = <<20+60=80>>80 items
+After the purchases, Allan has 120 items + 80 items = <<120+80=200>>200 total corns and cannolis combined.
+#### 200","### 方案一：直接计算
+**思路：**
+1. **初始状态**：根据题意，最初Allan家有40个卡诺利（cannolis）。
+2. **玉米数量**：根据题意，最初玉米（corns）的数量是卡诺利数量的两倍，因此玉米数量为 \(40 \times 2 = 80\) 个。
+3. **购买后数量变化**：Allan购买了60个额外的卡诺利，因此卡诺利总数变为 \(40 + 60 = 100\) 个。
+4. **玉米购买数量**：Allan购买了比卡诺利少40个的玉米，即 \(100 - 40 = 60\) 个玉米。
+5. **最终玉米总数**：初始玉米80个加上购买的60个玉米，最终玉米总数为 \(80 + 60 = 140\) 个。
+6. **总数计算**：最终卡诺利和玉米的总数为 \(100 + 140 = 240\)。
+
+**最终答案：**
+FINAL ANSWER: 240
+
+### 方案二：逐步推理
+**思路：**
+1. **初始状态**：Allan最初有40个卡诺利。
+2. **玉米数量**：根据题意，最初玉米是卡诺利的两倍，因此玉米数量是 \(40 \times 2 = 80\) 个。
+3. **购买后卡诺利数量**：Allan购买了60个卡诺利，所以卡诺利总数变为 \(40 + 60 = 100\) 个。
+4. **购买后玉米数量**：Allan购买了比卡诺利少40个的玉米，即 \(100 - 40 = 60\) 个玉米。
+5. **最终玉米数量**：初始80个玉米加上购买的60个玉米，最终玉米总数为 \(80 + 60 = 140\) 个。
+6. **总数计算**：最终卡诺利和玉米的总数为 \(100 + 140 = 240\)。
+
+**最终答案：**
+FINAL ANSWER: 240
+
+### 方案三：代数方法
+**思路：**
+1. **设变量**：设初始时卡诺利数量为 \(x\)，因此玉米数量为 \(2x\)。根据题意，最初 \(x = 40\)。
+2. **卡诺利购买**：Allan购买了60个卡诺利，所以卡诺利总数为 \(x + 60 = 40 + 60 = 100\)。
+3. **玉米购买**：Allan购买了比卡诺利少40个的玉米，即 \(100 - 40 = 60\) 个玉米。
+4. **最终玉米数量**：初始玉米数量 \(2x = 80\) 加上购买的60个玉米，最终玉米总数为 \(80 + 60 = 140\)。
+5. **总数计算**：最终卡诺利和玉米的总数为 \(100 + 140 = 240\)。
+
+**最终答案：**
+FINAL ANSWER: 240
+
+### 方案四：使用表格辅助计算
+**思路：**
+1. **初始状态**：
+| 类别 | 数量 |
+|------|------|
+| 卡诺利 | 40   |
+| 玉米   | 80   |
+
+2. **购买后状态**：
+| 类别 | 购买前数量 | 增加数量 | 购买后数量 |
+|------|-----------|---------|-----------|
+| 卡诺利 | 40        | 60      | 100       |
+| 玉米   | 80        | -40     | 60        |
+
+3. **最终状态**：
+| 类别 | 数量 |
+|------|------|
+| 卡诺利 | 100  |
+| 玉米   | 140  |
+
+4. **总数计算**：最终卡诺利和玉米的总数为 \(100 + 140 = 240\)。
+
+**最终答案：**
+FINAL ANSWER: 240"
+val_577,11376,11232,"Michael is replacing the carpet in his bedroom.  The new carpet he's chosen costs $12 per square foot, plus $2 per square foot for padding underneath.  His contractor charges $4 per square foot to remove the old carpet, and $34 per square foot to install the new carpet.  His bedroom measures 18 feet by 12 feet.  How much will it cost Michael to replace the carpet?","The room measures 18 * 12 = <<18*12=216>>216 square feet.
+The new carpet costs $12 * 216 = $<<12*216=2592>>2,592.
+The new carpet padding costs $2 * 216 = $<<2*216=432>>432.
+To remove the old carpet, the contractor will charge $4 * 216 = $<<4*216=864>>864.
+To install the new carpet, the contractor will charge $34 * 216 = $<<34*216=7344>>7,344.
+The total cost will be $864 + $2,592 + $432 + $7,344 = $11,232.
+#### 11232","### 方案1：直接计算法
+**思路解析：**
+1. **计算地毯和垫子的成本：**
+   - 地毯成本 = 12美元/平方英尺 * 18 * 12
+   - 垫子成本 = 2美元/平方英尺 * 18 * 12
+
+2. **计算拆除旧地毯的成本：**
+   - 拆除成本 = 4美元/平方英尺 * 18 * 12
+
+3. **计算安装新地毯的成本：**
+   - 安装成本 = 34美元/平方英尺 * 18 * 12
+
+4. **将所有成本相加得到总成本。**
+
+**具体步骤：**
+1. **地毯和垫子成本：**
+   - 地毯成本 = 12 * 18 * 12 = 2592美元
+   - 垫子成本 = 2 * 18 * 12 = 432美元
+   - 地毯及垫子总成本 = 2592 + 432 = 3024美元
+
+2. **拆除旧地毯成本：**
+   - 拆除成本 = 4 * 18 * 12 = 864美元
+
+3. **安装新地毯成本：**
+   - 安装成本 = 34 * 18 * 12 = 7488美元
+
+4. **总成本：**
+   - 总成本 = 地毯及垫子总成本 + 拆除成本 + 安装成本
+   - 总成本 = 3024 + 864 + 7488 = 11376美元
+
+**最终答案：**
+FINAL ANSWER: 11376
+
+### 方案2：分步骤计算法
+**思路解析：**
+1. **计算每个部分的成本：**
+   - 地毯成本 = 12美元/平方英尺 * 18 * 12
+   - 垫子成本 = 2美元/平方英尺 * 18 * 12
+   - 拆除成本 = 4美元/平方英尺 * 18 * 12
+   - 安装成本 = 34美元/平方英尺 * 18 * 12
+
+2. **分步骤进行计算并累加。**
+
+**具体步骤：**
+1. **地毯成本：**
+   - 地毯成本 = 12 * 18 * 12 = 2592美元
+
+2. **垫子成本：**
+   - 垫子成本 = 2 * 18 * 12 = 432美元
+
+3. **拆除成本：**
+   - 拆除成本 = 4 * 18 * 12 = 864美元
+
+4. **安装成本：**
+   - 安装成本 = 34 * 18 * 12 = 7488美元
+
+5. **总成本：**
+   - 总成本 = 地毯成本 + 垫子成本 + 拆除成本 + 安装成本
+   - 总成本 = 2592 + 432 + 864 + 7488 = 11376美元
+
+**最终答案：**
+FINAL ANSWER: 11376
+
+### 方案3：优化计算法
+**思路解析：**
+1. **一次性计算所有成本：**
+   - 总成本 = (地毯成本 + 垫子成本 + 拆除成本 + 安装成本) * (18 * 12)
+
+2. **简化计算过程。**
+
+**具体步骤：**
+1. **计算每平方英尺的总成本：**
+   - 每平方英尺总成本 = (地毯成本 + 垫子成本 + 拆除成本 + 安装成本) / (18 * 12)
+   - 每平方英尺总成本 = (12 + 2 + 4 + 34) = 52美元
+
+2. **总成本：**
+   - 总成本 = 每平方英尺总成本 * 18 * 12
+   - 总成本 = 52 * 18 * 12 = 11376美元
+
+**最终答案：**
+FINAL ANSWER: 11376"

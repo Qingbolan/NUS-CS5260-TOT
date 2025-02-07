@@ -1,0 +1,68 @@
+index,prediction,ground_truth,question,truth,issue
+val_769,600,675,"In one hour, Ezra read twice as many books as Ahmed. Ezra has read 300 books this hour and decided to read 150 more. How many books have they read altogether?","If Ezra has read 300 books this hour and decided to read 150 more in the next hour, he has read a total of 300+150=<<300+150=450>>450
+Since Ezra reads twice as many books as Ahmed, Ahmed has read 450/2=<<450/2=225>>225 books.
+Together, Ahmed and Ezra has read 225+450=<<225+450=675>>675 books
+#### 675","Let's break down the problem into clear steps and solve it.
+
+### Problem Breakdown:
+1. **Initial Reading**: Ezra has read 300 books in one hour.
+2. **Reading Rate**: Ezra reads twice as many books as Ahmed in one hour.
+3. **Additional Reading by Ezra**: Ezra decides to read 150 more books.
+4. **Calculate Total Books Read by Each**: Determine how many books Ahmed read in one hour, and then find the total number of books read by both Ezra and Ahmed.
+
+### Step-by-Step Solution:
+
+1. **Books Read by Ahmed in One Hour**:
+   - Since Ezra reads twice as many books as Ahmed in one hour, and Ezra has read 300 books, we can set up the following equation:
+     \[
+     \text{Books read by Ahmed} = \frac{\text{Books read by Ezra}}{2} = \frac{300}{2} = 150
+     \]
+   - Therefore, Ahmed has read 150 books in one hour.
+
+2. **Total Books Read by Each in One Hour**:
+   - Ezra has read 300 books in one hour.
+   - Ahmed has read 150 books in one hour.
+
+3. **Additional Books Read by Ezra**:
+   - Ezra decides to read 150 more books. So, the total number of books read by Ezra is:
+     \[
+     \text{Total books by Ezra} = 300 + 150 = 450
+     \]
+
+4. **Total Books Read by Both**:
+   - Since Ahmed hasn't read any additional books, his total remains 150.
+   - Therefore, the total number of books read by both Ezra and Ahmed is:
+     \[
+     \text{Total books} = \text{Books by Ezra} + \text{Books by Ahmed} = 450 + 150 = 600
+     \]
+
+### Consistency Check:
+- Calculation for Ahmed: \(300 / 2 = 150\) (Correct)
+- Calculation for Ezra: \(300 + 150 = 450\) (Correct)
+- Total: \(450 + 150 = 600\) (Correct)
+
+### Final Answer:
+FINAL ANSWER: 600"
+val_963,600,1000,"Jen decides to travel to 3 different countries.  He has to pay $400 for the supplies he needs, in total.  The tickets for travel cost, in total, 50% more than the supplies.  How much does travel cost?","He pays 400*.5=$<<400*.5=200>>200 more for tickets than supplies
+That means the tickets cost 400+200=$<<400+200=600>>600
+So it cost 600+400=$<<600+400=1000>>1000 in total.
+#### 1000","Original Question: Jen decides to travel to 3 different countries. He has to pay $400 for the supplies he needs, in total. The tickets for travel cost, in total, 50% more than the supplies. How much does travel cost?
+
+Step 1: Identify the cost of supplies.
+- Jen needs to pay $400 for supplies.
+
+Step 2: Calculate the total cost of travel tickets.
+- The travel tickets cost 50% more than the supplies.
+- To find 50% of the supplies cost: \( 0.50 \times 400 = 200 \).
+
+Step 3: Add the 50% increase to the original supplies cost to get the total travel cost.
+- Total travel cost = Original supplies cost + Additional cost
+- Total travel cost = 400 + 200 = 600
+
+Step 4: Verify the calculation.
+- Ensure that the 50% increase calculation is correct: \( 0.50 \times 400 = 200 \).
+- Confirm the addition: 400 + 200 = 600.
+
+All calculations are consistent and correct.
+
+FINAL ANSWER: 600"

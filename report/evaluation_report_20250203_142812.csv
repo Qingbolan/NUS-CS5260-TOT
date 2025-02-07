@@ -1,0 +1,125 @@
+index,prediction,ground_truth,question,truth,issue
+val_729,30,40,"Candy has 15 light blue spools of thread, 45 dark blue spools of thread, 40 light green spools of thread, and 50 dark green spools of thread. What percent of her spools are blue?","First find the number of blue spools: 15 spools + 45 spools = <<15+45=60>>60 spools
+Then find the total number of spools: 40 spools + 50 spools + 60 spools = <<40+50+60=150>>150 spools
+Then divide the number of blue spools by the total number of spools and multiply by 100% to express the answer as a percentage: 60 spools / 150 spools * 100% = 40%
+#### 40","### Tree-of-Thoughts (TOT) Approach
+
+#### Step 1: Identify Base Entities and Variables
+
+- **Light blue spools of thread (LB)**: 15
+- **Dark blue spools of thread (DB)**: 45
+- **Light green spools of thread (LG)**: 40
+- **Dark green spools of thread (DG)**: 50
+
+#### Step 2: Calculate the Total Number of Spools
+
+\[ \text{Total Spools} = LB + DB + LG + DG \]
+\[ \text{Total Spools} = 15 + 45 + 40 + 50 \]
+\[ \text{Total Spools} = 150 \]
+
+#### Step 3: Calculate the Number of Blue Spools
+
+- **Blue spools (Blue)**: DB (Dark blue)
+\[ \text{Blue Spools} = DB = 45 \]
+
+#### Step 4: Calculate the Percentage of Blue Spools
+
+\[ \text{Percentage of Blue Spools} = \left( \frac{\text{Blue Spools}}{\text{Total Spools}} \right) \times 100 \]
+\[ \text{Percentage of Blue Spools} = \left( \frac{45}{150} \right) \times 100 \]
+\[ \text{Percentage of Blue Spools} = 0.3 \times 100 \]
+\[ \text{Percentage of Blue Spools} = 30\% \]
+
+### Final Answer
+#### 30% of her spools are blue."
+val_755,150,89,Lorraine and Colleen are trading stickers for buttons. Each large sticker is worth a large button or three small buttons. A small sticker is worth one small button. A large button is worth three small stickers. Lorraine starts with 30 small stickers and 40 large stickers. She trades 90% of her small stickers for large buttons. She trades 50% of her large stickers for large buttons and trades the rest of them for small buttons. How many buttons does she have by the end?,"She trades 27 small stickers because 30 x .9 = <<27=27>>27
+She gets 9 large buttons for these because 27 / 3 = <<27/3=9>>9
+She trades 20 large stickers for large buttons because 40 x .5 = 20
+She gets 20 large buttons for these because 20 / 1 = <<20/1=20>>20
+She trades 50% of her large stickers for small buttons because 100 - 50 = <<100-50=50>>50
+She trades 20 large stickers for small buttons because 40 x .5 = 20
+She gets 60 small buttons because 20 x 3 = <<20*3=60>>60
+She has 89 buttons at the end because 9 + 20 + 60 = <<9+20+60=89>>89
+#### 89","Let's break down the problem step-by-step using the Tree-of-Thoughts (TOT) approach.
+
+### Step 1: Identify Base Entities, Variables, and Quantities
+- **Small Stickers (SS)**: Lorraine starts with 30 small stickers.
+- **Large Stickers (LS)**: Lorraine starts with 40 large stickers.
+- **Small Buttons (SB)**: Each small button is worth 1 small sticker.
+- **Large Buttons (LB)**: Each large button is worth 3 small stickers.
+- **Large Sticker to Button Trade**: Each large sticker is worth 1 large button or 3 small buttons.
+- **Trade Percentages**:
+  - 90% of small stickers for large buttons.
+  - 50% of large stickers for large buttons.
+  - The rest of large stickers for small buttons.
+
+### Step 2: Construct the Trading Process
+#### Branch 1: Trading Small Stickers for Large Buttons
+- **Number of Small Stickers Traded**: 90% of 30 small stickers = \(0.9 \times 30 = 27\) small stickers.
+- **Number of Large Buttons Received**: 27 small stickers converted to small buttons, then to large buttons, so \(27 \text{ small buttons} = \frac{27}{3} \text{ large buttons} = 9 \text{ large buttons}\).
+- **Remaining Small Stickers**: \(30 - 27 = 3\) small stickers.
+
+#### Branch 2: Trading Large Stickers for Large Buttons
+- **Number of Large Stickers Traded**: 50% of 40 large stickers = \(0.5 \times 40 = 20\) large stickers.
+- **Number of Large Buttons Received**: 20 large stickers converted to large buttons, so \(20 \text{ large buttons} = 20 \text{ large buttons}\).
+- **Remaining Large Stickers**: \(40 - 20 = 20\) large stickers.
+
+#### Branch 3: Trading Remaining Large Stickers for Small Buttons
+- **Number of Large Stickers Traded**: 20 large stickers.
+- **Number of Small Buttons Received**: 20 large stickers converted to small buttons, so \(20 \text{ large buttons} = 20 \times 3 = 60 \text{ small buttons}\).
+
+### Step 3: Summarize the Total Number of Buttons
+- **Initial Large Buttons Received from Small Stickers Trade**: 9 large buttons.
+- **Large Buttons Received from Large Sticker Trade**: 20 large buttons.
+- **Small Buttons Received from Large Sticker Trade**: 60 small buttons.
+- **Remaining Small Stickers**: 3 small stickers, which are worth 3 small buttons.
+
+### Step 4: Total Number of Buttons
+- **Total Large Buttons**: \(9 + 20 = 29\) large buttons.
+- **Total Small Buttons**: \(3 + 60 = 63\) small buttons.
+
+### Step 5: Convert All Buttons to a Single Unit (Buttons)
+- Since 1 large button = 3 small buttons:
+  \[
+  29 \text{ large buttons} \times 3 = 87 \text{ small buttons}
+  \]
+- **Total Small Buttons**: \(87 + 63 = 150\) buttons.
+
+### Final Answer
+\[
+\boxed{150}
+\]"
+val_841,20,16,"Patrick has three glue sticks that are partially used. One has 1/6 left, the second has 2/3 left and the third one has 1/2 left. If a glue stick is 12 millimeters long originally, what is the total length of the glue sticks that are not used?","The first glue stick has 12 x 1/6 = <<12*1/6=2>>2 millimeters left.
+The second glue stick has 12 x 2/3 = <<12*2/3=8>>8 millimeters left.
+The third glue stick has 12 x 1/2 = <<12*1/2=6>>6 millimeters left.
+There are a total of 2 + 8 + 6 = <<2+8+6=16>>16 millimeters of glue sticks that are not used.
+#### 16","Let's start by clearly identifying all the base entities and variables involved in the problem.
+
+1. **Entities and Variables:**
+   - Three glue sticks, each originally 12 millimeters (mm) long.
+   - Fraction of each glue stick that is left:
+     - Stick 1: \( \frac{1}{6} \) left
+     - Stick 2: \( \frac{2}{3} \) left
+     - Stick 3: \( \frac{1}{2} \) left
+   - Fraction of each glue stick that is not used:
+     - Stick 1: \( 1 - \frac{1}{6} = \frac{5}{6} \)
+     - Stick 2: \( 1 - \frac{2}{3} = \frac{1}{3} \)
+     - Stick 3: \( 1 - \frac{1}{2} = \frac{1}{2} \)
+   - Original length of each glue stick: 12 mm
+
+2. **Calculate the Length Not Used for Each Stick:**
+   - For Stick 1: \( \frac{5}{6} \times 12 \) mm
+   - For Stick 2: \( \frac{1}{3} \times 12 \) mm
+   - For Stick 3: \( \frac{1}{2} \times 12 \) mm
+
+3. **Perform Detailed Arithmetic and Logical Checks:**
+   - Stick 1: \( \frac{5}{6} \times 12 = \frac{5 \times 12}{6} = 10 \) mm
+   - Stick 2: \( \frac{1}{3} \times 12 = \frac{12}{3} = 4 \) mm
+   - Stick 3: \( \frac{1}{2} \times 12 = \frac{12}{2} = 6 \) mm
+
+4. **Sum the Lengths of the Glue Not Used:**
+   - Total length not used: \( 10 + 4 + 6 = 20 \) mm
+
+5. **Mark the Final Answer Clearly:**
+   - The total length of the glue sticks that are not used is \( \boxed{20} \) mm.
+
+#### Final Answer: 20 mm"

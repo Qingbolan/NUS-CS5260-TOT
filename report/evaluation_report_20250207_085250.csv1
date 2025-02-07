@@ -1,0 +1,101 @@
+index,prediction,ground_truth,question,truth,issue
+val_424,2,8,"Cole wanted to buy new jeans for a dance contest. At the store, he couldn't decide between tattered jeans and jogger jeans. Since the jeans were on sale, he decided to buy them both. The tattered jeans cost $28 while the jogger jeans cost $6 less than the tattered jeans. He saved a total of $6. If he saved 1/3 of the total savings from the jogger jeans and the rest from the tattered jeans, how much more do jogger jeans originally cost than the tattered jeans?","Cole saved $6 x 1/3 = $<<6*1/3=2>>2 on the jogger jeans.
+So, he saved $6 - $2 = $<<6-2=4>>4 on the tattered jeans.
+The original price of the jogger jeans is $22 + $2 = $<<22+2=24>>24.
+Cole bought the tattered jeans for $<<28=28>>28
+Hence, the original price of the tattered jeans is $28 + $4 = $<<28+4=32>>32.
+Therefore, jogger jeans originally cost $32 - $24 = $<<32-24=8>>8 more than the tattered jeans.
+#### 8","Let's break down the problem and solve it step by step.
+
+1. **Understanding the problem:**
+   - Tattered jeans cost $28.
+   - Jogger jeans cost $6 less than the tattered jeans.
+   - Cole saved a total of $6.
+   - He saved 1/3 of the total savings from the jogger jeans, and the rest from the tattered jeans.
+
+2. **Step-by-step solution:**
+   - Calculate the cost of the jogger jeans:
+     \[
+     \text{Cost of jogger jeans} = \text{Cost of tattered jeans} - 6 = 28 - 6 = 22 \text{ dollars}
+     \]
+   - Let \( S \) be the total savings. Then \( S = 6 \) dollars.
+   - Let \( S_j \) be the savings from jogger jeans and \( S_t \) be the savings from tattered jeans.
+     \[
+     S_j = \frac{1}{3}S = \frac{1}{3} \times 6 = 2 \text{ dollars}
+     \]
+     \[
+     S_t = S - S_j = 6 - 2 = 4 \text{ dollars}
+     \]
+   - Since \( S_j = 2 \) dollars is the savings from the jogger jeans, the original price of jogger jeans is:
+     \[
+     \text{Original price of jogger jeans} = \text{Current price of jogger jeans} + \text{Savings from jogger jeans} = 22 + 2 = 24 \text{ dollars}
+     \]
+   - Therefore, the original cost of the jogger jeans is:
+     \[
+     \text{Original price of jogger jeans} - \text{Cost of jogger jeans} = 24 - 22 = 2 \text{ dollars}
+     \]
+
+3. **Extracting and checking all arithmetic expressions:**
+   - \( 28 - 6 = 22 \) (Correct, jogger jeans cost $22)
+   - \( \frac{1}{3} \times 6 = 2 \) (Correct, savings from jogger jeans is $2)
+   - \( 6 - 2 = 4 \) (Correct, savings from tattered jeans is $4)
+   - \( 22 + 2 = 24 \) (Correct, original price of jogger jeans is $24)
+   - \( 24 - 22 = 2 \) (Correct, original jogger jeans price minus sale price is $2)
+
+4. **Final answer:**
+   FINAL ANSWER: 2"
+val_781,215,25,"Ava and Emma want to know who is better at the new video game Ava got for her birthday. They are each going to play one level and whoever has the highest score wins. They receive 10 points for every enemy they jump on, 5 points for each berry they collect, and 30 points for every second left on the timer when they finish the level. If Ava jumps on 8 more enemies than Emma and collects 3 more berries, but finishes the level 4 seconds slower, what is the difference between their two scores?","For jumping on enemies, Emma earns 8 * 10 = <<8*10=80>>80 fewer points than Ava.
+For collecting berries, Emma earns 3 * 5 = <<3*5=15>>15 fewer points than Ava.
+For finishing the level faster, Emma earns 4 * 30 = <<4*30=120>>120 more points than Ava.
+Overall, Emma has 120 – 80 - 15 = <<120-80-15=25>>25 more points than Ava.
+#### 25","Let's break down the problem into clear steps and calculate the scores for Ava and Emma.
+
+**Step 1: Define variables and given data**
+- Let \( E_e \) be the number of enemies Emma jumps on.
+- Let \( E_b \) be the number of berries Emma collects.
+- Let \( E_t \) be the seconds left on the timer when Emma finishes the level.
+
+From the problem, we know:
+- Ava jumps on \( E_e + 8 \) enemies.
+- Ava collects \( E_b + 3 \) berries.
+- Ava finishes the level \( E_t + 4 \) seconds slower.
+
+**Step 2: Calculate the scores for both players**
+- **Emma's score:**
+  \[
+  \text{Emma's score} = 10 \times E_e + 5 \times E_b + 30 \times E_t
+  \]
+
+- **Ava's score:**
+  \[
+  \text{Ava's score} = 10 \times (E_e + 8) + 5 \times (E_b + 3) + 30 \times (E_t + 4)
+  \]
+  Simplify Ava's score:
+  \[
+  \text{Ava's score} = 10 \times E_e + 80 + 5 \times E_b + 15 + 30 \times E_t + 120
+  \]
+  \[
+  \text{Ava's score} = 10 \times E_e + 5 \times E_b + 30 \times E_t + 215
+  \]
+
+**Step 3: Calculate the difference in their scores**
+- Difference in scores:
+  \[
+  \text{Difference} = \text{Ava's score} - \text{Emma's score}
+  \]
+  Substitute the expressions:
+  \[
+  \text{Difference} = (10 \times E_e + 5 \times E_b + 30 \times E_t + 215) - (10 \times E_e + 5 \times E_b + 30 \times E_t)
+  \]
+  Simplify the difference:
+  \[
+  \text{Difference} = 215
+  \]
+
+**Step 4: Check the arithmetic calculation**
+- The arithmetic expressions are consistent and simplified correctly.
+
+**Final Answer:**
+\[
+\boxed{215}
+\]"

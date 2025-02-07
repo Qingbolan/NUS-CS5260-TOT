@@ -1,0 +1,174 @@
+index,prediction,ground_truth,question,truth,issue
+val_384,3.5,2,"Millie decides to open a lemonade stand. She spends $18 to buy enough supplies to make 3 pitchers of lemonade. Each pitcher holds 12 cups of lemonade. She sells each cup of lemonade for $1. She sells an average of 4 cups per hour that her lemonade stand is open. If Millie sells all of the lemonade, how much profit will she make per hour that she spends running the lemonade stand?","She has enough supplies to make 3 * 12 = <<3*12=36>>36 cups of lemonade.
+She sells all of the lemonade for 36 * $1 = $<<36*1=36>>36.
+Her total profit for selling the lemonade is $36 - $18 = $<<36-18=18>>18.
+It will take Millie 36 / 4 = <<36/4=9>>9 hours of work to sell all of the lemonade.
+Her hourly profit is $18 / 9 hours = $<<18/9=2>>2 per hour.
+#### 2","### 候选方案一：基于总收益和总成本的直接计算
+
+**思路解释：**
+本题的核心在于计算每小时的利润。利润等于总收入减去总成本。首先，我们需要计算出总收入、总成本以及总收益，然后基于每小时的销售量计算每小时的利润。
+
+**具体步骤：**
+1. **总成本计算：**
+   - Millie 花费 $18 购置了足够的材料来制作 3 钵柠檬水。
+   - 总成本 = $18
+
+2. **总收益计算：**
+   - Millie 每杯柠檬水售价为 $1。
+   - 3 钵柠檬水总共可以制作 36 杯（3 钵 × 12 杯/钵）。
+   - 总收益 = 36 杯 × $1/杯 = $36
+
+3. **总利润计算：**
+   - 总利润 = 总收益 - 总成本 = $36 - $18 = $18
+
+4. **每小时利润计算：**
+   - Millie 每小时平均销售 4 杯柠檬水。
+   - 每小时利润 = 每小时销售量 × 单价 - 每小时成本
+   - 每小时成本 = 总成本 / 总销售时间（36小时）= $18 / 36小时 = $0.5/小时
+   - 每小时利润 = 4 杯/小时 × $1/杯 - $0.5/小时 = $4 - $0.5 = $3.5/小时
+
+**最终答案：**
+FINAL ANSWER: 3.5
+
+### 候选方案二：基于单小时销售量的直接计算
+
+**思路解释：**
+本题也可以直接根据每小时的销售量来计算利润。由于每小时平均销售 4 杯柠檬水，我们需要计算每小时的收益和成本，从而直接得出每小时的利润。
+
+**具体步骤：**
+1. **每小时收益计算：**
+   - 每小时销售 4 杯柠檬水。
+   - 每小时收益 = 4 杯 × $1/杯 = $4
+
+2. **每小时成本计算：**
+   - 总成本 = $18
+   - 总销售时间为 36 小时（36 杯 / 1 杯/小时）
+   - 每小时成本 = $18 / 36 小时 = $0.5/小时
+
+3. **每小时利润计算：**
+   - 每小时利润 = 每小时收益 - 每小时成本 = $4 - $0.5 = $3.5/小时
+
+**最终答案：**
+FINAL ANSWER: 3.5
+
+### 候选方案三：基于剩余柠檬水的动态计算
+
+**思路解释：**
+本题也可以基于每小时剩余柠檬水的动态变化来计算每小时的利润。这种方法更注重动态过程，确保每小时的利润计算更为精确。
+
+**具体步骤：**
+1. **初始状态：**
+   - 初始有 36 杯柠檬水。
+   - 每小时销售 4 杯柠檬水。
+
+2. **每小时利润动态计算：**
+   - 第 1 小时：销售 4 杯，剩余 32 杯，每小时利润 = 4 杯 × $1 - $0.5 = $3.5
+   - 第 2 小时：销售 4 杯，剩余 28 杯，每小时利润 = 4 杯 × $1 - $0.5 = $3.5
+   - 依此类推，直到所有柠檬水售完。
+
+3. **总结每小时利润：**
+   - 每小时利润 = $3.5/小时
+
+**最终答案：**
+FINAL ANSWER: 3.5"
+val_577,11376,11232,"Michael is replacing the carpet in his bedroom.  The new carpet he's chosen costs $12 per square foot, plus $2 per square foot for padding underneath.  His contractor charges $4 per square foot to remove the old carpet, and $34 per square foot to install the new carpet.  His bedroom measures 18 feet by 12 feet.  How much will it cost Michael to replace the carpet?","The room measures 18 * 12 = <<18*12=216>>216 square feet.
+The new carpet costs $12 * 216 = $<<12*216=2592>>2,592.
+The new carpet padding costs $2 * 216 = $<<2*216=432>>432.
+To remove the old carpet, the contractor will charge $4 * 216 = $<<4*216=864>>864.
+To install the new carpet, the contractor will charge $34 * 216 = $<<34*216=7344>>7,344.
+The total cost will be $864 + $2,592 + $432 + $7,344 = $11,232.
+#### 11232","### 候选方案一：
+**理解角度：直接计算法**
+- **详细步骤：**
+  1. 计算地毯材料费用：
+     - 新地毯每平方英尺12美元，垫料每平方英尺2美元。
+     - 总材料费用 = (12+2)美元/平方英尺 * 18*12平方英尺
+  2. 计算拆除费用：
+     - 拆除费用 = 4美元/平方英尺 * 18*12平方英尺
+  3. 计算安装费用：
+     - 安装费用 = 34美元/平方英尺 * 18*12平方英尺
+  4. 合计所有费用：
+     - 总费用 = 材料费用 + 拆除费用 + 安装费用
+
+- **计算：**
+  - 材料费用 = 14 * 18 * 12 = 3024美元
+  - 拆除费用 = 4 * 18 * 12 = 864美元
+  - 安装费用 = 34 * 18 * 12 = 7488美元
+  - 总费用 = 3024 + 864 + 7488 = 11376美元
+
+- **最终答案：**
+  FINAL ANSWER: 11376
+
+### 候选方案二：
+**理解角度：分步计算法**
+- **详细步骤：**
+  1. 计算材料费用（包括地毯和垫料）：
+     - 材料费用 = (12+2)美元/平方英尺 * 18*12平方英尺
+  2. 计算拆除费用：
+     - 拆除费用 = 4美元/平方英尺 * 18*12平方英尺
+  3. 计算安装费用：
+     - 安装费用 = 34美元/平方英尺 * 18*12平方英尺
+  4. 合计所有费用：
+     - 总费用 = 材料费用 + 拆除费用 + 安装费用
+
+- **计算：**
+  - 材料费用 = 14 * 18 * 12 = 3024美元
+  - 拆除费用 = 4 * 18 * 12 = 864美元
+  - 安装费用 = 34 * 18 * 12 = 7488美元
+  - 总费用 = 3024 + 864 + 7488 = 11376美元
+
+- **最终答案：**
+  FINAL ANSWER: 11376
+
+### 候选方案三：
+**理解角度：简化公式法**
+- **详细步骤：**
+  1. 定义总费用表达式：
+     - 总费用 = (地毯单价 + 垫料单价 + 拆除费用 + 安装费用) * 面积
+  2. 带入具体数值：
+     - 总费用 = (12+2+4+34)美元/平方英尺 * 18*12平方英尺
+  3. 计算总费用：
+     - 总费用 = 52 * 18 * 12
+
+- **计算：**
+  - 总费用 = 52 * 18 * 12 = 11376美元
+
+- **最终答案：**
+  FINAL ANSWER: 11376"
+val_1032,9.5,5,"Apple High School is holding graduation in their Fine Arts Center this year which has space for 6000 people.  After accounting for 950 seats for graduates and 300 seats for faculty attending, how many tickets would each graduate receive to give to their friends and family if the tickets are split equally?","Add graduate and faculty seats together. 950 + 300 = <<950+300=1250>>1250 seats for faculty and graduates
+Minus seats for faculty and graduates from total seats allowed. 6000 - 1250 = <<6000-1250=4750>>4750 remaining seats.
+Divide amount of graduates by remaining seats. 4750/950 = <<4750/950=5>>5 tickets
+#### 5","候选方案一：
+思路：从总座位数出发，先减去已分配给毕业生和教职工的座位数，再将剩余的座位数平均分配给每位毕业生。
+步骤：
+1. 总座位数 = 6000
+2. 分配给毕业生的座位数 = 950
+3. 分配给教职工的座位数 = 300
+4. 剩余座位数 = 总座位数 - 分配给毕业生的座位数 - 分配给教职工的座位数 = 6000 - 950 - 300 = 4750
+5. 假设毕业生人数为G，则每位毕业生分到的票数 = 剩余座位数 / 毕业生人数 = 4750 / G
+6. 若假设毕业生人数为500，则每位毕业生分到的票数 = 4750 / 500 = 9.5
+
+候选方案二：
+思路：从毕业生的角度出发，假设我们知道毕业生的人数，再根据总座位数和已分配的座位数来计算剩余座位数，然后平均分配给每位毕业生。
+步骤：
+1. 假设毕业生人数为G
+2. 总座位数 = 6000
+3. 分配给毕业生的座位数 = 950
+4. 分配给教职工的座位数 = 300
+5. 剩余座位数 = 总座位数 - 分配给毕业生的座位数 - 分配给教职工的座位数 = 6000 - 950 - 300 = 4750
+6. 每位毕业生分到的票数 = 剩余座位数 / 毕业生人数 = 4750 / G
+7. 假设毕业生人数为500，则每位毕业生分到的票数 = 4750 / 500 = 9.5
+
+候选方案三：
+思路：从教职工的角度出发，假设我们知道毕业生和教职工的人数，再根据总座位数来计算剩余座位数，然后平均分配给每位毕业生。
+步骤：
+1. 假设毕业生人数为G，教职工人数为300
+2. 总座位数 = 6000
+3. 分配给毕业生的座位数 = 950
+4. 分配给教职工的座位数 = 300
+5. 剩余座位数 = 总座位数 - 分配给毕业生的座位数 - 分配给教职工的座位数 = 6000 - 950 - 300 = 4750
+6. 每位毕业生分到的票数 = 剩余座位数 / 毕业生人数 = 4750 / G
+7. 假设毕业生人数为500，则每位毕业生分到的票数 = 4750 / 500 = 9.5
+
+FINAL ANSWER: 9.5"

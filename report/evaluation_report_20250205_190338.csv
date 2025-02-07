@@ -1,0 +1,49 @@
+index,prediction,ground_truth,question,truth,issue
+val_455,240,150,Marin and his neighbor Nancy each eat 4 apples a day. How many apples do they eat in 30 days?,"In one day, Marin and Nancy eat 4 + 1 = <<4+1=5>>5 apples.
+In 30 days, they eat 30 * 5 = <<30*5=150>>150 apples.
+#### 150","**Understanding the Problem:**
+Marin and Nancy each eat 4 apples a day. We need to calculate the total number of apples they consume together over a period of 30 days.
+
+**Step-by-Step Solution:**
+1. **Daily Consumption:**
+   - Marin eats 4 apples a day.
+   - Nancy eats 4 apples a day.
+   - Combined daily consumption = 4 (Marin) + 4 (Nancy) = 8 apples.
+
+2. **Total Consumption Over 30 Days:**
+   - Daily consumption = 8 apples.
+   - Number of days = 30.
+   - Total apples consumed in 30 days = 8 apples/day * 30 days = 240 apples.
+
+**Arithmetic Check:**
+- \( 4 \text{ apples/day (Marin)} + 4 \text{ apples/day (Nancy)} = 8 \text{ apples/day} \)
+- \( 8 \text{ apples/day} \times 30 \text{ days} = 240 \text{ apples} \)
+
+All calculations are consistent.
+
+**Final Answer:**
+FINAL ANSWER: 240"
+val_963,600,1000,"Jen decides to travel to 3 different countries.  He has to pay $400 for the supplies he needs, in total.  The tickets for travel cost, in total, 50% more than the supplies.  How much does travel cost?","He pays 400*.5=$<<400*.5=200>>200 more for tickets than supplies
+That means the tickets cost 400+200=$<<400+200=600>>600
+So it cost 600+400=$<<600+400=1000>>1000 in total.
+#### 1000","To solve the problem, let's break it down step-by-step.
+
+1. **Understanding the problem:**
+   - Jen needs to pay $400 for supplies.
+   - The total cost of travel tickets is 50% more than the supplies.
+
+2. **Step-by-step solution:**
+   - Calculate the cost of the travel tickets:
+     - The cost of travel tickets is 50% more than the supplies.
+     - 50% of the supplies cost = 50 / 100 * $400 = $200.
+     - Therefore, the total cost of travel tickets = supplies cost + 50% of supplies cost = $400 + $200 = $600.
+
+3. **Arithmetic check:**
+   - Supplies cost: $400.
+   - 50% of supplies cost: $200.
+   - Total travel cost: $400 + $200 = $600.
+
+4. **Final answer:**
+   - The total cost of travel is $600.
+
+FINAL ANSWER: 600"

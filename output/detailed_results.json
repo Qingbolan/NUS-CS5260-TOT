@@ -1,0 +1,17 @@
+[
+  {
+    "question_id": "val_447",
+    "predicted": "2",
+    "solution": "### Understanding the Problem\nRozanne is making eggnog using eggs. The total number of eggs she uses can be calculated from the dozens she has and the additional loose eggs. Each glass of eggnog requires 5 eggs, and each tray holds 5 glasses. We need to determine how many full trays of eggnog Rozanne can put out based on the total number of eggs available.\n\n### Step-by-Step Solution\n1. **Calculate the total number of eggs:**\n   - Eggs in dozens: 4 dozen. Since 1 dozen = 12 eggs, 4 dozen = 4 * 12 = 48 eggs.\n   - Loose eggs: 2 eggs.\n   - Total eggs = 48 + 2 = 50 eggs.\n\n2. **Determine the number of glasses of eggnog that can be made:**\n   - Each glass requires 5 eggs.\n   - Number of glasses = Total eggs / Eggs per glass = 50 / 5 = 10 glasses.\n\n3. **Calculate the number of trays needed:**\n   - Each tray holds 5 glasses.\n   - Number of trays = Number of glasses / Glasses per tray = 10 / 5 = 2 trays.\n\n### Final Answer\nThe calculations are consistent and no additional checks are necessary. The number of trays Rozanne can put out is determined directly from the total number of eggs and the requirements for glasses and trays.\n\nFINAL ANSWER: 2"
+  },
+  {
+    "question_id": "val_846",
+    "predicted": "12",
+    "solution": "To solve the problem, let's break it down into clear steps:\n\n1. **Identify the given information:**\n   - Total number of students = 20\n   - Students good at math only = 5\n   - Students good at English only = 8\n\n2. **Determine the number of students good at both subjects:**\n   - Students good at both subjects = Total students - (Students good at math only + Students good at English only)\n   - Students good at both subjects = 20 - (5 + 8) = 20 - 13 = 7\n\n3. **Calculate the total number of students good at math:**\n   - Students good at math = Students good at math only + Students good at both subjects\n   - Students good at math = 5 + 7 = 12\n\n4. **Verify the consistency of the calculations:**\n   - Total students = Students good at math only + Students good at English only + Students good at both subjects\n   - Total students = 5 + 8 + 7 = 20 (This matches the given total number of students)\n\nFinal Answer: 12"
+  },
+  {
+    "question_id": "val_864",
+    "predicted": "110",
+    "solution": "### Problem Understanding\nThe problem states that Gretchen has some coins, with 30 more gold coins than silver coins. It is given that she has 70 gold coins. The goal is to find the total number of coins Gretchen has.\n\n### Step-by-Step Solution\n1. **Define Variables:**\n   - Let \\( G \\) be the number of gold coins.\n   - Let \\( S \\) be the number of silver coins.\n\n2. **Given Information:**\n   - \\( G = 70 \\) (Gretchen has 70 gold coins).\n   - \\( G = S + 30 \\) (There are 30 more gold coins than silver coins).\n\n3. **Find the Number of Silver Coins:**\n   - Substitute \\( G = 70 \\) into the equation \\( G = S + 30 \\):\n     \\[\n     70 = S + 30\n     \\]\n   - Solve for \\( S \\):\n     \\[\n     S = 70 - 30 = 40\n     \\]\n\n4. **Calculate the Total Number of Coins:**\n   - Total number of coins \\( T \\) is the sum of gold and silver coins:\n     \\[\n     T = G + S = 70 + 40 = 110\n     \\]\n\n### Verification of Arithmetic Expressions\n- Verification of \\( S = 70 - 30 \\):\n  \\[\n  70 - 30 = 40\n  \\]\n- Verification of \\( T = 70 + 40 \\):\n  \\[\n  70 + 40 = 110\n  \\]\n\n### Final Answer\nThe calculations are consistent and correct.\n\nFINAL ANSWER: 110"
+  }
+]

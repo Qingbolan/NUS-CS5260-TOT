@@ -1,0 +1,27 @@
+index,prediction,ground_truth,question,truth,issue
+val_1116,4,5,"Anna is trying to buy books for her local library. She had a budget of $16, and she has already spent $4. She also bought 2 books today, and both books cost her the same amount of money. If Anna has $2 left in her budget, how much did each of the books cost?","Anna had already spent some money, so she started the day with $16 – $4 = $<<16-4=12>>12.
+She has money left in the budget, so she spent a total of $12 – $2 = $<<12-2=10>>10 on the books.
+Therefore each book cost her $10 / 2 = $<<10/2=5>>5.
+#### 5","为了确定每本书的成本，我们可以按照以下步骤进行：
+
+1. 确定Anna剩余的预算。
+2. 计算在购买书之前总共花费的金额。
+3. 确定两本书的总成本。
+4. 找出每本书的成本。
+
+让我们详细地进行每一步：
+
+1. Anna的初始预算为$16，她已经花费了$4。在购买书之前，她剩余的预算为：
+   \[
+   16 - 4 = 12 \text{ dollars}
+   \]
+2. 在购买书后，Anna有$2 left。因此，两本书的总成本为：
+   \[
+   12 - 2 = 8 \text{ dollars}
+   \]
+3. 由于两本书的成本相同，每本书的成本为：
+   \[
+   \frac{8}{2} = 4 \text{ dollars}
+   \]
+
+因此，每本书的成本是 \(\boxed{4}\)。"

@@ -1,0 +1,119 @@
+index,prediction,ground_truth,question,truth,issue
+val_210,7.5,145,Twenty dozen cups cost $1200 less than the total cost of half a dozen plates sold at $6000 each. Calculate the total cost of buying each cup.,"Since a dozen has 12 items, half a dozen plates are 12/2 = <<6=6>>6
+Half a dozen plates sold at $6000 each cost 6*$6000 = $<<6*6000=36000>>36000
+Twenty dozen cups cost $1200 less than the total cost of half a dozen plates, meaning the twenty dozen cups cost a total of $36000-$1200 = 34800
+Since a dozen has 12 items, twenty dozen cups are 20*12 = <<20*12=240>>240 cups.
+If the twenty dozen cups cost $34800, each cup costs $34800/240=$<<34800/240=145>>145
+#### 145","1. **At the beginning, provide key extracted information using PDDL markers.**
+   - PDDL: (info (cost-of-half-dozen-plates 6000) (total-cost-of-half-dozen-plates (* 6000 0.5)) (cost-of-twenty-dozen-cups (- (total-cost-of-half-dozen-plates 1200)) (number-of-dozen-cups 20) (number-of-cups (* 20 12)))
+
+2. **List the step-by-step reasoning with each calculation enclosed in <<>>.**
+   - Step 1: Calculate the total cost of half a dozen plates.
+     - PDDL: (total-cost-of-half-dozen-plates (* 6000 0.5))
+     - <<6000 * 0.5 = 3000>>
+   - Step 2: Calculate the cost of twenty dozen cups.
+     - PDDL: (cost-of-twenty-dozen-cups (- (total-cost-of-half-dozen-plates 1200)))
+     - <<3000 - 1200 = 1800>>
+   - Step 3: Calculate the cost per cup.
+     - PDDL: (number-of-cups (* 20 12))
+     - <<20 * 12 = 240>>
+     - PDDL: (cost-per-cup (/ cost-of-twenty-dozen-cups number-of-cups))
+     - <<1800 / 240 = 7.5>>
+
+3. **Final answer:**
+   ####
+   7.5"
+val_424,2,8,"Cole wanted to buy new jeans for a dance contest. At the store, he couldn't decide between tattered jeans and jogger jeans. Since the jeans were on sale, he decided to buy them both. The tattered jeans cost $28 while the jogger jeans cost $6 less than the tattered jeans. He saved a total of $6. If he saved 1/3 of the total savings from the jogger jeans and the rest from the tattered jeans, how much more do jogger jeans originally cost than the tattered jeans?","Cole saved $6 x 1/3 = $<<6*1/3=2>>2 on the jogger jeans.
+So, he saved $6 - $2 = $<<6-2=4>>4 on the tattered jeans.
+The original price of the jogger jeans is $22 + $2 = $<<22+2=24>>24.
+Cole bought the tattered jeans for $<<28=28>>28
+Hence, the original price of the tattered jeans is $28 + $4 = $<<28+4=32>>32.
+Therefore, jogger jeans originally cost $32 - $24 = $<<32-24=8>>8 more than the tattered jeans.
+#### 8","1. **Extract Key Information:**
+   - Tattered jeans cost: $28
+   - Jogger jeans cost $6 less than tattered jeans.
+   - Total savings: $6
+   - 1/3 of the total savings came from jogger jeans, and the rest from tattered jeans.
+
+2. **Step-by-Step Reasoning:**
+
+   a. **Calculate the cost of jogger jeans:**
+      - Jogger jeans cost $6 less than tattered jeans.
+      - Tattered jeans cost: $28
+      - Jogger jeans cost: $28 - $6 = $22
+      - **Verification:** $28 - $6 = $22 (Correct)
+
+   b. **Determine the savings from jogger jeans:**
+      - Total savings: $6
+      - 1/3 of the total savings came from jogger jeans.
+      - Savings from jogger jeans: $6 * (1/3) = $2
+      - **Verification:** $6 * (1/3) = $2 (Correct)
+
+   c. **Determine the savings from tattered jeans:**
+      - Total savings: $6
+      - Savings from jogger jeans: $2
+      - Savings from tattered jeans: $6 - $2 = $4
+      - **Verification:** $6 - $2 = $4 (Correct)
+
+   d. **Calculate the original cost of jogger jeans:**
+      - Let the original cost of jogger jeans be \( x \).
+      - Sale price of jogger jeans: $22
+      - Savings on jogger jeans: Original cost - Sale price = $4
+      - \( x - 22 = 4 \)
+      - Solve for \( x \): \( x = 22 + 4 = 26 \)
+      - **Verification:** $26 - $22 = $4 (Correct)
+
+   e. **Determine how much more jogger jeans originally cost compared to tattered jeans:**
+      - Original cost of jogger jeans: $26
+      - Cost of tattered jeans: $28
+      - Difference: $28 - $26 = $2
+      - **Verification:** $28 - $26 = $2 (Correct)
+
+3. **Final Answer:**
+   #####
+   $2"
+val_753,75,240,"Jenna has 4 roommates. Each month the electricity bill is $100. How much will each roommate pay per year for electricity, if they divide the share equally?","There are 12 months in a year, so the total electricity for the year will cost 100*12 =$<<100*12=1200>>1200.
+Since there are 5 roommates, each roommate will pay 1200/5=$<<1200/5=240>>240 in a year.
+#### 240","1. PDDL: (info P1 Jenna has 4 roommates. Each month the electricity bill is $100. How much will each roommate pay per year for electricity, if they divide the share equally?)
+
+2. Step-by-step reasoning:
+    - First, calculate the annual electricity bill. Since the monthly bill is $100, the annual bill is:
+      <<>> 100 * 12 = 1200 <<>>
+      - This is verified by multiplying the monthly bill by the number of months in a year.
+      
+    - Next, divide the annual electricity bill by the number of roommates to find out how much each person will pay. There are 4 roommates:
+      <<>> 1200 / 4 = 300 / 4 = 300 / 2 = 150 / 2 = 75 <<>>
+      - This is verified by a step-by-step division to show the intermediate results.
+      
+3. ####
+   - The final answer is 75. Each roommate will pay $75 per year for electricity."
+val_1049,9860.78,7400,Ben bought a car for $20000 in 2007. The price of the car depreciates at a constant rate of 21% per year. Find the price of the car in the year 2010.,"The price of the car depreciates of 20000 * 21% = $<<20000*21*.01=4200>>4200 per year.
+Ben had the car for 2010 - 2007 = <<2010-2007=3>>3 years.
+The price of the car depreciates 4200 * 3 = $<<4200*3=12600>>12600 from 2007 to 2010.
+So the price of the car in the year 2010 is $20000 - $12600 = $<<20000-12600=7400>>7400.
+#### 7400","1. Key information extracted:
+   PDDL: (info (initial-price 20000) (year-2007) (depreciation-rate 21%) (final-year 2010))
+
+2. Step-by-step reasoning:
+   - The car was bought in 2007 for $20000.
+   - The depreciation rate is 21% per year.
+   - We need to find the price of the car in 2010.
+   - The time span from 2007 to 2010 is 3 years.
+
+   Let's calculate the price of the car after each year of depreciation:
+   
+   a. Calculate the price of the car at the end of the first year (2008):
+      - Depreciation for the first year: 20000 * 0.21 = <<20000 * 0.21 = 4200>> (4200)
+      - Price at the end of the first year: 20000 - 4200 = <<20000 - 4200 = 15800>> (15800)
+   
+   b. Calculate the price of the car at the end of the second year (2009):
+      - Depreciation for the second year: 15800 * 0.21 = <<15800 * 0.21 = 3318>> (3318)
+      - Price at the end of the second year: 15800 - 3318 = <<15800 - 3318 = 12482>> (12482)
+   
+   c. Calculate the price of the car at the end of the third year (2010):
+      - Depreciation for the third year: 12482 * 0.21 = <<12482 * 0.21 = 2621.22>> (2621.22)
+      - Price at the end of the third year: 12482 - 2621.22 = <<12482 - 2621.22 = 9860.78>> (9860.78)
+
+3. Final answer:
+   ####
+   9860.78"

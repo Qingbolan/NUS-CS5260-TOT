@@ -1,0 +1,19 @@
+index,prediction,ground_truth,issue,error_detail,question,truth
+val_568,9.00,9,conversion error,预测值转换错误: invalid literal for int() with base 10: '9.00',,
+val_830,14000,"14,000",conversion error,"真实值转换错误: invalid literal for int() with base 10: '14,000'",,
+val_308,4,16,"1. At the beginning, provide key extracted information using PDDL markers.
+   PDDL: (info (joey-weight-loss 8 4) (sandy-weight-loss (lambda (x) (* 4 x))) (weeks-to-equal-weight-loss 4))
+
+2. Step-by-step reasoning:
+   - Joey loses 8 pounds in 4 weeks.
+   - Therefore, Joey's weekly weight loss is: <<8 / 4 = 2>> pounds per week.
+   - Sandy needs 4 weeks to lose the same amount of weight that Joey loses in one week.
+   - Thus, Sandy's weekly weight loss is: <<2 pounds per week * 4 weeks = 8 pounds in 4 weeks>>.
+   - To find out how many weeks it will take Sandy to lose 8 pounds (the same amount Joey loses in 4 weeks), we use the information that Sandy loses 2 pounds per week.
+   - Therefore, the number of weeks it will take Sandy to lose 8 pounds is: <<8 / 2 = 4 weeks>>.
+
+3. Finally, on a new line, output '####' immediately followed by the final answer.
+   ####4",,"Sandy wants to lose as much weight as Joey does but needs 4 weeks to lose the same amount of weight that Joey loses in a single week. If Joey loses 8 pounds in 4 weeks, how many weeks will it take Sandy to lose the same amount of weight?","Joey loses 8 pounds / 4 weeks = <<8/4=2>>2 pounds per week.
+In order to match Joey, Sandy should lose 2 pounds / 4 = <<2/4=0.5>>0.5 of a pound per week.
+To find the number of weeks it will take, divide the number of pounds by the rate of weight loss: 8 pounds / 0.5 pounds/week = <<8/0.5=16>>16 weeks
+#### 16"

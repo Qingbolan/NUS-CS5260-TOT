@@ -1,0 +1,66 @@
+index,prediction,ground_truth,question,truth,issue
+val_993,76,52,"Buford writes many checks every year.  Once per month he writes a check to pay the electric bill.  He also writes a check every month for the gas bill.  Twice per month he writes a check to the church.  And quarterly, he writes a check to the pest and lawn service.  How many checks does Buford write per year?","Once per month he writes a check to pay the electric bill, or 1*12=<<1*12=12>>12 checks each year.
+He also writes a check every month for the gas bill, or 1*12-12 checks each year.
+Twice per month he writes a check to the church, or 2*12-24 checks each year.
+Quarterly, he writes a check to the pest and lawn service, or 1*4=<<1*4=4>>4 checks each year.
+In total, Buford writes 12+12+24+4=<<12+12+24+4=52>>52 checks per year.
+#### 52","### 题目理解
+
+**题目背景：**
+Buford 一年中写了很多张支票，每月固定写支票支付电和气的账单，每月两次向教会捐款，每季度向害虫和草坪服务公司支付一次费用。题目要求计算 Buford 一年总共写多少张支票。
+
+**关键信息：**
+1. 每月写一次支票支付电的账单。
+2. 每月写一次支票支付气的账单。
+3. 每月两次写支票给教会。
+4. 每季度（每三个月）写一次支票给害虫和草坪服务公司。
+
+**可能存在的歧义：**
+- 没有明确说明每季度支付害虫和草坪服务公司的具体月份，但通常情况下，每季度的支付会在每个季度的前三个月中的某个月进行。
+- 每月支付电和气的账单是否仅仅是每月一次，还是有其他额外的支付情况未提及。
+
+### 解题过程
+
+1. **每月支付电和气的账单：**
+   - 电的账单：每个月 1 次，每年 12 次。
+   - 气的账单：每个月 1 次，每年 12 次。
+   - 总计：\(12 + 12 = 24\) 张支票。
+
+2. **每月两次向教会捐款：**
+   - 每月 2 次，每年 12 次，每次 2 次，总计：\(12 \times 2 = 24\) 张支票。
+
+3. **每季度支付害虫和草坪服务公司的费用：**
+   - 每季度 1 次，每季度有 3 个月，每年 4 次。
+   - 总计：\(4\) 张支票。
+
+### 总计
+将每个月的支票数量相加：
+\[ 24 \, (\text{电账单}) + 24 \, (\text{气账单}) + 24 \, (\text{教会捐款}) + 4 \, (\text{害虫和草坪服务费用}) = 76 \, \text{张支票} \]
+
+### FINAL ANSWER
+Buford 一年总共写 76 张支票。
+### 解题过程
+
+1. **每月支付电和气的账单：**
+   - 电的账单：每个月 1 次，每年 12 次。
+     \[ 12 \, (\text{次}) \]
+   - 气的账单：每个月 1 次，每年 12 次。
+     \[ 12 \, (\text{次}) \]
+   - 每月支付电和气的账单总计：
+     \[ 12 + 12 = 24 \, \text{张支票} \]
+
+2. **每月两次向教会捐款：**
+   - 每月 2 次，每年 12 次，每次 2 次，总计：
+     \[ 12 \times 2 = 24 \, \text{张支票} \]
+
+3. **每季度支付害虫和草坪服务公司的费用：**
+   - 每季度 1 次，每季度有 3 个月，每年 4 次。
+     \[ 4 \, \text{张支票} \]
+
+### 总计
+将每个月的支票数量相加：
+\[ 24 \, (\text{电账单}) + 24 \, (\text{气账单}) + 24 \, (\text{教会捐款}) + 4 \, (\text{害虫和草坪服务费用}) = 76 \, \text{张支票} \]
+
+### FINAL ANSWER
+Buford 一年总共写 76 张支票。 
+ FINAL ANSWER: 76"

@@ -1,0 +1,88 @@
+index,prediction,ground_truth,issue,error_detail,question,truth
+val_779,38.00,38,conversion error,预测值转换错误: invalid literal for int() with base 10: '38.00',,
+val_1049,9841.38,7400,conversion error,预测值转换错误: invalid literal for int() with base 10: '9841.38',,
+val_455,240,150,"1. **Key Information Extraction:**
+   - PDDL: (info (marin-apples-per-day 4) (nancy-apples-per-day 4) (days 30))
+
+2. **Step-by-Step Reasoning:**
+   - Step 1: Calculate the number of apples Marin eats in 30 days.
+     - Marin eats 4 apples per day. Therefore, in 30 days, Marin eats \(4 \times 30\) apples.
+     - Calculation: \(4 \times 30 = 120\)
+     - Cross-check: \(4 \times 30 = 120\)
+   - Step 2: Calculate the number of apples Nancy eats in 30 days.
+     - Nancy also eats 4 apples per day. Therefore, in 30 days, Nancy eats \(4 \times 30\) apples.
+     - Calculation: \(4 \times 30 = 120\)
+     - Cross-check: \(4 \times 30 = 120\)
+   - Step 3: Calculate the total number of apples both Marin and Nancy eat in 30 days.
+     - Total apples = Marin's apples + Nancy's apples
+     - Calculation: \(120 + 120 = 240\)
+     - Cross-check: \(120 + 120 = 240\)
+
+3. **Final Answer:**
+   #### 240",,Marin and his neighbor Nancy each eat 4 apples a day. How many apples do they eat in 30 days?,"In one day, Marin and Nancy eat 4 + 1 = <<4+1=5>>5 apples.
+In 30 days, they eat 30 * 5 = <<30*5=150>>150 apples.
+#### 150"
+val_676,37,33,"1. **Key Information Extraction**:
+   - PDDL: (info (initial-toys 4) (initial-dogs 4) (new-dogs 8) (twice-dogs-appear) (dogs-left 3))
+
+2. **Step-by-Step Reasoning**:
+   - **Step 1**: Calculate the total number of dogs before buying additional toys.
+     - Initial dogs: 4
+     - New dogs: 8
+     - Total dogs before buying: 4 + 8 = 12
+     - Verification: 4 + 8 = 12
+   - **Step 2**: Determine the number of toys needed before the second visit.
+     - Each dog needs one toy.
+     - Total toys needed: 12
+     - Verification: 12 dogs * 1 toy/dog = 12 toys
+   - **Step 3**: Calculate the number of dogs after the first visit.
+     - Twice as many dogs as when he left.
+     - Twice as many: 12 * 2 = 24
+     - Verification: 12 * 2 = 24
+   - **Step 4**: Determine the number of toys needed after the first visit.
+     - Total dogs: 24
+     - Each dog needs one toy.
+     - Total toys needed: 24
+     - Verification: 24 dogs * 1 toy/dog = 24 toys
+   - **Step 5**: Calculate the number of dogs after the second visit.
+     - 3 dogs left.
+     - Remaining dogs: 24 - 3 = 21
+     - Verification: 24 - 3 = 21
+   - **Step 6**: Determine the number of toys needed after the second visit.
+     - Total dogs: 21
+     - Each dog needs one toy.
+     - Total toys needed: 21
+     - Verification: 21 dogs * 1 toy/dog = 21 toys
+
+3. **Final Answer Calculation**:
+   - Total toys needed: Initial toys + First visit toys + Second visit toys - Remaining toys
+   - Total toys needed: 4 + 12 + 24 - 3 = 37
+   - Verification: 4 (initial) + 12 (first visit) + 24 (second visit) - 3 (left) = 37
+
+#### 37",,"James needs to get more toys for his doggie shelter. Each dog needs one toy. James currently has 4 toys on hand for 4 dogs, but there are 8 more dogs in the shelter now. After buying the toys, he went back to see that there are twice as many more dogs than when he left so he had to buy some more toys. When James came back yet again, 3 dogs were gone so he no longer needed those toys. How many toys in total does James need?","James has 4+8=<<4+8=12>>12 toys.
+There were 12*2=<<12*2=24>>24 dogs.
+James needed to buy 24-12=<<24-12=12>>12 more toys.
+There are 36 total toys.
+36-3=<<36-3=33>>33 toys are now needed.
+#### 33"
+val_753,300,240,"1. PDDL: (info (total-monthly-bill 100) (number-of-roommates 4) (time-period-year 12))
+
+2. Step-by-step reasoning:
+   - First, calculate the total annual electricity bill.
+     - Monthly bill = $100
+     - Time period in months for a year = 12
+     - Total annual bill = Monthly bill × Time period in months
+     - Total annual bill = 100 × 12 = <<100 * 12 = 1200>> $1200
+     - Check: $1200 is the total amount Jenna and her roommates will pay in a year for electricity.
+   
+   - Next, calculate the share each roommate will pay for the year.
+     - Total annual bill = $1200
+     - Number of roommates = 4 (including Jenna)
+     - Share per roommate = Total annual bill ÷ Number of roommates
+     - Share per roommate = 1200 ÷ 4 = <<1200 / 4 = 300>> $300
+     - Check: $300 is the amount each roommate will pay per year for electricity.
+
+3. ####
+#### 300",,"Jenna has 4 roommates. Each month the electricity bill is $100. How much will each roommate pay per year for electricity, if they divide the share equally?","There are 12 months in a year, so the total electricity for the year will cost 100*12 =$<<100*12=1200>>1200.
+Since there are 5 roommates, each roommate will pay 1200/5=$<<1200/5=240>>240 in a year.
+#### 240"

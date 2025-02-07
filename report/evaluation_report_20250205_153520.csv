@@ -1,0 +1,96 @@
+index,prediction,ground_truth,question,truth,issue
+val_410,42000,168000,"Carolyn works for a delivery service company that hires on a contract basis. In May, they hired 40 employees, paying each employee $15 per hour for a 40-hour workweek. In June, 1/4 of the employees' contracts expired. Calculate the total amount of money the company paid to the employees in the two months.","When hired, each employee is paid $15*40 = $<<15*40=600>>600 per week.
+The total earnings of a contracted employee in a month are 4 weeks * $600 per week = $<<4*600=2400>>2400
+Paying 40 employees, the company paid 40*$2400= $<<40*2400=96000>>96000 to all of its contract employees in May.
+In June, 1/4 of the employees' contracts expired, that is 1/4*40 = <<1/4*40=10>>10 employees.
+The total number of employees whose contracts were valid in June was 40-10 = <<40-10=30>>30 employees.
+The total amount of money paid to the contracted employees in June is 30*$2400 = $<<30*2400=72000>>72000
+In the two months, the company paid a total of $72000+$96000 = $<<72000+96000=168000>>168000
+#### 168000","Let's break down the problem step by step:
+
+1. **Calculate the total payment for May:**
+   - Number of employees in May: 40
+   - Pay per employee per hour: $15
+   - Hours worked per week: 40
+   - Total payment per employee in May: $15 × 40 = $600
+   - Total payment for all employees in May: $600 × 40 = $24,000
+
+2. **Calculate the number of employees remaining in June:**
+   - In June, 1/4 of the employees' contracts expired.
+   - Number of employees who left: 40 × 1/4 = 10
+   - Number of employees remaining in June: 40 - 10 = 30
+
+3. **Calculate the total payment for June:**
+   - Pay per employee per hour: $15
+   - Hours worked per week: 40
+   - Total payment per employee in June: $15 × 40 = $600
+   - Total payment for all employees in June: $600 × 30 = $18,000
+
+4. **Calculate the total payment for both months:**
+   - Total payment for May: $24,000
+   - Total payment for June: $18,000
+   - Total payment for both months: $24,000 + $18,000 = $42,000
+
+Final Answer: 42000"
+val_676,28,33,"James needs to get more toys for his doggie shelter. Each dog needs one toy. James currently has 4 toys on hand for 4 dogs, but there are 8 more dogs in the shelter now. After buying the toys, he went back to see that there are twice as many more dogs than when he left so he had to buy some more toys. When James came back yet again, 3 dogs were gone so he no longer needed those toys. How many toys in total does James need?","James has 4+8=<<4+8=12>>12 toys.
+There were 12*2=<<12*2=24>>24 dogs.
+James needed to buy 24-12=<<24-12=12>>12 more toys.
+There are 36 total toys.
+36-3=<<36-3=33>>33 toys are now needed.
+#### 33","To solve the problem, we need to calculate the total number of toys James needs at each step based on the changes in the number of dogs.
+
+1. **Initial Situation:**
+   - James has 4 toys for 4 dogs.
+   - Number of dogs initially = 4.
+   - Additional dogs = 8.
+   - Total dogs after first purchase = 4 + 8 = 12.
+   - Toys needed = 12 (since each dog needs one toy).
+   - Let's denote the number of toys James bought with \( T_1 \).
+   - Therefore, \( T_1 = 12 - 4 = 8 \).
+
+2. **Second Visit:**
+   - Number of dogs is now twice as many more than when he left.
+   - Initially, there were 8 more dogs, so the number of dogs now is \( 12 + 2 \times 8 = 12 + 16 = 28 \).
+   - Toys needed = 28.
+   - Let's denote the number of toys James bought with \( T_2 \).
+   - Therefore, \( T_2 = 28 - 12 = 16 \).
+
+3. **Third Visit:**
+   - 3 dogs are gone, so the number of dogs is \( 28 - 3 = 25 \).
+   - Toys needed = 25.
+   - Since the 3 dogs that left are no longer needed, we don't need to buy more toys for them.
+
+4. **Total Toys Needed:**
+   - Initially, he needed 4 toys.
+   - After the first purchase, he bought 8 more toys.
+   - After the second purchase, he bought 16 more toys.
+   - Total toys needed = 4 (initial) + 8 (first purchase) + 16 (second purchase) = 28.
+
+Final Answer: 28"
+val_1049,9860.78,7400,Ben bought a car for $20000 in 2007. The price of the car depreciates at a constant rate of 21% per year. Find the price of the car in the year 2010.,"The price of the car depreciates of 20000 * 21% = $<<20000*21*.01=4200>>4200 per year.
+Ben had the car for 2010 - 2007 = <<2010-2007=3>>3 years.
+The price of the car depreciates 4200 * 3 = $<<4200*3=12600>>12600 from 2007 to 2010.
+So the price of the car in the year 2010 is $20000 - $12600 = $<<20000-12600=7400>>7400.
+#### 7400","Understanding the Problem:
+- Ben bought a car in 2007 for $20000.
+- The car depreciates at a constant rate of 21% per year.
+- We need to find the price of the car in the year 2010.
+
+Step-by-Step Solution:
+1. Calculate the number of years between 2007 and 2010:
+   - 2010 - 2007 = 3 years.
+
+2. Determine the annual depreciation rate:
+   - The car depreciates by 21% each year.
+
+3. Use the formula for exponential decay to find the car's value after 3 years:
+   - Value after depreciation = Initial value × (1 - depreciation rate)^number of years.
+   - Here, Initial value = $20000, depreciation rate = 0.21, and number of years = 3.
+   - Value after 3 years = $20000 × (1 - 0.21)^3.
+   - Calculate (1 - 0.21)^3:
+     - (1 - 0.21) = 0.79.
+     - 0.79^3 = 0.79 × 0.79 × 0.79 = 0.493039.
+   - Now, multiply this by the initial value:
+     - $20000 × 0.493039 = $9860.78.
+
+FINAL ANSWER: 9860.78"

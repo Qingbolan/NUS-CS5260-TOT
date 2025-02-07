@@ -1,0 +1,174 @@
+index,prediction,ground_truth,question,truth,issue
+val_299,550,500,"Carmen goes to an auction to win an antique desk. She accepts the opening bid of $200 and continues bidding until she wins. The bids on the desk rise by $50 each time and 3 other people each bid once. Carmen bids after each of the 3 other people and eventually wins. How much money, in dollars, does the desk cost her?","3 other people are bidding on the desk so there are 3 bids * $50 per bid = $<<3*50=150>>150 added to the cost of the desk by other people.
+Carmen also has to bid against each person, so she also adds 3 bids * $50 per bid = $<<3*50=150>>150 to the overall cost.
+So in these bids, there has been a total of $150 + $150 = $<<150+150=300>>300 added to the initial cost of the desk.
+The desk therefore costs $200 opening bid + $300 added cost = $<<200+300=500>>500.
+#### 500","Let's break down the problem using the outlined framework.
+
+### Step 1: Logic Chain Analysis
+```
+PDDL:
+(info (base_entity Carmen) (relationship Bids) (target_entity Antique Desk))
+(info (condition OtherBidders) (affects Bids) (type relative))
+```
+
+### Step 2: Time and Age Relationships (Not directly applicable here, but we can analyze the sequence of events)
+- Opening bid: $200
+- Each subsequent bid rises by $50
+- Carmen bids after each of the 3 other people
+- Carmen wins the bid
+
+### Step 3: Quantity Relationships
+- Initial bid: $200
+- Each bid increase: $50
+- 3 other people each bid once
+
+We need to calculate the total amount Carmen pays for the desk.
+
+### Step 4: Sequential Logic
+- Other bidders bid in sequence.
+- Carmen bids after each of the 3 other bidders.
+
+### Step 5: Validation Steps
+- Logical Consistency: Ensure no contradictions in the sequence of events.
+- Numeric Validation: Check the arithmetic sequence of bids.
+- Timeline Check: Verify the sequence and total amount paid.
+
+### Detailed Calculation
+1. **Initial Bid by Carmen (after opening bid):**
+   - Opening bid: $200
+   - First bid by Carmen: $200 + $50 = $250
+
+2. **First Bid by Other Bidders:**
+   - First bidder: $250 + $50 = $300
+
+3. **Carmen's Second Bid:**
+   - Second bid by Carmen: $300 + $50 = $350
+
+4. **Second Bid by Other Bidders:**
+   - Second bidder: $350 + $50 = $400
+
+5. **Carmen's Third Bid:**
+   - Third bid by Carmen: $400 + $50 = $450
+
+6. **Third Bid by Other Bidders:**
+   - Third bidder: $450 + $50 = $500
+
+7. **Carmen's Fourth Bid:**
+   - Fourth bid by Carmen: $500 + $50 = $550
+
+Carmen wins the bid at her fourth bid of $550.
+
+### Answer
+#### Carmen pays $550 for the antique desk."
+val_555,3,54,When the water is cold Ray swims a mile in 16 minutes. When the water is warm Ray swims a mile in 2 minutes more than twice as long. How much longer does Ray take to swim 3 miles on a hot day than a cold day?,"Cold water mile = <<16=16>>16 minutes
+Warm water mile = 2+2(16)=34 minutes
+3 miles in cold water: 3(16)=<<3*16=48>>48 minutes
+3 miles in warm water: 3(34)=<<3*34=102>>102 minutes
+Ray takes 102-48=<<102-48=54>>54 minutes longer
+#### 54","Let's break down the problem step-by-step using the guidelines provided.
+
+### Step 1: Logic Chain Analysis
+
+- **Base Entity and Relationships:**
+  - Base: Ray's swimming time for 1 mile
+  - Relationship: Time taken depends on the temperature of the water
+  - Target Entity: Time taken to swim 3 miles
+
+- **Time and Age Relationships:**
+  - Cold Day: Ray swims a mile in 16 minutes
+  - Warm Day: Ray swims a mile in 2 minutes more than twice the time it takes on a cold day
+
+- **Quantity Relationships:**
+  - Cold Day Time for 1 mile: 16 minutes
+  - Warm Day Time for 1 mile: 2 minutes more than twice the cold day time
+  - Total Time for 3 miles on a cold day: 3 * 16 minutes
+  - Total Time for 3 miles on a warm day: 3 * (2 * 16 + 2) minutes
+
+### Step 2: Time and Age Relationships
+
+- **Cold Day Calculation:**
+  - Time for 1 mile: 16 minutes
+  - Time for 3 miles: 3 * 16 = 48 minutes
+
+- **Warm Day Calculation:**
+  - Time for 1 mile: 2 * 16 + 2 = 32 + 2 = 34 minutes
+  - Time for 3 miles: 3 * 34 = 102 minutes
+
+### Step 3: Quantity Relationships
+
+- **Cold Day Total Time for 3 miles:** 48 minutes
+- **Warm Day Total Time for 3 miles:** 102 minutes
+
+### Step 4: Sequential Logic
+
+- **Difference in Time:**
+  - Difference = Warm Day Time - Cold Day Time
+  - Difference = 102 - 48 = 54 minutes
+
+### Step 5: Validation Steps
+
+- **Logical Consistency:**
+  - Cold day time (16 minutes per mile) is reasonable for a swim.
+  - Warm day time (34 minutes per mile) is reasonable but slower than cold day, which makes sense.
+  - No contradictions or paradoxes.
+
+- **Numeric Validation:**
+  - Units are consistent (minutes).
+  - Values are reasonable.
+  - Cross-calculations: 3 * 16 = 48 and 3 * 34 = 102 are accurate.
+
+- **Timeline Check:**
+  - Events are properly sequenced.
+  - Durations are realistic.
+
+### Step 6: Answer Format
+
+#### Marker
+#### 54 minutes
+
+Ray takes 54 minutes longer to swim 3 miles on a hot day than on a cold day."
+val_1079,200,8,"Melanie found a blueprint online for a toothpick sculpture she wanted to make. It requires 200 toothpicks. Melanie’s mom puts toothpicks in her sandwiches when she serves them for lunch. Melanie started saving them and has saved 10 toothpicks each week for the past 12 weeks. If she continues saving toothpicks at the same rate, how many more weeks will it take her to collect 200 toothpicks?","Melanie has already saved 10 toothpicks x 12 weeks = <<10*12=120>>120 toothpicks.
+She needs to save 200 – 120 = <<200-120=80>>80 more toothpicks to reach her goal.
+She'll have 80 toothpicks / 10 each week = in <<80/10=8>>8 more weeks.
+#### 8","Let's analyze the given information and map out the logical relationships step by step.
+
+### Logical Relationships and Dependencies
+
+1. **Base Entity:** Melanie's saved toothpicks.
+2. **Relationship:** Melanie saves 10 toothpicks each week.
+3. **Target Entity:** Collecting 200 toothpicks.
+
+### Time and Age Relationships (Not directly applicable here, but relevant for understanding the context)
+
+- Melanie has been saving toothpicks for 12 weeks.
+- She saves 10 toothpicks per week.
+
+### Quantity Relationships
+
+1. **Direct Relationship:** Melanie saves 10 toothpicks per week.
+2. **Target Quantity:** Melanie needs 200 toothpicks.
+
+### Sequential Logic
+
+1. **Order Dependency:** Melanie needs to save more toothpicks to reach her goal.
+
+### Validation Steps
+
+1. **Logical Consistency:** Ensure no contradictions in the saving rate.
+2. **Numeric Validation:** Check the calculations for consistency.
+3. **Timeline Check:** Ensure the timeline is correctly sequenced.
+
+### Calculation
+
+- Toothpicks already saved: \( 10 \text{ toothpicks/week} \times 12 \text{ weeks} = 120 \text{ toothpicks} \).
+- Total toothpicks needed: 200 toothpicks.
+- Toothpicks still needed: \( 200 \text{ toothpicks} - 120 \text{ toothpicks} = 80 \text{ toothpicks} \).
+
+Given that Melanie saves 10 toothpicks per week, we need to find the number of weeks required to save the remaining 80 toothpicks.
+
+- Weeks required: \( \frac{80 \text{ toothpicks}}{10 \text{ toothpicks/week}} = 8 \text{ weeks} \).
+
+### Answer
+
+Melanie will need to save toothpicks for \(\boxed{8 \text{ weeks}}\) to collect 200 toothpicks."

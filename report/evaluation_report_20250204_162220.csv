@@ -1,0 +1,148 @@
+index,prediction,ground_truth,question,truth,issue
+val_841,20,16,"Patrick has three glue sticks that are partially used. One has 1/6 left, the second has 2/3 left and the third one has 1/2 left. If a glue stick is 12 millimeters long originally, what is the total length of the glue sticks that are not used?","The first glue stick has 12 x 1/6 = <<12*1/6=2>>2 millimeters left.
+The second glue stick has 12 x 2/3 = <<12*2/3=8>>8 millimeters left.
+The third glue stick has 12 x 1/2 = <<12*1/2=6>>6 millimeters left.
+There are a total of 2 + 8 + 6 = <<2+8+6=16>>16 millimeters of glue sticks that are not used.
+#### 16","### Constructing a Logical Tree
+
+To solve this problem, we first need to understand the relationships between the glue sticks, their original lengths, and the fractions that represent how much of each stick is left.
+
+- **Base Entities:** 
+  - Original length of a glue stick = 12 mm
+  - Fraction of each glue stick left: 1/6, 2/3, 1/2
+- **Relationships:**
+  - The length of each glue stick used can be found by subtracting the length of the glue stick left from the original length.
+- **Intermediate Dependencies:**
+  - Calculate the length of each glue stick left.
+  - Calculate the total length of glue sticks used.
+
+### Time and Sequential Reasoning
+
+Since this problem does not involve events over time, our focus is on the sequential calculation of the lengths of the glue sticks used.
+
+- **Timeline:**
+  1. Calculate the length of each glue stick left.
+  2. Calculate the length of each glue stick used.
+  3. Sum the lengths of all glue sticks used to find the total length used.
+
+### Quantity and Numerical Relationships
+
+We will calculate the length of each glue stick left and then the length used.
+
+- **Calculations:**
+  - For the first glue stick: Length left = 12 mm * (1/6) = 2 mm
+  - For the second glue stick: Length left = 12 mm * (2/3) = 8 mm
+  - For the third glue stick: Length left = 12 mm * (1/2) = 6 mm
+  - Length used for each glue stick = Original length - Length left
+
+### Branching and Conditional Logic
+
+Let's explore different approaches to calculate the total length of the glue sticks not used.
+
+#### Branch 1: Direct Calculation
+
+1. Calculate the length of each glue stick used directly by subtracting the length left from the original length for each stick.
+2. Sum these lengths to find the total length used.
+
+- **Calculations:**
+  - First glue stick used: 12 mm - 2 mm = 10 mm
+  - Second glue stick used: 12 mm - 8 mm = 4 mm
+  - Third glue stick used: 12 mm - 6 mm = 6 mm
+  - Total length used = 10 mm + 4 mm + 6 mm = 20 mm
+
+#### Branch 2: Alternative Perspective
+
+Consider the total original length of all glue sticks and subtract the total length left to find the total length used.
+
+1. Calculate the total original length of all glue sticks.
+2. Calculate the total length of all glue sticks left.
+3. Subtract the total length left from the total original length to find the total length used.
+
+- **Calculations:**
+  - Total original length = 3 * 12 mm = 36 mm
+  - Total length left = 2 mm + 8 mm + 6 mm = 16 mm
+  - Total length used = Total original length - Total length left = 36 mm - 16 mm = 20 mm
+
+### Validation and Final Answer
+
+Both branches lead to the same conclusion, validating our calculation.
+
+#### Forward Calculation and Reverse Verification:
+
+- Forward: Calculated total length used directly and through alternative perspective.
+- Reverse: Verified that adding the total length used to the total length left equals the total original length of the glue sticks (20 mm + 16 mm = 36 mm).
+
+#### Cross-check:
+
+Both methods yield the same result, confirming the accuracy of our calculations.
+
+#### Final Answer:
+
+The total length of the glue sticks that are not used is the same as the total length used since the question asks for the length not used, which we've determined through our calculations.
+
+#### 
+The final answer is: $\boxed{20}$"
+val_1002,00,2,"Jordan wanted to surprise her mom with a homemade birthday cake.  From reading the instructions, she knew it would take 20 minutes to make the cake batter and 30 minutes to bake the cake.  The cake would require 2 hours to cool and an additional 10 minutes to frost the cake.  If she plans to make the cake all on the same day, what is the latest time of day that Jordan can start making the cake to be ready to serve it at 5:00 pm?","1 hour is 60 minutes so we know that 2 hours to cool the cake is the same as 2*60 so <<2*60=120>>120 min
+It will take Jordan 20 min to make the batter, 30 to bake, 120 to cool and 10 to frost so the cake will take 20 +30 +120 +10 = <<20+30+120+10=180>>180 minutes total
+Jordan needs to convert 180 minutes to hours so 180/60 = <<180/60=3>>3 hours
+If the cake needs to be finished by 5:00 pm and it will take 3 hours total to make then 5-3 = <<5-3=2>>2:00 pm is the latest she can start making the cake
+#### 2","### Constructing a Logical Tree
+
+To solve this problem, let's break down the tasks and their durations:
+- Making the cake batter: 20 minutes
+- Baking the cake: 30 minutes
+- Cooling the cake: 2 hours (120 minutes)
+- Frosting the cake: 10 minutes
+
+Total time required to make and prepare the cake: 20 + 30 + 120 + 10 = 180 minutes
+
+Since there are 60 minutes in an hour, the total time in hours is 180 / 60 = 3 hours.
+
+### Time and Sequential Reasoning
+
+Given that Jordan wants to serve the cake at 5:00 pm, we need to work backwards to find the latest time she can start making the cake.
+
+- Serving time: 5:00 pm
+- Total preparation time: 3 hours
+
+### Quantity and Numerical Relationships
+
+To find the latest start time, we subtract the total preparation time from the serving time.
+
+### Branching and Conditional Logic
+
+Let's consider different approaches to calculate the start time:
+
+#### Branch 1: Direct Subtraction
+If the cake needs to be served at 5:00 pm and it takes 3 hours to prepare, we subtract 3 hours from the serving time.
+
+#### Branch 2: Verifying the Calculation
+Another way to look at it is to convert all times into minutes past midnight and then perform the subtraction.
+
+#### Branch 3: Accounting for Potential Delays
+Consider if there are any potential delays in the process that could affect the start time.
+
+### Branch 1: Direct Subtraction
+
+Start time = Serving time - Preparation time
+= 5:00 pm - 3 hours
+= 2:00 pm
+
+### Branch 2: Verifying the Calculation
+
+Serving time in minutes past midnight: 5:00 pm = 17:00 hours = 17 * 60 = 1020 minutes
+Preparation time in minutes: 3 hours * 60 = 180 minutes
+
+Start time in minutes past midnight = 1020 - 180 = 840 minutes
+Converting start time back to hours and minutes: 840 / 60 = 14 hours = 2:00 pm
+
+### Branch 3: Accounting for Potential Delays
+
+Assuming there might be minor delays, let's add a buffer to the preparation time. However, the problem does not specify any potential delays, so we will stick with the calculated time for our final answer.
+
+### Validation and Final Answer
+
+Both Branch 1 and Branch 2 yield the same result without considering additional delays. Thus, the latest time Jordan can start making the cake to have it ready by 5:00 pm is 2:00 pm.
+
+#### 
+The final answer is: $\boxed{2:00 pm}$"

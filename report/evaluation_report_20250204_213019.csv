@@ -1,0 +1,85 @@
+index,prediction,ground_truth,question,truth,issue
+val_455,240,150,Marin and his neighbor Nancy each eat 4 apples a day. How many apples do they eat in 30 days?,"In one day, Marin and Nancy eat 4 + 1 = <<4+1=5>>5 apples.
+In 30 days, they eat 30 * 5 = <<30*5=150>>150 apples.
+#### 150","### Construct a Logical Tree
+1. **Base Entities**:
+   - Marin
+   - Nancy
+2. **Relationships**:
+   - Both consume 4 apples per day.
+3. **Temporal Reference Points**:
+   - We need to calculate the total consumption over 30 days.
+4. **Quantity and Numerical Relationships**:
+   - Daily consumption for both: 4 apples + 4 apples = 8 apples.
+   - Total period: 30 days.
+5. **Branching and Conditional Logic**:
+   - No conditional logic branches are necessary for this problem as the consumption is constant.
+
+### Time and Sequential Reasoning
+- Marin and Nancy's consumption starts on day 1 and continues to day 30, without any interruptions or changes in their daily consumption.
+
+### Quantity and Numerical Relationships
+- **Intermediate Calculation 1**: Daily total consumption
+  - Marin: 4 apples/day
+  - Nancy: 4 apples/day
+  - Total daily consumption: 4 + 4 = 8 apples/day
+- **Intermediate Calculation 2**: Total consumption for 30 days
+  - Total consumption = Daily consumption × Number of days
+  - Total consumption = 8 apples/day × 30 days = 240 apples
+
+### Final Answer Extraction
+- The final answer is fully reflected in the total number of apples consumed over the 30 days, which is 240 apples.
+
+FINAL ANSWER: 240"
+val_1315,22,8,"John had a son James when he was 19.  James is now twice as old as his sister Dora, who will turn 12 in 3 years.  How old will John's youngest son, who was born when John was 32, be in 3 years?","Dora is 12-3=<<12-3=9>>9
+So James is 9*2=<<9*2=18>>18 years old
+That means John is 18+19=<<18+19=37>>37
+Johns youngest son is 37-32=<<37-32=5>>5 years old
+So he will be 5+3=<<5+3=8>>8 in 3 years
+#### 8","Let's construct the logical tree and break down the problem step by step.
+
+### Step 1: Construct a Logical Tree
+
+1. **Base Entities and Relationships:**
+   - John: 32 years old at the birth of James.
+   - James: Born when John was 32.
+   - Dora: Born when John was 19 (since James is currently 19 and Dora is younger).
+   - James's Current Age: \(19\) years (since he was born when John was 32).
+   - Dora's Age in 3 Years: \(12\) years (Dora will turn 12 in 3 years).
+
+2. **Temporal Reference Points:**
+   - James is currently 19.
+   - Dora will be 12 in 3 years, so she is currently \(12 - 3 = 9\) years old.
+
+3. **Numerical Relationships:**
+   - James is twice as old as Dora: \(19 = 2 \times \text{Dora's Age}\). (This is already satisfied with Dora being 9).
+
+### Step 2: Time and Sequential Reasoning
+
+- We need to determine James's age in 3 years.
+- Dora was born when John was 19.
+- James was born when John was 32, so James is 13 years older than Dora.
+
+### Step 3: Quantity and Numerical Relationships
+
+- Dora's current age: \(9\) years.
+- James's current age: \(19\) years.
+- James's age in 3 years: \(19 + 3 = 22\) years.
+- John's age when James was born: \(32\) years.
+- John's current age: \(32 + 13 = 45\) years (since James is 13 years older than Dora).
+
+### Step 4: Branching and Conditional Logic
+
+- **Branch 1:** Age of John in 3 years.
+  - John's current age: \(45\).
+  - John's age in 3 years: \(45 + 3 = 48\) years.
+
+- **Branch 2:** Age of John's youngest son in 3 years.
+  - John's youngest son is James.
+  - James's age in 3 years: \(22\) years.
+
+### Step 5: Final Answer Extraction
+
+- The final answer is the age of John's youngest son in 3 years, which is 22.
+
+FINAL ANSWER: 22"

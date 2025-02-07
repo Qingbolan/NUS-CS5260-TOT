@@ -1,0 +1,231 @@
+index,prediction,ground_truth,question,truth,issue
+val_22,2,14,"Raymond and Samantha are cousins. Raymond was born 6 years before Samantha. Raymond had a son at the age of 23. If Samantha is now 31, how many years ago was Raymond's son born?","When Raymond's son was born Samantha was 23 - 6 = <<23-6=17>>17 years old.
+Thus it has been 31 - 17 = <<31-17=14>>14 years since Raymond's son was born.
+#### 14","### 构建逻辑树
+
+1. **基本实体及其关系：**
+   - Raymond 和 Samantha 是表亲。
+   - Raymond 比 Samantha 年长 6 年。
+   - Raymond 在 23 岁时生下他的儿子。
+   - Samantha 现在 31 岁。
+
+2. **时间与顺序推理：**
+   - 计算 Raymond 的出生年份。
+   - 计算 Raymond 的儿子的出生年份。
+   - 确定 Raymond 的儿子出生距今的时间。
+
+3. **数量与数值关系：**
+   - Samantha 现在 31 岁。
+   - Raymond 比 Samantha 年长 6 年，因此 Raymond 现在 31 - 6 = 25 岁。
+   - Raymond 在 23 岁时生下他的儿子，因此他儿子的出生年份是 25 - 23 = 2 年前。
+
+4. **分支与条件逻辑：**
+   - 分支 1: 直接计算 Raymond 的儿子的出生年份。
+   - 分支 2: 通过 Samantha 的年龄间接计算 Raymond 的儿子的出生年份。
+
+### 分支 1: 直接计算 Raymond 的儿子的出生年份
+
+- Raymond 现在 25 岁。
+- Raymond 在 23 岁时生下他的儿子。
+- 因此，Raymond 的儿子出生于 25 - 23 = 2 年前。
+
+### 分支 2: 通过 Samantha 的年龄间接计算 Raymond 的儿子的出生年份
+
+- Samantha 现在 31 岁。
+- Samantha 比 Raymond 年轻 6 年，因此 Raymond 现在 31 + 6 = 37 岁。
+- Raymond 在 23 岁时生下他的儿子，因此他儿子的出生年份是 37 - 23 = 14 年前。
+- 由于 Samantha 现在 31 岁，我们可以通过 14 年前的计算结果推算出当前 Raymond 的儿子的年龄：31 - 14 = 17 岁，这与直接计算 Raymond 的儿子出生于 2 年前矛盾。
+
+### 最终答案提取
+
+通过直接计算和间接计算两种方法，我们得出一致的结果：Raymond 的儿子出生于 2 年前。
+
+FINAL ANSWER: 2"
+val_841,20,16,"Patrick has three glue sticks that are partially used. One has 1/6 left, the second has 2/3 left and the third one has 1/2 left. If a glue stick is 12 millimeters long originally, what is the total length of the glue sticks that are not used?","The first glue stick has 12 x 1/6 = <<12*1/6=2>>2 millimeters left.
+The second glue stick has 12 x 2/3 = <<12*2/3=8>>8 millimeters left.
+The third glue stick has 12 x 1/2 = <<12*1/2=6>>6 millimeters left.
+There are a total of 2 + 8 + 6 = <<2+8+6=16>>16 millimeters of glue sticks that are not used.
+#### 16","好的，我们来逐步推理这个问题，确保涵盖所有关键点并给出详细解释。
+
+### 1. 构建逻辑树
+我们需要计算每支胶棒未使用的部分长度，然后将这些部分加起来得到总长度。
+
+#### 基本实体和关系
+- 胶棒1：剩余1/6
+- 胶棒2：剩余2/3
+- 胶棒3：剩余1/2
+- 原始长度：12毫米
+
+#### 计算过程
+1. 计算每支胶棒未使用的部分。
+2. 将未使用的部分相加。
+
+### 2. 时间与顺序推理
+这个问题没有明确的时间顺序，但我们需要先计算每支胶棒未使用的部分。
+
+### 3. 数量与数值关系
+- 胶棒1未使用的部分：\(12 \times \left(1 - \frac{1}{6}\right) = 12 \times \frac{5}{6}\)
+- 胶棒2未使用的部分：\(12 \times \left(1 - \frac{2}{3}\right) = 12 \times \frac{1}{3}\)
+- 胶棒3未使用的部分：\(12 \times \left(1 - \frac{1}{2}\right) = 12 \times \frac{1}{2}\)
+
+### 4. 分支与条件逻辑
+我们不需要分支逻辑，因为所有计算步骤都是直接的。
+
+### 5. 最终答案提取
+计算每支胶棒未使用的部分：
+- 胶棒1未使用的部分：\(12 \times \frac{5}{6} = 10\) 毫米
+- 胶棒2未使用的部分：\(12 \times \frac{1}{3} = 4\) 毫米
+- 胶棒3未使用的部分：\(12 \times \frac{1}{2} = 6\) 毫米
+
+将这些部分相加得到总长度：
+- 总长度：\(10 + 4 + 6 = 20\) 毫米
+
+因此，最终答案为：
+ FINAL ANSWER: 20 毫米"
+val_927,6,1,"Colby loves going to the movies and every month his parents give him $150 to spend at the movies. Tickets for Fridays and Saturdays cost $10. Tickets for any other day cost $7. Popcorn costs $8 and boxes of candy cost $2. It is the last day of the month and it's a Friday. He wants to make sure he gets a popcorn and box of candy that night. How many movies can he see if he already saw 5 movies on a Friday or Saturday, 8 movies on other days, had 2 tubs of popcorn, and four boxes of candy that month?","He has spent $50 on Fri/Sat movies because 5 x 10 = <<50=50>>50
+He has spent $56 on movies the rest of the day because 8 x 7 = <<8*7=56>>56
+He has spent $16 on popcorn because 2 x 8 = <<16=16>>16
+He has spent $8 on candy because 4 x 2 = <<4*2=8>>8
+He has spent 130 in total because 50 + 56 + 16 + 8 = <<50+56+16+8=130>>130
+He plans to spend $10 on popcorn and candy because 8 + 2 = <<8+2=10>>10
+He has $10 left to spend because 150 - 130 - 10 = <<150-130-10=10>>10
+He can see 1 movie because 10 / 10 = <<10/10=1>>1
+#### 1","### 构建逻辑树
+
+1. **基本实体和关系**：
+   - Colby 每月有 $150 可以花在看电影上。
+   - 每张电影票的价格：
+     - 周五或周六：$10
+     - 其他日子：$7
+   - 一桶爆米花：$8
+   - 一盒糖果：$2
+   - 当前日期是周五，Colby 想看电影并吃爆米花和糖果。
+   - Colby 已经看电影 5 次（周五或周六）且 8 次（其他日子），并且已经买了 2 桶爆米花和 4 盒糖果。
+
+2. **时间与顺序关系**：
+   - 今天是周五，Colby 可以看电影并吃爆米花和糖果。
+   - Colby 已经看电影 5 次（周五或周六），并且今天是周五。
+   - Colby 已经看电影 8 次（其他日子），并且今天是周五。
+   - Colby 已经吃了 2 桶爆米花和 4 盒糖果，今天是周五。
+   - Colby 有剩余的预算可以用来看电影、买爆米花和糖果。
+
+3. **数量与数值关系**：
+   - Colby 剩余的预算：$150 - (5 \times 10 + 8 \times 7 + 2 \times 8 + 4 \times 2) = 150 - (50 + 56 + 16 + 8) = 150 - 120 = 30$ 美元
+   - 今天是周五，每张票的价格是 $10$。
+
+4. **分支与条件逻辑**：
+   - 分支 1：Colby 今天看电影并吃爆米花和糖果。
+   - 分支 2：Colby 只看电影。
+
+### 分支 1：Colby 今天看电影并吃爆米花和糖果
+- 可用预算：$30 - 10 - 8 - 2 = 10$ 美元
+- 用完剩余预算，Colby 可以再看 1 场电影。
+
+### 分支 2：Colby 只看电影
+- 可用预算：$30 - 10 = 20$ 美元
+- 每场电影 $10$ 美元，Colby 可以再看 2 场电影。
+
+### 总计
+- Colby 已经看电影 5 次（周五或周六）。
+- Colby 可以再看电影 1 次（今天）或 2 次（今天）。
+- 今天是周五，Colby 可以看电影并吃爆米花和糖果，但只能再看 1 场电影。
+
+### 最终答案
+- Colby 最多可以再看电影 1 次。
+- Colby 总共可以看电影 6 次。
+
+ FINAL ANSWER: 6
+### 构建逻辑树
+
+1. **基本实体和关系**：
+   - Colby 每月有 $150 可以花在看电影上。
+   - 每张电影票的价格：
+     - 周五或周六：$10
+     - 其他日子：$7
+   - 一桶爆米花：$8
+   - 一盒糖果：$2
+   - 当前日期是周五，Colby 想看电影并吃爆米花和糖果。
+   - Colby 已经看电影 5 次（周五或周六）且 8 次（其他日子），并且已经买了 2 桶爆米花和 4 盒糖果。
+   - Colby 已经花掉的金额：$5 \times 10 + 8 \times 7 + 2 \times 8 + 4 \times 2 = 50 + 56 + 16 + 8 = 120$ 美元
+
+2. **时间与顺序关系**：
+   - 今天是周五，Colby 可以看电影并吃爆米花和糖果。
+   - Colby 已经看电影 5 次（周五或周六），并且今天是周五。
+   - Colby 已经看电影 8 次（其他日子），并且今天是周五。
+   - Colby 已经买了 2 桶爆米花和 4 盒糖果，今天是周五。
+   - Colby 有剩余的预算可以用来看电影、买爆米花和糖果。
+
+3. **数量与数值关系**：
+   - Colby 剩余的预算：$150 - 120 = 30$ 美元
+   - 今天是周五，每张票的价格是 $10$。
+   - 一桶爆米花：$8$
+   - 一盒糖果：$2$
+
+4. **分支与条件逻辑**：
+   - 分支 1：Colby 今天看电影并吃爆米花和糖果。
+   - 分支 2：Colby 只看电影。
+
+### 分支 1：Colby 今天看电影并吃爆米花和糖果
+- 可用预算：$30 - 10 - 8 - 2 = 10$ 美元
+- 用完剩余预算，Colby 可以再看 1 场电影。
+
+### 分支 2：Colby 只看电影
+- 可用预算：$30 - 10 = 20$ 美元
+- 每场电影 $10$ 美元，Colby 可以再看 2 场电影。
+
+### 总计
+- Colby 已经看电影 5 次（周五或周六）。
+- Colby 可以再看电影 1 次（今天）或 2 次（今天）。
+- 今天是周五，Colby 可以看电影并吃爆米花和糖果，但只能再看 1 场电影。
+
+### 最终答案
+- Colby 最多可以再看电影 1 次。
+- Colby 总共可以看电影 6 次。
+
+ FINAL ANSWER: 6"
+val_1304,6,4,"Nate's dog can dig six holes a day. He digs for 14 days while Nate is on vacation. When Nate gets home, he starts filling in 9 holes a day, but the dog keeps digging 6 new holes every night. How many weeks does it take him to fill in all the holes?","First find the number of holes the dog digs while Nate is on vacation: 14 days * 6 holes/day = <<14*6=84>>84 holes
+Then find the net number of holes Nate fill in each day: 9 holes/day - 6 holes/day = <<9-6=3>>3 holes/day
+Then divide the total number of holes by the daily decrease in the number of holes to find the number of days Nate spends filling in holes: 84 holes / 3 holes/day = <<84/3=28>>28 days
+Then divide the number of days by the number of days per week to convert the answer to weeks: 28 days / 7 days/week = <<28/7=4>>4 weeks
+#### 4","好的，我们来逐步分析这个问题，并构建树形逻辑结构。
+
+### 1. 构建逻辑树
+- **基本实体**：
+  - Nate
+  - 洞穴数量
+  - 挖洞速度：6孔/天
+  - 填洞速度：9孔/天
+- **关系**：
+  - Nate的狗在14天内挖了洞穴
+  - 每天狗挖6个洞，Nate每天填9个洞
+- **计算过程**：
+  - 第1阶段：14天内狗挖洞
+  - 第2阶段：Nate回家后，每天狗继续挖6个洞，Nate填9个洞
+
+### 2. 时间与顺序推理
+- **第1阶段**：狗挖洞
+  - 14天内狗每天挖6个洞
+  - 累计：14天 * 6孔/天 = 84孔
+- **第2阶段**：狗继续挖洞，Nate填洞
+  - 每天狗挖6个新洞，Nate填9个洞，净减少：9孔 - 6孔 = 3孔/天
+  - 从第14天开始计算，每天净减少3孔
+
+### 3. 数量与数值关系
+- **第1阶段**：
+  - 14天内狗挖了84孔
+- **第2阶段**：
+  - 每天净减少3孔
+  - 需要计算填满84孔需要多少天
+
+### 4. 分支与条件逻辑
+#### 分支1：计算填满84孔需要多少天
+- 84孔 / 3孔/天 = 28天
+
+### 5. 最终答案提取
+- **第1阶段**：14天狗挖了84孔
+- **第2阶段**：28天填满84孔
+- 总共需要的时间：14天 + 28天 = 42天
+
+- 将42天转换为周数：42天 / 7天/周 = 6周
+
+FINAL ANSWER: 6周"

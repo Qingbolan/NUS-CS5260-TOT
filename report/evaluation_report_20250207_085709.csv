@@ -1,0 +1,31 @@
+index,prediction,ground_truth,question,truth,issue
+val_407,160,200,"At Allan's house, there is twice as much corn as cannolis. He has a total of 40 cannolis in his house. Allan bought 60 more cannolis at the store and 40 fewer corns than the number of cannolis. Find the combined total of the number of corns and cannolis Allan has in the house?","Before buying any corn and cannoli, Allan had twice as much corn as cannoli, which is 40 cannoli * 2 corn/cannoli = <<40*2=80>>80 corns
+The total number of corns and cannolis that Allan had before is 80 corn + 40 corn = <<80+40=120>>120 corn
+When he bought 40 fewer corns than cannolis, he bought 60 corn - 40 corn = <<60-40=20>>20 corns
+In total, he bought 20 corns + 60 cannolis = <<20+60=80>>80 items
+After the purchases, Allan has 120 items + 80 items = <<120+80=200>>200 total corns and cannolis combined.
+#### 200","Understanding the problem:
+Allan has twice as much corn as cannolis in his house, initially with 40 cannolis. He then buys 60 more cannolis and 40 fewer corns than the number of cannolis he now has. We need to find the combined total of the number of corns and cannolis after these purchases.
+
+Step-by-step solution:
+1. **Initial number of cannolis and corns:**
+   - Initial cannolis: 40
+   - Initial corns: \(2 \times 40 = 80\)
+
+2. **After purchasing more cannolis and corns:**
+   - New number of cannolis: \(40 + 60 = 100\)
+   - New number of corns: \(80 - 40 + 60 - 40 = 60\)
+
+3. **Combined total of corns and cannolis:**
+   - Combined total: \(100 + 60 = 160\)
+
+Arithmetic checks:
+- \(40 \times 2 = 80\) (initial corns)
+- \(40 + 60 = 100\) (new cannolis)
+- \(80 - 40 = 40\) (reduction in corns)
+- \(40 + 60 = 100\) (new cannolis purchase)
+- \(100 - 40 = 60\) (new corns)
+
+The calculations are consistent, and the combined total is correct.
+
+Final Answer: 160"

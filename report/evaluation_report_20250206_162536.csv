@@ -1,0 +1,67 @@
+index,prediction,ground_truth,question,truth,issue
+val_954,572,452,"Kim sleepwalks, to monitor her sleeping hours, she installs a camera in her room. Kim usually goes to sleep at 10 p.m. and wakes up at 6 a.m. She is a sleepwalker. One day, after reviewing the cameras, she finds that she woke up that day and was sleepwalking from 2:15 to 2:38 am.  Also, that day she woke up 5 minutes earlier than usual to go to the bathroom. How many minutes did she sleep on her bed that day?","Out of 24 hours in a day, 10 pm represents 22 hours.
+Until 12 p.m. or 24 hours, Kim slept 24 - 22 = <<24-22=2>>2 hours.
+In total, Kim usually sleeps 2 + 6 = <<2+6=8>>8 hours a day.
+In minutes, Kim usually sleeps 8 * 60 = <<8*60=480>>480 minutes
+Kim was sleepwalking for a total of 38 - 15 = <<38-15=23>>23 minutes.
+Within her usual sleep routine, Kim was sleepwalking or awake a total of 23 + 5 =<<23+5=28>>28 minutes.
+On that day, Kim slept in her bed for 480 - 28 = <<480-28=452>>452 minutes.
+#### 452","To solve this problem, we need to determine the total time Kim spent on her bed that day, considering her usual sleep pattern and the anomalies on that specific day.
+
+1. **Understanding Kim's usual sleep pattern:**
+   - Kim usually goes to sleep at 10 p.m. and wakes up at 6 a.m.
+   - Total sleep duration on a usual day = 10 p.m. to 6 a.m. = 8 hours.
+   - Convert 8 hours to minutes: 8 hours * 60 minutes/hour = 480 minutes.
+
+2. **Identifying the anomalies on the specific day:**
+   - Kim was sleepwalking from 2:15 a.m. to 2:38 a.m.
+   - Time spent sleepwalking: 2:38 a.m. - 2:15 a.m. = 23 minutes.
+   - Kim woke up 5 minutes earlier than usual (6 a.m. shifted to 5:55 a.m.).
+
+3. **Calculating the time Kim was in bed but not sleepwalking:**
+   - Usual wake-up time: 6 a.m.
+   - Actual wake-up time: 5:55 a.m.
+   - Total time from when she went to sleep to the actual wake-up time: 10 p.m. to 5:55 a.m. = 9 hours and 55 minutes.
+   - Convert 9 hours and 55 minutes to minutes: 9 hours * 60 minutes/hour + 55 minutes = 595 minutes.
+   - Subtract the time she was sleepwalking: 595 minutes - 23 minutes = 572 minutes.
+
+4. **Final calculation:**
+   - Total time Kim was in bed that day = 572 minutes.
+
+**Final Answer: 572**"
+val_963,600,1000,"Jen decides to travel to 3 different countries.  He has to pay $400 for the supplies he needs, in total.  The tickets for travel cost, in total, 50% more than the supplies.  How much does travel cost?","He pays 400*.5=$<<400*.5=200>>200 more for tickets than supplies
+That means the tickets cost 400+200=$<<400+200=600>>600
+So it cost 600+400=$<<600+400=1000>>1000 in total.
+#### 1000","Let's break down the problem step by step.
+
+1. **Understanding the problem**:
+   - Jen has to pay $400 for supplies.
+   - The tickets for travel cost 50% more than the supplies.
+
+2. **Step-by-step solution**:
+   - The cost of supplies is $400.
+   - The cost of travel tickets is 50% more than the supplies. 
+     - First, we calculate 50% of $400: 
+       \[
+       0.50 \times 400 = 200
+       \]
+     - The total cost of travel tickets is:
+       \[
+       400 + 200 = 600
+       \]
+
+3. **Arithmetic checks**:
+   - Calculation for 50% of $400: 
+     \[
+     0.50 \times 400 = 200
+     \]
+   - Total cost of travel tickets:
+     \[
+     400 + 200 = 600
+     \]
+   - Both calculations are consistent.
+
+4. **Final answer**:
+   - The total cost of travel is $600.
+
+FINAL ANSWER: 600"

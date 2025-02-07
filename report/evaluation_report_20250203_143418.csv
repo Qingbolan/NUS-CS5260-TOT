@@ -1,0 +1,192 @@
+index,prediction,ground_truth,question,truth,issue
+val_424,4,8,"Cole wanted to buy new jeans for a dance contest. At the store, he couldn't decide between tattered jeans and jogger jeans. Since the jeans were on sale, he decided to buy them both. The tattered jeans cost $28 while the jogger jeans cost $6 less than the tattered jeans. He saved a total of $6. If he saved 1/3 of the total savings from the jogger jeans and the rest from the tattered jeans, how much more do jogger jeans originally cost than the tattered jeans?","Cole saved $6 x 1/3 = $<<6*1/3=2>>2 on the jogger jeans.
+So, he saved $6 - $2 = $<<6-2=4>>4 on the tattered jeans.
+The original price of the jogger jeans is $22 + $2 = $<<22+2=24>>24.
+Cole bought the tattered jeans for $<<28=28>>28
+Hence, the original price of the tattered jeans is $28 + $4 = $<<28+4=32>>32.
+Therefore, jogger jeans originally cost $32 - $24 = $<<32-24=8>>8 more than the tattered jeans.
+#### 8","Let's begin by constructing the problem and identifying key variables and relationships.
+
+1. **Identify Key Variables:**
+   - Let \( T \) be the cost of the tattered jeans.
+   - Let \( J \) be the cost of the jogger jeans.
+   - The cost of the tattered jeans is given as \( T = 28 \) dollars.
+   - The jogger jeans cost $6 less than the tattered jeans, so \( J = T - 6 \).
+
+2. **Calculate the Original Cost of Jogger Jeans:**
+   \[
+   J = 28 - 6 = 22 \text{ dollars}
+   \]
+
+3. **Determine Total Savings:**
+   - Cole saved a total of $6 from the sale.
+   - The savings from the jogger jeans is \(\frac{1}{3}\) of the total savings.
+   - The savings from the tattered jeans is the rest of the savings.
+   - Let \( S_J \) be the savings from the jogger jeans and \( S_T \) be the savings from the tattered jeans.
+   - We have:
+   \[
+   S_J + S_T = 6
+   \]
+   \[
+   S_J = \frac{1}{3} \times 6 = 2 \text{ dollars}
+   \]
+   \[
+   S_T = 6 - 2 = 4 \text{ dollars}
+   \]
+
+4. **Determine the Original Cost of Jogger Jeans:**
+   - The current cost of the jogger jeans is \( J = 22 \) dollars.
+   - The original cost of the jogger jeans is \( J + S_J \).
+   - The original cost of the tattered jeans is \( T \).
+
+5. **Calculate the Original Cost of Jogger Jeans:**
+   \[
+   \text{Original cost of jogger jeans} = 22 + 2 = 24 \text{ dollars}
+   \]
+
+6. **Calculate the Difference in Original Cost:**
+   \[
+   \text{Difference} = \text{Original cost of jogger jeans} - \text{Cost of tattered jeans} = 24 - 28 = -4 \text{ dollars}
+   \]
+
+7. **Re-evaluate the Problem Statement:**
+   - The problem asks how much more the jogger jeans originally cost than the tattered jeans.
+   - Since the original cost of jogger jeans is $24 and the cost of tattered jeans is $28, the difference is actually:
+   \[
+   \text{Difference} = 28 - 24 = 4 \text{ dollars}
+   \]
+
+#### The jogger jeans originally cost $4 more than the tattered jeans."
+val_455,240,150,Marin and his neighbor Nancy each eat 4 apples a day. How many apples do they eat in 30 days?,"In one day, Marin and Nancy eat 4 + 1 = <<4+1=5>>5 apples.
+In 30 days, they eat 30 * 5 = <<30*5=150>>150 apples.
+#### 150","### Tree-of-Thoughts (TOT) Approach
+
+#### Base Entities and Quantities:
+- Marin eats 4 apples a day.
+- Nancy eats 4 apples a day.
+- Total apples eaten by both per day: \(4 + 4 = 8\) apples.
+- Duration: 30 days.
+
+#### Branch 1: Direct Calculation
+1. **Daily Consumption Calculation:**
+   - Marin: 4 apples/day
+   - Nancy: 4 apples/day
+   - Combined daily consumption: \(4 + 4 = 8\) apples/day
+
+2. **Total Apples Over 30 Days:**
+   - Total apples = Daily consumption \(\times\) Number of days
+   - Total apples = \(8 \text{ apples/day} \times 30 \text{ days}\)
+   - Total apples = 240 apples
+
+#### Branch 2: Verification
+1. Reverse Calculation:
+   - If 240 apples are consumed in 30 days, then:
+   - Daily consumption: \( \frac{240 \text{ apples}}{30 \text{ days}} = 8 \text{ apples/day} \)
+   - This matches the initial daily combined consumption of \(4 + 4 = 8\) apples.
+
+2. Alternative Verification:
+   - Marin’s total apples: \(4 \text{ apples/day} \times 30 \text{ days} = 120 \text{ apples}\)
+   - Nancy’s total apples: \(4 \text{ apples/day} \times 30 \text{ days} = 120 \text{ apples}\)
+   - Combined total: \(120 \text{ apples} + 120 \text{ apples} = 240 \text{ apples}\)
+
+#### Cross-Check
+- Both branches yield the same result: 240 apples.
+
+#### Final Answer
+The total number of apples eaten by Marin and Nancy in 30 days is 240 apples.
+
+#### Marker for Final Answer
+#### 240"
+val_753,300,240,"Jenna has 4 roommates. Each month the electricity bill is $100. How much will each roommate pay per year for electricity, if they divide the share equally?","There are 12 months in a year, so the total electricity for the year will cost 100*12 =$<<100*12=1200>>1200.
+Since there are 5 roommates, each roommate will pay 1200/5=$<<1200/5=240>>240 in a year.
+#### 240","To solve the problem of how much each roommate will pay per year for electricity, let's construct a detailed logical tree and perform the necessary calculations step by step.
+
+### Branch 1: Monthly and Annual Electricity Bill Calculation
+
+1. **Identify the base entities and variables:**
+   - Total monthly electricity bill: \( \$100 \)
+   - Number of roommates: 4
+   - Time period: 1 year (12 months)
+
+2. **Calculate the monthly share for each roommate:**
+   - The monthly share for each roommate is calculated by dividing the total monthly bill by the number of roommates.
+   \[
+   \text{Monthly share per roommate} = \frac{\$100}{4} = \$25
+   \]
+
+3. **Calculate the annual share for each roommate:**
+   - The annual share is the monthly share multiplied by the number of months in a year.
+   \[
+   \text{Annual share per roommate} = \$25 \times 12 = \$300
+   \]
+
+### Branch 2: Verification and Cross-Checking
+
+1. **Verify the monthly share:**
+   - The monthly share per roommate is consistent with the division of the total bill.
+   - \(\frac{\$100}{4} = \$25\)
+
+2. **Verify the annual share:**
+   - The annual share per roommate is consistent with the multiplication of the monthly share.
+   - \( \$25 \times 12 = \$300 \)
+
+### Branch 3: Alternative Considerations
+
+- **Assumption of equal sharing:** The problem explicitly states that the share is divided equally among the roommates. Therefore, no alternative sharing methods need to be considered.
+
+- **No other costs or adjustments:** The problem does not mention any additional costs or adjustments (e.g., late fees, discounts, or other room expenses).
+
+### Conclusion
+
+After constructing the logical tree and performing the necessary calculations, we have determined that each roommate will pay \( \$300 \) per year for electricity.
+
+#### \$300"
+val_769,600,675,"In one hour, Ezra read twice as many books as Ahmed. Ezra has read 300 books this hour and decided to read 150 more. How many books have they read altogether?","If Ezra has read 300 books this hour and decided to read 150 more in the next hour, he has read a total of 300+150=<<300+150=450>>450
+Since Ezra reads twice as many books as Ahmed, Ahmed has read 450/2=<<450/2=225>>225 books.
+Together, Ahmed and Ezra has read 225+450=<<225+450=675>>675 books
+#### 675","Let's break down the problem using a Tree-of-Thoughts (TOT) approach and solve it step by step.
+
+### Step 1: Identify Base Entities and Variables
+- Ezra's reading rate: \( E \)
+- Ahmed's reading rate: \( A \)
+- Number of books Ezra read in one hour: 300 (given)
+- Number of books Ezra plans to read: 150 (given)
+- Number of books Ahmed read in one hour: \( x \) (to be determined)
+
+### Step 2: Construct the Logical Tree of Relationships
+- Given: \( E = 2A \)
+- Ezra's total books read in the given time: \( 300 + 150 = 450 \)
+- Ahmed's books read in one hour: \( x \)
+
+### Step 3: Forward Calculations and Verifications
+#### Branch 1: Determine Ahmed's Reading Rate
+- From the given information, \( E = 2A \)
+- Since \( E = 300 \) books in one hour:
+  \[
+  2A = 300 \implies A = \frac{300}{2} = 150 \text{ books per hour}
+  \]
+
+#### Branch 2: Calculate Total Books Read by Both
+- Books read by Ahmed in one hour: \( x = 150 \)
+- Total books read by both in one hour:
+  \[
+  300 \text{ (Ezra)} + 150 \text{ (Ahmed)} = 450 \text{ books}
+  \]
+
+- Total books read by Ezra in the second part:
+  \[
+  150 \text{ books}
+  \]
+- Total books read by both in the second part:
+  \[
+  450 \text{ (Ezra's first part)} + 150 \text{ (Ezra's second part)} = 600 \text{ books}
+  \]
+
+### Step 4: Cross-Check and Final Answer
+- Verify the consistency of the problem:
+  - Total books read by Ezra: \( 300 + 150 = 450 \)
+  - Total books read by Ahmed: \( 150 \)
+  - Combined total: \( 450 + 150 = 600 \)
+
+### Final Answer
+The total number of books read by Ezra and Ahmed altogether is \(\boxed{600}\)."

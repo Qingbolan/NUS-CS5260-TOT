@@ -1,0 +1,208 @@
+index,prediction,ground_truth,question,truth,issue
+val_22,2,14,"Raymond and Samantha are cousins. Raymond was born 6 years before Samantha. Raymond had a son at the age of 23. If Samantha is now 31, how many years ago was Raymond's son born?","When Raymond's son was born Samantha was 23 - 6 = <<23-6=17>>17 years old.
+Thus it has been 31 - 17 = <<31-17=14>>14 years since Raymond's son was born.
+#### 14","Let's construct a logical tree to solve the problem step by step.
+
+### Step 1: Construct a Logical Tree
+
+1. **Base Entities and Relationships:**
+   - Raymond
+   - Samantha
+   - Raymond's Son
+   - Time relationships: Samantha is 31, Raymond was born 6 years before Samantha, and Raymond had his son at the age of 23.
+
+2. **Intermediate Calculations:**
+   - Calculate Raymond's age when Samantha is 31.
+   - Calculate the year Raymond's son was born relative to the current year.
+
+### Step 2: Time and Sequential Reasoning
+
+- **Current Time:** Samantha is 31 years old.
+- **Raymond's Age:** Since Raymond was born 6 years before Samantha, Raymond is 31 - 6 = 25 years old now.
+- **Raymond's Son's Birth Year:**
+  - Raymond had his son at the age of 23.
+  - Therefore, the son was born when Raymond was 23 years old.
+  - To find out how many years ago Raymond's son was born, we need to calculate the difference between Raymond's current age (25) and the age he was when he had his son (23).
+
+### Step 3: Quantity and Numerical Relationships
+
+- **Years since Raymond had his son:**
+  - Current age of Raymond: 25
+  - Age when Raymond had his son: 23
+  - Years since the son was born: 25 - 23 = 2
+
+### Step 4: Branching and Conditional Logic
+
+- **Branch 1 (Primary Calculation):**
+  - Calculate the number of years since Raymond had his son.
+  - **Branch 1 Result:** 2 years ago.
+
+### Step 5: Final Answer Extraction
+
+- The son was born 2 years before the current time when Samantha is 31.
+
+FINAL ANSWER: 2 years ago"
+val_210,20,145,Twenty dozen cups cost $1200 less than the total cost of half a dozen plates sold at $6000 each. Calculate the total cost of buying each cup.,"Since a dozen has 12 items, half a dozen plates are 12/2 = <<6=6>>6
+Half a dozen plates sold at $6000 each cost 6*$6000 = $<<6*6000=36000>>36000
+Twenty dozen cups cost $1200 less than the total cost of half a dozen plates, meaning the twenty dozen cups cost a total of $36000-$1200 = 34800
+Since a dozen has 12 items, twenty dozen cups are 20*12 = <<20*12=240>>240 cups.
+If the twenty dozen cups cost $34800, each cup costs $34800/240=$<<34800/240=145>>145
+#### 145","### Step 1: Construct a Logical Tree
+
+1. **Base Entities:**
+   - Twenty dozen cups
+   - Half a dozen plates
+   - Cost of half a dozen plates = $6000
+   - Cost of twenty dozen cups = \(C_{24}\)
+   - Cost of twenty dozen cups is $1200 less than the total cost of half a dozen plates.
+
+2. **Relationships:**
+   - \(C_{24} = \text{Cost of half a dozen plates} - 1200\)
+   - Cost of half a dozen plates = $6000
+
+3. **Intermediate Calculations:**
+   - Calculate the cost of one dozen cups.
+   - Calculate the cost of one cup.
+
+### Step 2: Time and Sequential Reasoning
+
+- The cost of half a dozen plates is given and is a fixed value.
+- The cost of twenty dozen cups is derived from the cost of half a dozen plates.
+- We need to find the cost of one cup.
+
+### Step 3: Quantity and Numerical Relationships
+
+1. **Cost of half a dozen plates:**
+   \[
+   \text{Cost of half a dozen plates} = 6000
+   \]
+
+2. **Cost of twenty dozen cups:**
+   \[
+   C_{24} = 6000 - 1200 = 4800
+   \]
+
+3. **Cost of one dozen cups:**
+   \[
+   \text{Cost of one dozen cups} = \frac{C_{24}}{20} = \frac{4800}{20} = 240
+   \]
+
+4. **Cost of one cup:**
+   \[
+   \text{Cost of one cup} = \frac{\text{Cost of one dozen cups}}{12} = \frac{240}{12} = 20
+   \]
+
+### Step 4: Branching and Conditional Logic
+
+- There are no branching or conditional logic branches needed here as the relationships are straightforward.
+
+### Step 5: Final Answer Extraction
+
+- The total cost of buying each cup is:
+  \[
+  \text{Cost of one cup} = 20
+  \]
+
+FINAL ANSWER: 20
+### Step 1: Construct a Logical Tree
+
+1. **Base Entities:**
+   - Twenty dozen cups: \(240\) cups
+   - Half a dozen plates: \(6\) plates
+   - Cost of half a dozen plates: \(6000\) dollars
+   - Cost of twenty dozen cups: \(C_{24}\) dollars
+   - Cost of twenty dozen cups is $1200 less than the total cost of half a dozen plates.
+
+2. **Relationships:**
+   - \(C_{24} = 6000 - 1200\)
+   - Cost of one dozen plates: \(1000\) dollars (since \(6000 / 6 = 1000\))
+   - Cost of one dozen cups: \(C_{24} / 20\)
+   - Cost of one cup: \((C_{24} / 20) / 12\)
+
+3. **Intermediate Calculations:**
+   - Calculate the cost of twenty dozen cups.
+   - Calculate the cost of one dozen cups.
+   - Calculate the cost of one cup.
+
+### Step 2: Time and Sequential Reasoning
+
+- The cost of half a dozen plates is given and is a fixed value.
+- The cost of twenty dozen cups is derived from the cost of half a dozen plates.
+- We need to find the cost of one cup.
+
+### Step 3: Quantity and Numerical Relationships
+
+1. **Cost of twenty dozen cups:**
+   \[
+   C_{24} = 6000 - 1200 = 4800 \text{ dollars}
+   \]
+
+2. **Cost of one dozen cups:**
+   \[
+   \text{Cost of one dozen cups} = \frac{C_{24}}{20} = \frac{4800}{20} = 240 \text{ dollars}
+   \]
+
+3. **Cost of one cup:**
+   \[
+   \text{Cost of one cup} = \frac{\text{Cost of one dozen cups}}{12} = \frac{240}{12} = 20 \text{ dollars}
+   \]
+
+### Step 4: Branching and Conditional Logic
+
+- There are no branching or conditional logic branches needed here as the relationships are straightforward.
+
+### Step 5: Final Answer Extraction
+
+- The total cost of buying each cup is:
+  \[
+  \text{Cost of one cup} = 20
+  \]
+
+**Final Answer:**
+\[
+\boxed{20}
+\]"
+val_1116,7,5,"Anna is trying to buy books for her local library. She had a budget of $16, and she has already spent $4. She also bought 2 books today, and both books cost her the same amount of money. If Anna has $2 left in her budget, how much did each of the books cost?","Anna had already spent some money, so she started the day with $16 – $4 = $<<16-4=12>>12.
+She has money left in the budget, so she spent a total of $12 – $2 = $<<12-2=10>>10 on the books.
+Therefore each book cost her $10 / 2 = $<<10/2=5>>5.
+#### 5","1. **Construct a Logical Tree:**
+
+   - **Base Entities and Relationships:**
+     - Anna's initial budget: $16
+     - Amount already spent: $4
+     - Remaining budget: $2
+     - Number of books bought: 2
+     - Cost of each book: x (unknown, to be determined)
+   
+   - **Temporal and Sequential Reasoning:**
+     - Anna spent money before and after buying the books.
+     - The total spent is the initial amount minus the remaining amount.
+     - The cost of the books is the amount spent before finding the remaining amount.
+
+   - **Quantity and Numerical Relationships:**
+     - Total spent = Initial budget - Remaining budget
+     - Total spent = $16 - $2 = $14
+     - Total spent = 2 * Cost of each book (since 2 books were bought)
+     - Therefore, 2 * x = $14
+
+   - **Branching and Conditional Logic:**
+     - If the cost of each book is x, then 2 * x = $14 (Branch 1)
+
+2. **Calculate the Cost of Each Book:**
+
+   - Solve for x using the equation derived in the logical tree:
+     \[
+     2x = 14
+     \]
+     \[
+     x = \frac{14}{2}
+     \]
+     \[
+     x = 7
+     \]
+
+3. **Final Answer Extraction:**
+
+   - Each book cost $7.
+
+   FINAL ANSWER: $7"

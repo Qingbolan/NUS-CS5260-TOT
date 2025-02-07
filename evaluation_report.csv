@@ -1,0 +1,114 @@
+index,prediction,ground_truth,issue,error_detail,question,truth
+val_210,7.5,145,conversion error,预测值转换错误: invalid literal for int() with base 10: '7.5',,
+val_820,6250,"6,250",conversion error,"真实值转换错误: invalid literal for int() with base 10: '6,250'",,
+val_55,52,40,"1. **PDDL: (info (total-kittens 7) (patchy-kittens (+ (thrice 7) 12)) (trixie-kittens 12))**
+
+   - We start with 7 adopted kittens.
+   - Patchy has had thrice the number of adopted kittens, plus 12 additional kittens.
+   - Trixie has had 12 kittens.
+
+2. **Step-by-Step Reasoning:**
+   - Calculate the number of kittens Patchy has had: 
+     - Thrice the number of adopted kittens: <<3 * 7 = 21>>
+     - Adding the additional 12 kittens: <<21 + 12 = 33>>
+   - The number of kittens Trixie has had: <<12>>
+   - Total number of kittens: 
+     - Adopted kittens: <<7>>
+     - Patchy's kittens: <<33>>
+     - Trixie's kittens: <<12>>
+     - Adding them all together: <<7 + 33 + 12 = 52>>
+
+#####
+52",,"The Doubtfire sisters are driving home with 7 kittens adopted from the local animal shelter when their mother calls to inform them that their two house cats have just had kittens. She says that Patchy, the first cat, has had thrice the number of adopted kittens, while Trixie, the other cat, has had 12. How many kittens does the Doubtfire family now have?","Patchy has just had 3 * 7 = <<3*7=21>>21 kittens
+Since Trixie's kittens are 12, both cats have 21 +12 = <<21+12=33>>33 kittens.
+Combining the adopted kittens with those from the two cats, the Doubtfire family now has 7 + 33 = <<7+33=40>>40 kittens.
+#### 40"
+val_676,21,33,"1. **Extract Key Information**:
+   - PDDL: (info (initial-toys 4) (initial-dogs 4) (additional-dogs 8) (dogs-twice-more 2) (dogs-gone 3))
+
+2. **Step-by-Step Reasoning**:
+   - **Initial Situation**: James has 4 toys for 4 dogs.
+     - PDDL: (initial-toys 4) (initial-dogs 4)
+   - **Adding More Dogs**: James now has 8 more dogs, so the total number of dogs is 4 + 8 = 12.
+     - PDDL: (additional-dogs 8) (total-dogs 12)
+     - Calculation: <<4 + 8 = 12>>
+   - **Twice as Many Dogs**: After returning, there are twice as many dogs as there were when he left. So, the new number of dogs is 12 * 2 = 24.
+     - PDDL: (dogs-twice-more 2) (new-dogs 24)
+     - Calculation: <<12 * 2 = 24>>
+   - **Dogs Gone**: When James came back yet again, 3 dogs were gone. So, the number of dogs now is 24 - 3 = 21.
+     - PDDL: (dogs-gone 3) (final-dogs 21)
+     - Calculation: <<24 - 3 = 21>>
+   - **Total Toys Needed**: James needs one toy per dog, so he needs 21 toys in total.
+     - Calculation: <<21>>
+
+3. **Final Answer**:
+   #####
+   21",,"James needs to get more toys for his doggie shelter. Each dog needs one toy. James currently has 4 toys on hand for 4 dogs, but there are 8 more dogs in the shelter now. After buying the toys, he went back to see that there are twice as many more dogs than when he left so he had to buy some more toys. When James came back yet again, 3 dogs were gone so he no longer needed those toys. How many toys in total does James need?","James has 4+8=<<4+8=12>>12 toys.
+There were 12*2=<<12*2=24>>24 dogs.
+James needed to buy 24-12=<<24-12=12>>12 more toys.
+There are 36 total toys.
+36-3=<<36-3=33>>33 toys are now needed.
+#### 33"
+val_755,102,89,"1. **Extract Key Information:**
+   - PDDL: (info (large-sticker-to-large-button 1 3) (large-sticker-to-small-button 1 3) (small-sticker-to-small-button 1 1) (large-button-to-small-sticker 3 1))
+
+2. **Step-by-Step Reasoning:**
+
+   - **Initial Stickers and Buttons:**
+     - Lorraine starts with 30 small stickers and 40 large stickers.
+     - Each large sticker is worth 3 small stickers or 1 large button or 3 small buttons.
+     - Each small sticker is worth 1 small button.
+     - Each large button is worth 3 small stickers.
+
+   - **Trade 90% of Small Stickers for Large Buttons:**
+     - 90% of 30 small stickers = 27 small stickers.
+     - Each small sticker = 1 small button, so 27 small stickers = 27 small buttons.
+     - Each small button can be traded for 1/3 of a large button, so 27 small buttons = 27 / 3 = 9 large buttons.
+     - After trading, Lorraine has 30 - 27 = 3 small stickers remaining and 40 + 9 = 49 large stickers.
+
+   - **Trade 50% of Large Stickers for Large Buttons:**
+     - 50% of 49 large stickers = 24.5, but since we cannot have half a sticker, we consider 24 large stickers.
+     - 24 large stickers = 24 large buttons.
+     - After trading, Lorraine has 49 - 24 = 25 large stickers remaining.
+
+   - **Trade the Remaining Large Stickers for Small Buttons:**
+     - 25 large stickers = 25 large buttons.
+     - Each large button = 3 small stickers, so 25 large buttons = 25 * 3 = 75 small buttons.
+     - Adding the 27 small buttons already obtained, Lorraine has 75 + 27 = 102 small buttons.
+
+3. **Final Calculation:**
+   - Lorraine has no more large buttons or large stickers to trade.
+   - Therefore, the total number of buttons (large buttons + small buttons) = 0 + 102 = 102.
+
+#####
+102",,Lorraine and Colleen are trading stickers for buttons. Each large sticker is worth a large button or three small buttons. A small sticker is worth one small button. A large button is worth three small stickers. Lorraine starts with 30 small stickers and 40 large stickers. She trades 90% of her small stickers for large buttons. She trades 50% of her large stickers for large buttons and trades the rest of them for small buttons. How many buttons does she have by the end?,"She trades 27 small stickers because 30 x .9 = <<27=27>>27
+She gets 9 large buttons for these because 27 / 3 = <<27/3=9>>9
+She trades 20 large stickers for large buttons because 40 x .5 = 20
+She gets 20 large buttons for these because 20 / 1 = <<20/1=20>>20
+She trades 50% of her large stickers for small buttons because 100 - 50 = <<100-50=50>>50
+She trades 20 large stickers for small buttons because 40 x .5 = 20
+She gets 60 small buttons because 20 x 3 = <<20*3=60>>60
+She has 89 buttons at the end because 9 + 20 + 60 = <<9+20+60=89>>89
+#### 89"
+val_961,10,11,"1. **Key Information Extraction (PDDL):**
+   - PDDL: (info (initial-holes 10) (second-day-holes 13) (third-day-holes 8) (filled-holes 2) (final-holes (* 4 10)) (treasure-found true))
+
+2. **Step-by-Step Reasoning:**
+   - Calculate the total number of holes dug by the end of the third day, excluding the holes filled in.
+     - Total holes after first day: 10
+     - Total holes after second day: 10 + 13 = <<10 + 13 = 23>>
+     - Total holes after third day: 23 + 8 - 2 (filled in) = <<23 + 8 - 2 = 30>>
+   - The final number of holes on the fourth day is four times the number of holes at the end of the first day.
+     - Final holes: 4 * 10 = <<4 * 10 = 40>>
+   - Calculate the number of holes dug on the fourth day.
+     - Holes dug on the fourth day: 40 - 30 = <<40 - 30 = 10>>
+
+3. **Final Answer:**
+   #####
+   10",,"A pirate crew is digging for buried treasure on the island marked X on a map. They dug ten holes the first day, thirteen holes the second day, and eight holes the third day. They stopped digging early on the third day to fill in two holes the pirates kept falling in. On the fourth day of digging, they unearthed a treasure chest full of gold, jewels, and an aged hat. The island had four times as many holes by then as it did at the end of the first day. How many holes did the pirates dig on the fourth day before finding the treasure?","Let X mark the number of holes they dug on the fourth day.
+The island had 4 * 10 = <<4*10=40>>40 holes when they found the treasure.
+They dug 10 + 13 + 8 = <<10+13+8=31>>31 holes the first three days.
+After filling in 2 holes, they had 31 - 2 = <<31-2=29>>29 holes dug.
+When they found the treasure, they had 29 + X = 40 holes dug.
+Thus, the pirates dug 40 - 29 = <<40-29=11>>11 holes on the fourth day.
+#### 11"

@@ -1,0 +1,275 @@
+index,prediction,ground_truth,question,truth,issue
+val_841,20,16,"Patrick has three glue sticks that are partially used. One has 1/6 left, the second has 2/3 left and the third one has 1/2 left. If a glue stick is 12 millimeters long originally, what is the total length of the glue sticks that are not used?","The first glue stick has 12 x 1/6 = <<12*1/6=2>>2 millimeters left.
+The second glue stick has 12 x 2/3 = <<12*2/3=8>>8 millimeters left.
+The third glue stick has 12 x 1/2 = <<12*1/2=6>>6 millimeters left.
+There are a total of 2 + 8 + 6 = <<2+8+6=16>>16 millimeters of glue sticks that are not used.
+#### 16","### Step 1: Construct a Logical Tree
+- **Base Entities:**
+  - Three glue sticks.
+  - Original length of each glue stick: 12 millimeters.
+- **Relationships:**
+  - Fraction of each glue stick left.
+  - Amount of glue left in each stick.
+  - Length of glue not used in each stick.
+  - Total length of glue not used.
+
+### Step 2: Time and Sequential Reasoning
+- The problem does not specify any time frame for the usage of the glue sticks. We will assume all calculations are performed at the same time.
+
+### Step 3: Quantity and Numerical Relationships
+- Calculate the length of glue not used for each glue stick.
+
+#### Branch 1: First Glue Stick
+- Original length: 12 millimeters.
+- Fraction left: \( \frac{1}{6} \).
+- Length left: \( 12 \times \frac{1}{6} = 2 \) millimeters.
+- Length not used: \( 12 - 2 = 10 \) millimeters.
+
+#### Branch 2: Second Glue Stick
+- Original length: 12 millimeters.
+- Fraction left: \( \frac{2}{3} \).
+- Length left: \( 12 \times \frac{2}{3} = 8 \) millimeters.
+- Length not used: \( 12 - 8 = 4 \) millimeters.
+
+#### Branch 3: Third Glue Stick
+- Original length: 12 millimeters.
+- Fraction left: \( \frac{1}{2} \).
+- Length left: \( 12 \times \frac{1}{2} = 6 \) millimeters.
+- Length not used: \( 12 - 6 = 6 \) millimeters.
+
+### Step 4: Total Length of Glue Not Used
+- Sum the lengths of glue not used from each glue stick.
+- Total length not used: \( 10 + 4 + 6 = 20 \) millimeters.
+
+### Step 5: Final Answer Extraction
+- The total length of the glue sticks that are not used is 20 millimeters.
+
+FINAL ANSWER: 20 millimeters
+### Step 1: Construct a Logical Tree
+- **Base Entities:**
+  - Three glue sticks.
+  - Original length of each glue stick: 12 millimeters.
+- **Relationships:**
+  - Fraction of each glue stick left.
+  - Amount of glue left in each stick.
+  - Length of glue not used in each stick.
+  - Total length of glue not used.
+
+### Step 2: Time and Sequential Reasoning
+- The problem does not specify any time frame for the usage of the glue sticks. We will assume all calculations are performed at the same time.
+
+### Step 3: Quantity and Numerical Relationships
+- Calculate the length of glue not used for each glue stick.
+
+#### Branch 1: First Glue Stick
+- Original length: 12 millimeters.
+- Fraction left: \( \frac{1}{6} \).
+- Length left: \( 12 \times \frac{1}{6} = 2 \) millimeters.
+- Length not used: \( 12 - 2 = 10 \) millimeters.
+
+#### Branch 2: Second Glue Stick
+- Original length: 12 millimeters.
+- Fraction left: \( \frac{2}{3} \).
+- Length left: \( 12 \times \frac{2}{3} = 8 \) millimeters.
+- Length not used: \( 12 - 8 = 4 \) millimeters.
+
+#### Branch 3: Third Glue Stick
+- Original length: 12 millimeters.
+- Fraction left: \( \frac{1}{2} \).
+- Length left: \( 12 \times \frac{1}{2} = 6 \) millimeters.
+- Length not used: \( 12 - 6 = 6 \) millimeters.
+
+### Step 4: Total Length of Glue Not Used
+- Sum the lengths of glue not used from each glue stick.
+- Total length not used: \( 10 + 4 + 6 = 20 \) millimeters.
+
+### Step 5: Final Answer Extraction
+- The total length of the glue sticks that are not used is 20 millimeters.
+
+FINAL ANSWER: 20 millimeters
+
+### Additional Branching and Conditional Logic
+- **Branch 4: If the length of the glue sticks were different**
+  - Suppose one of the glue sticks was originally 15 millimeters instead of 12 millimeters.
+  - For the first glue stick (1/6 left): \( 15 \times \frac{1}{6} = 2.5 \) millimeters left, \( 15 - 2.5 = 12.5 \) millimeters not used.
+  - For the second glue stick (2/3 left): \( 15 \times \frac{2}{3} = 10 \) millimeters left, \( 15 - 10 = 5 \) millimeters not used.
+  - For the third glue stick (1/2 left): \( 15 \times \frac{1}{2} = 7.5 \) millimeters left, \( 15 - 7.5 = 7.5 \) millimeters not used.
+  - Total length not used: \( 12.5 + 5 + 7.5 = 25 \) millimeters.
+
+- **Branch 5: If the fractions were different**
+  - Suppose the fractions were \( \frac{1}{4} \), \( \frac{3}{4} \), and \( \frac{1}{3} \) respectively.
+  - For the first glue stick: \( 12 \times \frac{1}{4} = 3 \) millimeters left, \( 12 - 3 = 9 \) millimeters not used.
+  - For the second glue stick: \( 12 \times \frac{3}{4} = 9 \) millimeters left, \( 12 - 9 = 3 \) millimeters not used.
+  - For the third glue stick: \( 12 \times \frac{1}{3} = 4 \) millimeters left, \( 12 - 4 = 8 \) millimeters not used.
+  - Total length not used: \( 9 + 3 + 8 = 20 \) millimeters.
+
+### Final Answer Extraction
+- The total length of the glue sticks that are not used is 20 millimeters.
+
+FINAL ANSWER: 20 millimeters
+### Step 1: Construct a Logical Tree
+- **Base Entities:**
+  - Three glue sticks.
+  - Original length of each glue stick: 12 millimeters.
+- **Relationships:**
+  - Fraction of each glue stick left.
+  - Amount of glue left in each stick.
+  - Length of glue not used in each stick.
+  - Total length of glue not used.
+
+### Step 2: Time and Sequential Reasoning
+- The problem does not specify any time frame for the usage of the glue sticks. We will assume all calculations are performed at the same time.
+
+### Step 3: Quantity and Numerical Relationships
+- Calculate the length of glue not used for each glue stick.
+
+#### Branch 1: Original Lengths
+- **First Glue Stick:**
+  - Original length: 12 millimeters.
+  - Fraction left: \( \frac{1}{6} \).
+  - Length left: \( 12 \times \frac{1}{6} = 2 \) millimeters.
+  - Length not used: \( 12 - 2 = 10 \) millimeters.
+- **Second Glue Stick:**
+  - Original length: 12 millimeters.
+  - Fraction left: \( \frac{2}{3} \).
+  - Length left: \( 12 \times \frac{2}{3} = 8 \) millimeters.
+  - Length not used: \( 12 - 8 = 4 \) millimeters.
+- **Third Glue Stick:**
+  - Original length: 12 millimeters.
+  - Fraction left: \( \frac{1}{2} \).
+  - Length left: \( 12 \times \frac{1}{2} = 6 \) millimeters.
+  - Length not used: \( 12 - 6 = 6 \) millimeters.
+
+#### Branch 2: Total Length of Glue Not Used
+- Sum the lengths of glue not used from each glue stick.
+- Total length not used: \( 10 + 4 + 6 = 20 \) millimeters.
+
+### Step 4: Additional Branching and Conditional Logic
+
+#### Branch 4: Different Original Lengths
+- Suppose the original length of each glue stick is 15 millimeters.
+- **First Glue Stick:**
+  - Original length: 15 millimeters.
+  - Fraction left: \( \frac{1}{6} \).
+  - Length left: \( 15 \times \frac{1}{6} = 2.5 \) millimeters.
+  - Length not used: \( 15 - 2.5 = 12.5 \) millimeters.
+- **Second Glue Stick:**
+  - Original length: 15 millimeters.
+  - Fraction left: \( \frac{2}{3} \).
+  - Length left: \( 15 \times \frac{2}{3} = 10 \) millimeters.
+  - Length not used: \( 15 - 10 = 5 \) millimeters.
+- **Third Glue Stick:**
+  - Original length: 15 millimeters.
+  - Fraction left: \( \frac{1}{2} \).
+  - Length left: \( 15 \times \frac{1}{2} = 7.5 \) millimeters.
+  - Length not used: \( 15 - 7.5 = 7.5 \) millimeters.
+- **Total length not used:**
+  - \( 12.5 + 5 + 7.5 = 25 \) millimeters.
+
+#### Branch 5: Different Fractions
+- Suppose the fractions are \( \frac{1}{4} \), \( \frac{3}{4} \), and \( \frac{1}{3} \) respectively.
+- **First Glue Stick:**
+  - Original length: 12 millimeters.
+  - Fraction left: \( \frac{1}{4} \).
+  - Length left: \( 12 \times \frac{1}{4} = 3 \) millimeters.
+  - Length not used: \( 12 - 3 = 9 \) millimeters.
+- **Second Glue Stick:**
+  - Original length: 12 millimeters.
+  - Fraction left: \( \frac{3}{4} \).
+  - Length left: \( 12 \times \frac{3}{4} = 9 \) millimeters.
+  - Length not used: \( 12 - 9 = 3 \) millimeters.
+- **Third Glue Stick:**
+  - Original length: 12 millimeters.
+  - Fraction left: \( \frac{1}{3} \).
+  - Length left: \( 12 \times \frac{1}{3} = 4 \) millimeters.
+  - Length not used: \( 12 - 4 = 8 \) millimeters.
+- **Total length not used:**
+  - \( 9 + 3 + 8 = 20 \) millimeters.
+
+### Step 5: Final Answer Extraction
+- The total length of the glue sticks that are not used is 20 millimeters.
+
+FINAL ANSWER: 20 millimeters
+### Step 1: Construct a Logical Tree
+- **Base Entities:**
+  - Three glue sticks.
+  - Original length of each glue stick: 12 millimeters.
+- **Relationships:**
+  - Fraction of each glue stick left.
+  - Amount of glue left in each stick.
+  - Length of glue not used in each stick.
+  - Total length of glue not used.
+
+### Step 2: Time and Sequential Reasoning
+- The problem does not specify any time frame for the usage of the glue sticks. We will assume all calculations are performed at the same time.
+
+### Step 3: Quantity and Numerical Relationships
+- Calculate the length of glue not used for each glue stick.
+
+#### Branch 1: Original Lengths and Given Fractions
+- **First Glue Stick:**
+  - Original length: 12 millimeters.
+  - Fraction left: \( \frac{1}{6} \).
+  - Length left: \( 12 \times \frac{1}{6} = 2 \) millimeters.
+  - Length not used: \( 12 - 2 = 10 \) millimeters.
+- **Second Glue Stick:**
+  - Original length: 12 millimeters.
+  - Fraction left: \( \frac{2}{3} \).
+  - Length left: \( 12 \times \frac{2}{3} = 8 \) millimeters.
+  - Length not used: \( 12 - 8 = 4 \) millimeters.
+- **Third Glue Stick:**
+  - Original length: 12 millimeters.
+  - Fraction left: \( \frac{1}{2} \).
+  - Length left: \( 12 \times \frac{1}{2} = 6 \) millimeters.
+  - Length not used: \( 12 - 6 = 6 \) millimeters.
+
+#### Branch 2: Total Length of Glue Not Used
+- Sum the lengths of glue not used from each glue stick.
+- Total length not used: \( 10 + 4 + 6 = 20 \) millimeters.
+
+### Step 4: Additional Branching and Conditional Logic
+
+#### Branch 4: Different Original Lengths
+- Suppose the original length of each glue stick is 15 millimeters.
+- **First Glue Stick:**
+  - Original length: 15 millimeters.
+  - Fraction left: \( \frac{1}{6} \).
+  - Length left: \( 15 \times \frac{1}{6} = 2.5 \) millimeters.
+  - Length not used: \( 15 - 2.5 = 12.5 \) millimeters.
+- **Second Glue Stick:**
+  - Original length: 15 millimeters.
+  - Fraction left: \( \frac{2}{3} \).
+  - Length left: \( 15 \times \frac{2}{3} = 10 \) millimeters.
+  - Length not used: \( 15 - 10 = 5 \) millimeters.
+- **Third Glue Stick:**
+  - Original length: 15 millimeters.
+  - Fraction left: \( \frac{1}{2} \).
+  - Length left: \( 15 \times \frac{1}{2} = 7.5 \) millimeters.
+  - Length not used: \( 15 - 7.5 = 7.5 \) millimeters.
+- **Total length not used:**
+  - \( 12.5 + 5 + 7.5 = 25 \) millimeters.
+
+#### Branch 5: Different Fractions
+- Suppose the fractions are \( \frac{1}{4} \), \( \frac{3}{4} \), and \( \frac{1}{3} \) respectively.
+- **First Glue Stick:**
+  - Original length: 12 millimeters.
+  - Fraction left: \( \frac{1}{4} \).
+  - Length left: \( 12 \times \frac{1}{4} = 3 \) millimeters.
+  - Length not used: \( 12 - 3 = 9 \) millimeters.
+- **Second Glue Stick:**
+  - Original length: 12 millimeters.
+  - Fraction left: \( \frac{3}{4} \).
+  - Length left: \( 12 \times \frac{3}{4} = 9 \) millimeters.
+  - Length not used: \( 12 - 9 = 3 \) millimeters.
+- **Third Glue Stick:**
+  - Original length: 12 millimeters.
+  - Fraction left: \( \frac{1}{3} \).
+  - Length left: \( 12 \times \frac{1}{3} = 4 \) millimeters.
+  - Length not used: \( 12 - 4 = 8 \) millimeters.
+- **Total length not used:**
+  - \( 9 + 3 + 8 = 20 \) millimeters.
+
+### Step 5: Final Answer Extraction
+- The total length of the glue sticks that are not used is 20 millimeters.
+
+FINAL ANSWER: 20 millimeters"

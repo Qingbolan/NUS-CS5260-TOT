@@ -1,0 +1,24 @@
+index,prediction,ground_truth,question,truth,issue
+val_1051,1630,655,"It is approximately 1955 kilometers from San Diego, California to New York City, New York. If Bernice drove 325 kilometers for 4 days, how many kilometers will she still need to drive?","325 * 4 = <<325*4=1300>>1300 km
+1955 - 1300 = <<1955-1300=655>>655 km
+Bernice will still have 655 kilometers to travel.
+#### 655","Understanding of the problem:
+Bernice is driving from San Diego to New York City, a distance of approximately 1955 kilometers. She has already driven 325 kilometers over 4 days. We need to determine how many kilometers she still needs to drive to reach her destination.
+
+Step-by-step solution:
+1. The total distance from San Diego to New York City is 1955 kilometers.
+2. Bernice has already driven 325 kilometers.
+3. The remaining distance she needs to drive is the total distance minus the distance she has already covered.
+
+\[ \text{Remaining distance} = \text{Total distance} - \text{Distance already driven} \]
+\[ \text{Remaining distance} = 1955 \text{ km} - 325 \text{ km} \]
+
+Calculation:
+\[ \text{Remaining distance} = 1955 - 325 = 1630 \text{ km} \]
+
+Check the arithmetic expression:
+\[ 1955 - 325 = 1630 \]
+The calculation is consistent.
+
+Final answer:
+FINAL ANSWER: 1630"

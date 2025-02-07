@@ -1,0 +1,63 @@
+index,prediction,ground_truth,issue,error_detail,question,truth
+val_830,14000,"14,000",conversion error,"真实值转换错误: could not convert string to float: '14,000'",,
+val_44,240,48,"To solve this problem, we need to follow a step-by-step approach to determine how many grams of chips you can eat without exceeding your daily calorie target of 2000 calories, given that you have already consumed 1800 calories.
+
+### Step 1: Determine the Total Daily Calorie Allowance and Remaining Calories
+- **Daily Calorie Target**: 2000 calories
+- **Calories Consumed**: 1800 calories
+- **Remaining Calories**: \( 2000 - 1800 = 200 \) calories
+
+### Step 2: Determine the Calorie Content per Gram of Chips
+- **Calories per Serving**: 250 calories
+- **Servings per 300g Bag**: 5 servings
+- **Calories per Gram**: \( \frac{250 \text{ calories}}{300 \text{ grams}} = \frac{5}{6} \text{ calories/gram} \approx 0.833 \text{ calories/gram} \)
+
+### Step 3: Calculate the Grams of Chips You Can Eat with Remaining Calories
+- **Remaining Calories**: 200 calories
+- **Calories per Gram**: 0.833 calories/gram
+- **Grams of Chips**: \( \frac{200 \text{ calories}}{0.833 \text{ calories/gram}} \approx 240 \text{ grams} \)
+
+### Validation:
+- **Reality Check**: 
+  - 240 grams is a reasonable amount to eat in a day, considering typical serving sizes.
+- **Unit Verification**: 
+  - The calculation is consistent, using calories and grams.
+  - No rounding is necessary, as the result is already a whole number.
+- **Cross-Check Methods**: 
+  - \( 240 \text{ grams} \times 0.833 \text{ calories/gram} = 200 \text{ calories} \)
+  - \( \frac{200 \text{ calories}}{240 \text{ grams}} = 0.833 \text{ calories/gram} \)
+
+#### 240 grams",,"According to its nutritional info, a bag of chips has 250 calories per serving. If a 300g bag has 5 servings, how many grams can you eat if your daily calorie target is 2000 and you have already consumed 1800 calories?","If the total calorie target is 2000 and I have consumed 1800 calories then I have 2000-1800 = <<2000-1800=200>>200 calories left to eat
+If each serving of chips has 250 calories and I only have 200 calories left to eat, then I can only eat 200/250 of a serving = 4/5 of a serving
+We also know that a 300g bag of chips has 5 servings, hence each serving has 300g/5 = <<300/5=60>>60 grams
+If I can only eat 4/5 of a serving, then I can eat only 60g * 4/5 = 240g/5 = 48 grams
+#### 48"
+val_754,42,128,"The problem provided does not involve percentages or sequential calculations. Instead, it involves basic subtraction to determine the number of glasses and plates Jeff has after the event. Let's solve it step by step.
+
+### Step 1: Calculate the initial number of glasses and plates
+- Initial glasses: 8 dozen = 8 × 12 = 96 glasses
+- Initial plates: 4 dozen = 4 × 12 = 48 plates
+
+### Step 2: Calculate the number of glasses and plates returned
+- Broken glasses: 10 glasses
+- Broken plates: 6 plates
+
+### Step 3: Calculate the remaining glasses and plates
+- Remaining glasses: Initial glasses - Broken glasses = 96 - 10 = 86 glasses
+- Remaining plates: Initial plates - Broken plates = 48 - 6 = 42 plates
+
+### Step 4: Verify the calculations
+- Total initial items: 96 glasses + 48 plates = 144 items
+- Total broken items: 10 glasses + 6 plates = 16 items
+- Total remaining items: 86 glasses + 42 plates = 128 items
+- Reality check: 128 remaining items is less than the initial 144 items, which is reasonable since some items were broken.
+
+### Final Answer:
+Jeff has 86 glasses and 42 plates now.
+
+#### 86 glasses, 42 plates",,"Jeff owns a catering company.  During a recent event, he sent 8 dozen glasses and 4 dozen plates for the party.  When they were returned, 10 glasses were broken as well as 6 plates.  How many glasses and plates does Jeff have now?","He had 8 dozen glasses so he had 8*12 = <<8*12=96>>96 glasses
+He had 4 dozen plates so he had 4*12 = <<4*12=48>>48 plates
+10 glasses were broken and he started with 96 so he now has 96-10= 86 glasses
+6 plates were broken and he started with 48 so he now has 48-6 = <<48-6=42>>42
+All total he has 86 glasses and 42 plates so 86+42 = <<86+42=128>>128 glasses and plates
+#### 128"

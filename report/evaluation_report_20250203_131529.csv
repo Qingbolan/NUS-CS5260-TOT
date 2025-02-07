@@ -1,0 +1,126 @@
+index,prediction,ground_truth,issue,error_detail,question,truth
+val_27,243.00,243,conversion error,预测值转换错误: invalid literal for int() with base 10: '243.00',,
+val_576,36.00,36,conversion error,预测值转换错误: invalid literal for int() with base 10: '36.00',,
+val_820,6250,"6,250",conversion error,"真实值转换错误: invalid literal for int() with base 10: '6,250'",,
+val_1224,8.00,8,conversion error,预测值转换错误: invalid literal for int() with base 10: '8.00',,
+val_370,1208,1198,"1. PDDL: (info (total-seniors 44) (cost-per-frame 20) (frame-etching-cost 0.2) (pin-cost 5) (officer-seniors 11) (cord-cost 12))
+
+2. Step-by-step reasoning:
+   - Calculate the cost for the picture frames for all seniors.
+     - Total cost for frames = 44 * 20 = <<44*20=880>> $880
+   - Calculate the additional etching cost for the picture frames.
+     - Total etching cost = 44 * 20 * 0.2 = <<44*20*0.2=176>> $176
+   - Calculate the total cost for the pins for 2 seniors.
+     - Total pin cost = 2 * 5 = <<2*5=10>> $10
+   - Calculate the number of officer seniors.
+     - Officer seniors = 44 / 4 = <<44/4=11>> 11
+   - Calculate the total cost for the cords for the officer seniors.
+     - Total cord cost = 11 * 12 = <<11*12=132>> $132
+   - Sum up all the costs to find the total amount spent on the senior gifts.
+     - Total amount spent = 880 + 176 + 10 + 132 = <<880+176+10+132=1208>> $1208
+
+#### 1208",,44 seniors need to receive awards.  Each senior receives a picture frame that costs $20.  Each picture frame needs to be etched with the logo for an additional 20% cost per frame.  2 of the seniors will also receive pins that are $5.  1/4 of the seniors are officers and they will need to receive cords that are $12 each.  How much will be spent on the senior gifts?,"The cost per picture frame is $20 * 1.20 = $<<20*1.20=24>>24.
+Total cost for the senior's picture frames is 44 seniors * $24 = $<<44*24=1056>>1056.
+The cost for pins will be 2 seniors * $5 = $<<2*5=10>>10.
+The number of seniors receiving cords is 1/4 * 44 = <<1/4*44=11>>11 seniors.
+The total cost of cords is 11 seniors * $12 = $<<11*12=132>>132.
+The total cost of gifts for seniors is $1056 + $10 + $132 = $<<1056+10+132=1198>>1198.
+#### 1198"
+val_676,48,33,"1. **Key Information Extraction:**
+   - PDDL: (info (initial-toys 4) (initial-dogs 4) (additional-dogs 8) (twice-more-dogs) (final-dogs 3))
+
+2. **Step-by-Step Reasoning:**
+   - **Step 1:** Calculate the total number of dogs after the first purchase.
+     - Initial dogs: 4
+     - Additional dogs: 8
+     - Total dogs after first purchase: 4 + 8 = 12
+     - Cross-check: 4 (initial dogs) + 8 (additional dogs) = 12 (total dogs). This is correct.
+   - **Step 2:** Calculate the number of toys needed after the first purchase.
+     - Each dog needs one toy.
+     - Number of toys needed: 12
+     - Cross-check: 12 (total dogs) = 12 (toys needed). This is correct.
+   - **Step 3:** Determine the number of dogs after the second purchase.
+     - There are twice as many more dogs than when he left.
+     - Number of dogs after leaving: 12
+     - Twice as many more dogs: 12 * 2 = 24
+     - Total dogs after second purchase: 12 + 24 = 36
+     - Cross-check: 12 (initial dogs after first purchase) + 24 (twice as many more dogs) = 36 (total dogs). This is correct.
+   - **Step 4:** Calculate the number of toys needed after the second purchase.
+     - Each dog needs one toy.
+     - Number of toys needed: 36
+     - Cross-check: 36 (total dogs) = 36 (toys needed). This is correct.
+   - **Step 5:** Adjust the number of dogs after 3 dogs left.
+     - Number of dogs after 3 left: 36 - 3 = 33
+     - Cross-check: 36 (total dogs) - 3 (dogs left) = 33 (total dogs). This is correct.
+   - **Step 6:** Calculate the total number of toys needed.
+     - Toys needed after first purchase: 12
+     - Toys needed after second purchase: 36
+     - Total toys needed: 12 + 36 = 48
+     - Cross-check: 12 (first purchase) + 36 (second purchase) = 48 (total toys needed). This is correct.
+
+3. **Final Answer:**
+   - #### 48",,"James needs to get more toys for his doggie shelter. Each dog needs one toy. James currently has 4 toys on hand for 4 dogs, but there are 8 more dogs in the shelter now. After buying the toys, he went back to see that there are twice as many more dogs than when he left so he had to buy some more toys. When James came back yet again, 3 dogs were gone so he no longer needed those toys. How many toys in total does James need?","James has 4+8=<<4+8=12>>12 toys.
+There were 12*2=<<12*2=24>>24 dogs.
+James needed to buy 24-12=<<24-12=12>>12 more toys.
+There are 36 total toys.
+36-3=<<36-3=33>>33 toys are now needed.
+#### 33"
+val_755,174,89,"1. PDDL: (info (initial-stickers 30 40) (large-button-value 3) (small-button-value 1) (large-sticker-for-large-button 1 3) (large-sticker-for-small-button 3) (small-sticker-for-small-button 1))
+
+2. Step-by-step reasoning:
+   - Lorraine starts with 30 small stickers and 40 large stickers.
+   - She trades 90% of her small stickers for large buttons.
+     - 90% of 30 small stickers = 0.9 * 30 = 27 small stickers.
+     - Each small sticker is worth 1 small button, so 27 small stickers = 27 small buttons.
+     - Each small button can be traded for 1/3 of a large button, so 27 small buttons = 27 / 3 = 9 large buttons.
+     - Cross-check: 9 large buttons (from small stickers) + 40 large stickers (initial) = 49 large stickers.
+   - She trades 50% of her large stickers for large buttons.
+     - 50% of 49 large stickers = 0.5 * 49 = 24.5. Since she can only trade whole stickers, we round down to 24 large stickers.
+     - Each large sticker is worth 3 small buttons, so 24 large stickers = 24 * 3 = 72 small buttons.
+     - Cross-check: 72 small buttons (from large stickers) + 27 (leftover from previous trading) = 99 small buttons.
+   - She trades the rest of her large stickers for small buttons.
+     - After trading 24 large stickers, she has 49 - 24 = 25 large stickers left.
+     - Each large sticker is worth 3 small buttons, so 25 large stickers = 25 * 3 = 75 small buttons.
+     - Cross-check: 99 (from previous trading) + 75 = 174 small buttons.
+   - Final count: 174 small buttons + 25 large buttons.
+
+3. ####
+174",,Lorraine and Colleen are trading stickers for buttons. Each large sticker is worth a large button or three small buttons. A small sticker is worth one small button. A large button is worth three small stickers. Lorraine starts with 30 small stickers and 40 large stickers. She trades 90% of her small stickers for large buttons. She trades 50% of her large stickers for large buttons and trades the rest of them for small buttons. How many buttons does she have by the end?,"She trades 27 small stickers because 30 x .9 = <<27=27>>27
+She gets 9 large buttons for these because 27 / 3 = <<27/3=9>>9
+She trades 20 large stickers for large buttons because 40 x .5 = 20
+She gets 20 large buttons for these because 20 / 1 = <<20/1=20>>20
+She trades 50% of her large stickers for small buttons because 100 - 50 = <<100-50=50>>50
+She trades 20 large stickers for small buttons because 40 x .5 = 20
+She gets 60 small buttons because 20 x 3 = <<20*3=60>>60
+She has 89 buttons at the end because 9 + 20 + 60 = <<9+20+60=89>>89
+#### 89"
+val_902,2,1,"1. **Key Information Extraction**:
+   - PDDL: (info (total-soup-for-adult 4) (total-soup-for-child 8) (adults 2) (children 2) (calvin-adult? yes) (meal-bowls 4))
+
+2. **Step-by-Step Reasoning**:
+   - **Total Soup Volumes**:
+     - Total soup can fill 4 adult bowls or 8 child bowls.
+     - Let's denote the volume of one adult bowl as \( A \) and one child bowl as \( C \).
+     - We have \( 4A = 8C \). Therefore, \( A = 2C \).
+   - **Soup Consumption**:
+     - Calvin and his wife are adults, so they will consume \( 2A \) (2 adult bowls).
+     - Two children will consume \( 2C \) (2 child bowls).
+     - Total soup consumed = \( 2A + 2C \).
+     - Substituting \( A = 2C \), we get \( 2(2C) + 2C = 6C \).
+   - **Remaining Soup**:
+     - Total soup available = \( 8C \).
+     - Remaining soup after meal = \( 8C - 6C = 2C \).
+   - **Leftover Soup for Children**:
+     - Each child bowl is \( C \), so the leftover soup \( 2C \) can fill \( \frac{2C}{C} = 2 \) child bowls.
+
+3. **Final Answer**:
+   - Each child will be able to have 2 bowls of soup for lunch from the leftover soup.
+   
+#####
+
+2",,"Calvin is making soup for his family for dinner. He has a pot with enough soup to fill four adult's bowls or eight child's bowls. He is an adult and will be eating with his adult wife and their two children. If everyone eats one bowl at a meal, how many times will each child be able to have a bowl of soup for lunch from the leftover soup?","Four adult bowls equal eight children’s bowls, so each adult bowl is 8 / 4 = <<8/4=2>>2 children’s bowls.
+Calvin and his wife will eat two adult bowls, so they will eat the equivalent of 2 * 2 = <<2*2=4>>4 children’s bowls.
+Thus, he, his wife, and their children will eat 4 + 2 = <<4+2=6>>6 children’s bowls at dinner.
+After dinner, there will be 8 - 6 = <<8-6=2>>2 children’s bowls left over.
+There are 2 children, so each child will be able to eat a bowl of leftover soup for lunch 2 / 2 = <<2/2=1>>1 time.
+#### 1"

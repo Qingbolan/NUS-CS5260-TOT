@@ -1,0 +1,151 @@
+index,prediction,ground_truth,question,truth,issue
+val_754,42,128,"Jeff owns a catering company.  During a recent event, he sent 8 dozen glasses and 4 dozen plates for the party.  When they were returned, 10 glasses were broken as well as 6 plates.  How many glasses and plates does Jeff have now?","He had 8 dozen glasses so he had 8*12 = <<8*12=96>>96 glasses
+He had 4 dozen plates so he had 4*12 = <<4*12=48>>48 plates
+10 glasses were broken and he started with 96 so he now has 96-10= 86 glasses
+6 plates were broken and he started with 48 so he now has 48-6 = <<48-6=42>>42
+All total he has 86 glasses and 42 plates so 86+42 = <<86+42=128>>128 glasses and plates
+#### 128","To solve this problem, let's construct a logical tree of thoughts and perform detailed arithmetic and logical checks.
+
+### Step 1: Identify Base Entities and Variables
+- Total glasses sent: 8 dozen = 8 * 12 = 96 glasses
+- Total plates sent: 4 dozen = 4 * 12 = 48 plates
+- Broken glasses: 10 glasses
+- Broken plates: 6 plates
+
+### Branch 1: Calculate Remaining Glasses
+1.1. **Initial Glasses**: 96 glasses
+1.2. **Broken Glasses**: 10 glasses
+1.3. **Remaining Glasses**: 96 - 10 = 86 glasses
+
+### Branch 2: Calculate Remaining Plates
+2.1. **Initial Plates**: 48 plates
+2.2. **Broken Plates**: 6 plates
+2.3. **Remaining Plates**: 48 - 6 = 42 plates
+
+### Step 2: Combine Results from Both Branches
+- Total remaining glasses: 86
+- Total remaining plates: 42
+
+### Step 3: Verify the Calculations
+- **Verification of Glasses**: 
+  - Initial glasses: 96
+  - Broken: 10
+  - Remaining: 96 - 10 = 86
+- **Verification of Plates**:
+  - Initial plates: 48
+  - Broken: 6
+  - Remaining: 48 - 6 = 42
+
+Both calculations are consistent and correct.
+
+### Step 4: Integrate Branches and State Final Answer
+- Jeff now has 86 glasses and 42 plates.
+
+#### Final Answer: Jeff has 86 glasses and 42 plates."
+val_1051,1630,655,"It is approximately 1955 kilometers from San Diego, California to New York City, New York. If Bernice drove 325 kilometers for 4 days, how many kilometers will she still need to drive?","325 * 4 = <<325*4=1300>>1300 km
+1955 - 1300 = <<1955-1300=655>>655 km
+Bernice will still have 655 kilometers to travel.
+#### 655","To solve this problem, let's follow the TOT approach step by step.
+
+### Step 1: Construct a Complete Logical Tree
+
+1. **Base Entities and Quantities:**
+   - Total distance from San Diego to New York: 1955 kilometers.
+   - Distance driven by Bernice in 4 days: 325 kilometers.
+   - Distance remaining to be driven: \( \text{Total distance} - \text{Distance driven} \).
+
+2. **Relationships and Dependencies:**
+   - Direct relationship: Total distance - Distance driven = Distance remaining.
+   - No need to consider time (4 days) as it is not relevant for the distance calculation.
+
+3. **Verify Interpretation:**
+   - Ensure that 325 kilometers is the total distance driven in 4 days.
+   - Ensure that the total distance is 1955 kilometers.
+
+### Step 2: Perform Detailed Arithmetic and Logical Checks
+
+**Branch 1: Calculate Distance Remaining**
+1. **Forward Calculation:**
+   \[
+   \text{Distance remaining} = \text{Total distance} - \text{Distance driven}
+   \]
+   \[
+   \text{Distance remaining} = 1955 \text{ km} - 325 \text{ km}
+   \]
+   \[
+   \text{Distance remaining} = 1630 \text{ km}
+   \]
+
+2. **Reverse Verification:**
+   \[
+   \text{Verification} = \text{Distance remaining} + \text{Distance driven}
+   \]
+   \[
+   \text{Verification} = 1630 \text{ km} + 325 \text{ km}
+   \]
+   \[
+   \text{Verification} = 1955 \text{ km}
+   \]
+   - The reverse calculation matches the original total distance, confirming the calculation is correct.
+
+### Step 3: Integrate Branching and Conditional Reasoning
+
+- No branching is necessary as there is only one direct calculation required.
+- The problem statement is clear and does not introduce any conditions or alternative scenarios.
+
+### Step 4: Mark the Final Answer Clearly
+
+#### 1630 kilometers
+
+The number of kilometers Bernice still needs to drive is \(\boxed{1630}\) kilometers."
+val_1241,3,2,"Elly is organizing her books on the new bookcases her parents bought her. Each of the middle 2 shelves can hold 10 books. The bottom shelf can hold twice as many books as a middle shelf. The top shelf can hold 5 fewer books than the bottom shelf. If she has 110 books, how many bookcases does she need to hold all of them?","The bottom shelf can hold 2 * 10 = <<2*10=20>>20 books.
+The 2 middle shelves can hold a total of 2 * 10 = <<2*10=20>>20 books.
+The top shelf can hold 20 – 5 = <<20-5=15>>15 books.
+Each bookcase can hold a total of 20 books + 20 books + 15 books = <<20+20+15=55>>55 books.
+To hold all of her books, she needs 110 / 55 = <<110/55=2>>2 bookcases.
+#### 2","To solve the problem, let's construct a complete logical tree and perform detailed arithmetic and logical checks.
+
+### Step 1: Identify Variables and Quantities
+- Let \( M \) represent the number of books a middle shelf can hold.
+- Let \( B \) represent the number of books the bottom shelf can hold.
+- Let \( T \) represent the number of books the top shelf can hold.
+- Let \( N \) represent the number of bookcases Elly needs.
+- \( M = 10 \) (each middle shelf holds 10 books)
+- \( B = 2M = 2 \times 10 = 20 \) (bottom shelf holds twice as many as a middle shelf)
+- \( T = B - 5 = 20 - 5 = 15 \) (top shelf holds 5 fewer books than the bottom shelf)
+
+### Step 2: Calculate Total Books per Bookcase
+- Total books per bookcase = \( M + B + T \)
+- Substituting the values:
+  \[
+  \text{Total books per bookcase} = 10 + 20 + 15 = 45
+  \]
+
+### Step 3: Calculate Number of Bookcases Needed
+- Elly has 110 books.
+- Number of bookcases needed \( N \) is given by:
+  \[
+  N = \left\lceil \frac{110}{45} \right\rceil
+  \]
+
+### Step 4: Perform Arithmetic Calculation
+- Calculate \( \frac{110}{45} \):
+  \[
+  \frac{110}{45} \approx 2.4444
+  \]
+- Since the number of bookcases must be an integer, we round up to the next whole number:
+  \[
+  N = \left\lceil 2.4444 \right\rceil = 3
+  \]
+
+### Step 5: Verify and Cross-Check
+- Verify the total capacity of 3 bookcases:
+  \[
+  3 \text{ bookcases} \times 45 \text{ books/bookcase} = 135 \text{ books}
+  \]
+- Since 135 books is more than 110 books, 3 bookcases are sufficient.
+
+### Final Answer
+Elly needs 3 bookcases to hold all 110 books.
+
+#### 3"

@@ -1,0 +1,32 @@
+index,prediction,ground_truth,question,truth,issue
+val_555,3,54,When the water is cold Ray swims a mile in 16 minutes. When the water is warm Ray swims a mile in 2 minutes more than twice as long. How much longer does Ray take to swim 3 miles on a hot day than a cold day?,"Cold water mile = <<16=16>>16 minutes
+Warm water mile = 2+2(16)=34 minutes
+3 miles in cold water: 3(16)=<<3*16=48>>48 minutes
+3 miles in warm water: 3(34)=<<3*34=102>>102 minutes
+Ray takes 102-48=<<102-48=54>>54 minutes longer
+#### 54","为了确定 Ray 在 hot 天比 cold 天多花多少时间游 3 米，我们需要遵循以下步骤：
+
+1. 计算 Ray 在 cold 天游 3 米所需的时间。
+2. 计算 Ray 在 warm 天游 3 米所需的时间。
+3. 找出 warm 天和 cold 天之间的时间差。
+
+**步骤 1: 计算 cold 天游 3 米所需的时间。**
+
+Ray 在 cold 水中游 1 米需要 16 分钟。因此，游 3 米需要：
+\[ 3 \times 16 = 48 \text{ 分钟} \]
+
+**步骤 2: 计算 warm 天游 3 米所需的时间。**
+
+Ray 在 warm 水中游 1 米需要 2 分钟 more than twice as long as he swims in cold water。首先，我们计算 twice the cold water time:
+\[ 2 \times 16 = 32 \text{ 分钟} \]
+然后，我们加上 2 分钟：
+\[ 32 + 2 = 34 \text{ 分钟} \]
+因此，Row 在 warm 水中游 1 米需要 34 分钟。因此，游 3 米需要：
+\[ 3 \times 34 = 102 \text{ 分钟} \]
+
+**步骤 3: 找出 warm 天和 cold 天之间的时间差。**
+
+time difference is:
+\[ 102 - 48 = 54 \text{ 分钟} \]
+
+因此，Ray 在 hot 天比 cold 天多花 \(\boxed{54}\) 分钟游 3 米。"

@@ -1,0 +1,47 @@
+index,prediction,ground_truth,question,truth,issue
+val_555,3,54,When the water is cold Ray swims a mile in 16 minutes. When the water is warm Ray swims a mile in 2 minutes more than twice as long. How much longer does Ray take to swim 3 miles on a hot day than a cold day?,"Cold water mile = <<16=16>>16 minutes
+Warm water mile = 2+2(16)=34 minutes
+3 miles in cold water: 3(16)=<<3*16=48>>48 minutes
+3 miles in warm water: 3(34)=<<3*34=102>>102 minutes
+Ray takes 102-48=<<102-48=54>>54 minutes longer
+#### 54","To solve the problem in a Tree-of-Thoughts (TOT) manner, we will construct a logical tree, map all logical relationships and dependencies, and follow a step-by-step reasoning process.
+
+### Step 1: Construct a Logical Tree
+
+1. **Base Entities:**
+   - Ray's swimming time in cold water (cold_time)
+   - Ray's swimming time in warm water (warm_time)
+   - Time difference for 3 miles on a hot day compared to a cold day (time_difference)
+
+2. **Relationships and depends:**
+   - cold_time = 16 minutes
+   - warm_time = 2 minutes more than twice as long as cold_time
+   - time_difference = warm_time for 3 miles - cold_time for 3 miles
+
+### Step 2: Time and Sequential Reasoning
+
+- The problem does not specify the sequence of events, but we need to calculate the time taken for 3 miles on both days.
+
+### Step 3: Quantity and Numerical Relationships
+
+1. **Cold Water Swimming Time:**
+   - cold_time = 16 minutes per mile
+   - For 3 miles: cold_time_for_3_miles = 3 * cold_time = 3 * 16 = 48 minutes
+
+2. **Warm Water Swimming Time:**
+   - warm_time = 2 minutes more than twice as long as cold_time
+   - twice_cold_time = 2 * cold_time = 2 * 16 = 32 minutes
+   - warm_time = 32 + 2 = 34 minutes per mile
+   - For 3 miles: warm_time_for_3_miles = 3 * warm_time = 3 * 34 = 102 minutes
+
+### Step 4: Branching and Conditional logic
+
+- We have two branches: cold water and warm water.
+- We need to calculate the time difference for 3 miles.
+
+### Step 5: valid at and Final Answer
+
+- time_difference = warm_time_for_3_miles - cold_time_for_3_miles
+- time_difference = 102 - 48 = 54 minutes
+
+Thus, Ray takes \(\boxed{54}\) minutes longer to swim 3 miles on a hot day than a cold day."

@@ -1,0 +1,266 @@
+index,prediction,ground_truth,question,truth,issue
+val_579,16,48,Diane gave a number train a starting value of 20. This starting value plus half the number was divided by 5 and the resulting value was multiplied by the starting value minus 12. What was the final value of the number train?,"If Diane gave a number train a starting value of 20, half the number is 1/2*20=<<20-10=10>>10
+The starting value plus half the number is 20+10=<<20+10=30>>30
+This starting value plus half the number was divided by 5, giving a total of 30/5 = <<30/5=6>>6
+The starting value minus 12 is 20-12=<<20-12=8>>8
+The resulting value after dividing by 5 was times by the starting value minus 12, a total of 8*6 = <<8*6=48>>48
+#### 48","Let's break down the problem step by step using the Tree-of-Thoughts (TOT) method.
+
+### 1. Construct a Logical Tree
+
+- **Base Entities and Relationships:**
+  - Starting value (\( S \)) = 20
+  - Half of the starting value: \(\frac{S}{2}\)
+  - Dividing by 5: \(\frac{\frac{S}{2}}{5}\)
+  - Resulting value: \(\frac{\frac{S}{2}}{5}\)
+  - Starting value minus 12: \( S - 12 \)
+  - Final value: \(\left(\frac{\frac{S}{2}}{5}\right) \times (S - 12)\)
+
+### 2. Time and Sequential Reasoning
+
+- The sequence of operations is:
+  1. Calculate half of the starting value.
+  2. Divide the result by 5.
+  3. Subtract 12 from the starting value.
+  4. Multiply the results from steps 2 and 3.
+
+### 3. Quantity and Numerical Relationships
+
+- **Step 1: Calculate Half of the Starting Value**
+  - \(\frac{S}{2} = \frac{20}{2} = 10\)
+
+- **Step 2: Divide by 5**
+  - \(\frac{10}{5} = 2\)
+
+- **Step 3: Subtract 12 from the Starting Value**
+  - \(20 - 12 = 8\)
+
+- **Step 4: Multiply the Results**
+  - \(2 \times 8 = 16\)
+
+### 4. Branching and Conditional Logic
+
+- In this problem, there is no conditional logic or branching. We follow a straightforward sequence of arithmetic operations.
+
+### 5. Final Answer Extraction
+
+- The final value of the number train is \(16\).
+
+FINAL ANSWER: 16"
+val_583,30,129200,"Juan asked his neighbor, Herb, how much his house was worth. Herb answered that he paid $76,000 for the house. If Juan's house is 30% less expensive than Herb's, calculate the value of the two houses combined.","Juan's house is 30% less expensive than Herb's house, meaning Juan's house is 30/100*$76000= $<<30/100*76000=22800>>22800 less expensive than Herb's house.
+Juan's house is worth $76000-$22800 = $<<76000-22800=53200>>53200
+The combined total value of Juan's and Herb's house is $76000+$53200 = $<<76000+53200=129200>>129200
+#### 129200","### Step 1: Construct a Logical Tree
+
+- **Base Entities:**
+  - Herb's house price: $76,000
+  - Juan's house is 30% less expensive than Herb's
+
+- **Intermediate Calculations:**
+  - Calculate the price of Juan's house based on Herb's house price and the 30% discount.
+  - Calculate the combined value of both houses.
+
+### Step 2: Time and Sequential Reasoning
+
+- **Time Reference Points:**
+  - The price of Herb's house is given as $76,000.
+  - The calculation for Juan's house value is based on this current price.
+
+- **Sequence of Events:**
+  - First, calculate Juan's house price.
+  - Then, sum the values of both houses.
+
+### Step 3: Quantity and Numerical Relationships
+
+- **Calculations:**
+  - Herb's house price = $76,000
+  - Juan's house price = Herb's house price - 30% of Herb's house price
+  - Combined value of both houses = Herb's house price + Juan's house price
+
+### Step 4: Branching and Conditional Logic
+
+- **Branch 1: Calculate Juan's House Price**
+  - Juan's house price = $76,000 - 0.30 * $76,000
+  - Juan's house price = $76,000 - $22,800
+  - Juan's house price = $53,200
+
+- **Branch 2: Calculate Combined Value of Both Houses**
+  - Combined value = Herb's house price + Juan's house price
+  - Combined value = $76,000 + $53,200
+  - Combined value = $129,200
+
+### Step 5: Final Answer Extraction
+
+- **Final Answer:**
+  FINAL ANSWER: $129,200
+### Step 1: Construct a Logical Tree
+
+- **Base Entities:**
+  - Herb's house price: $76,000
+  - Juan's house is 30% less expensive than Herb's
+
+- **Intermediate Calculations:**
+  - Calculate the price of Juan's house based on Herb's house price and the 30% discount.
+  - Calculate the combined value of both houses.
+
+### Step 2: Time and Sequential Reasoning
+
+- **Time Reference Points:**
+  - The price of Herb's house is given as $76,000.
+  - The calculation for Juan's house value is based on this current price.
+  - Both calculations occur at the present time.
+
+- **Sequence of Events:**
+  - First, calculate Juan's house price.
+  - Then, sum the values of both houses.
+
+### Step 3: Quantity and Numerical Relationships
+
+- **Calculations:**
+  - Herb's house price = $76,000
+  - Juan's house price = Herb's house price - 30% of Herb's house price
+  - Combined value of both houses = Herb's house price + Juan's house price
+
+### Step 4: Branching and Conditional Logic
+
+- **Branch 1: Calculate Juan's House Price**
+  - Juan's house price = $76,000 - 0.30 * $76,000
+  - Juan's house price = $76,000 - $22,800
+  - Juan's house price = $53,200
+
+- **Branch 2: Calculate Combined Value of Both Houses**
+  - Combined value = Herb's house price + Juan's house price
+  - Combined value = $76,000 + $53,200
+  - Combined value = $129,200
+
+### Step 5: Final Answer Extraction
+
+- **Final Answer:**
+  FINAL ANSWER: $129,200
+
+This final answer is derived by first calculating Juan's house price by applying a 30% discount to Herb's house price and then summing the values of both houses."
+val_783,19,54,"Chase and Rider can ride their bikes thrice a day for 5 days; but on two other days, they ride twice the times they do on usual days. How many times do they ride their bikes a week?","Each person rides his bike 3 x 5 = <<3*5=15>>15 times for 5 days.
+Together, they ride 15+15 = <<15+15=30>>30 times for five days.
+Each person rides his bike 3 x 2 = <<3*2=6>>6 times for every day of the other two days.
+This means each person rides 6*2 = <<6*2=12>>12 times on each day of the other two days.
+The total for the other two days is 12+12 = <<12+12=24>>24
+For the whole week the together ride 24+30 = <<24+30=54>>54 times
+#### 54","Let's approach this problem step-by-step using the Tree-of-Thoughts (TOT) method.
+
+### Step 1: Construct a Logical Tree
+
+- **Base Entities:**
+  - Chase and Rider (the bike riders)
+  - Days of the week (7 days)
+  - Number of rides per day (thrice a day for 5 days, twice a day for 2 days)
+
+- **Relationships and Calculations:**
+  - Total number of rides on usual days (5 days)
+  - Total number of rides on special days (2 days)
+  - Total number of rides for the week
+
+### Step 2: Time and Sequential Reasoning
+
+- **Temporal Reference Points:**
+  - 5 days: Usual riding days
+  - 2 days: Special riding days
+
+### Step 3: Quantity and Numerical Relationships
+
+- **Usual Riding Days (5 days):**
+  - Number of rides per day: 3
+  - Total rides for 5 days: \( 5 \times 3 \)
+
+- **Special Riding Days (2 days):**
+  - Number of rides per day: 2 (twice the usual riding time)
+  - Total rides for 2 days: \( 2 \times 2 \)
+
+### Step 4: Branching and Conditional Logic
+
+- **Branch 1 (Usual Days Calculation):**
+  - Total rides for 5 usual days: 
+    \[
+    5 \times 3 = 15
+    \]
+
+- **Branch 2 (Special Days Calculation):**
+  - Total rides for 2 special days:
+    \[
+    2 \times 2 = 4
+    \]
+
+- **Branch 3 (Total Weekly Calculation):**
+  - Sum of total rides from usual and special days:
+    \[
+    15 + 4 = 19
+    \]
+
+### Step 5: Final Answer Extraction
+
+- **Final Answer:**
+    FINAL ANSWER: 19
+### Step 1: Construct a Logical Tree
+
+- **Base Entities:**
+  - Chase and Rider (the bike riders)
+  - Days of the week (7 days)
+  - Number of rides per day (thrice a day for 5 days, twice a day for 2 days)
+
+- **Relationships and Calculations:**
+  - Total number of rides on usual days (5 days)
+  - Total number of rides on special days (2 days)
+  - Total number of rides for the week
+
+### Step 2: Time and Sequential Reasoning
+
+- **Temporal Reference Points:**
+  - 5 days: Usual riding days
+  - 2 days: Special riding days
+
+### Step 3: Quantity and Numerical Relationships
+
+- **Usual Riding Days (5 days):**
+  - Number of rides per day: 3
+  - Total rides for 5 days: \( 5 \times 3 \)
+
+- **Special Riding Days (2 days):**
+  - Number of rides per day: 2 (twice the usual riding time)
+  - Total rides for 2 days: \( 2 \times 2 \)
+
+### Step 4: Branching and Conditional Logic
+
+- **Branch 1 (Usual Days Calculation):**
+  - Total rides for 5 usual days:
+    \[
+    5 \times 3 = 15
+    \]
+
+- **Branch 2 (Special Days Calculation):**
+  - Total rides for 2 special days:
+    \[
+    2 \times 2 = 4
+    \]
+
+- **Branch 3 (Total Weekly Calculation):**
+  - Sum of total rides from usual and special days:
+    \[
+    15 + 4 = 19
+    \]
+
+### Step 5: Final Answer Extraction
+
+- **Final Answer:**
+    FINAL ANSWER: 19
+
+### Additional Branches for Clarity
+
+- **Branch 4 (Verification):**
+  - Verify the total number of days: \(5 + 2 = 7\)
+  - Verify the total number of rides: \(15 + 4 = 19\)
+
+- **Branch 5 (Intermediate Calculations):**
+  - \(15\) (usual rides)
+  - \(4\) (special rides)
+  - \(19\) (total weekly rides)
+
+The final answer is clearly reflected in the calculations, and all steps are well-documented."

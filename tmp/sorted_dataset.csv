@@ -1,0 +1,12 @@
+question_id,question,solution,answer
+val_447,"Rozanne is making eggnog for her family. She uses 4 dozen eggs that were in cases and another 2 eggs that were loose in the cupboard. She puts out trays that each hold 5 glasses of eggnog. If each glass needs 5 eggs, how many trays can Rozanne put out?","As a dozen is equivalent to 12 eggs, Rozanne has 4 dozen eggs * 12 = <<4*12=48>>48 eggs in cases.
+She therefore has a total of 48 eggs in cases + 2 loose eggs = <<48+2=50>>50 eggs.
+So she can make 50 eggs / 5 eggs per glass of eggnog = <<50/5=10>>10 glasses of eggnog.
+This means she can put out 10 glasses of eggnog / 5 glasses per tray = <<10/5=2>>2 trays.
+#### 2",2
+val_846,"There are 20 students in Miss Susan's class. 5 of them are good at math only, 8 of them perform well in English only, and the rest are good at both math and English. How many are good at math?","The number of students who are good at math includes those who are only good at math and those who are good at both math and English. The only group that isn't included is the students who are only good at English.
+There are 20 - 8 = <<20-8=12>>12 students who are good at math.
+#### 12",12
+val_864,"Gretchen has some coins. There are 30 more gold coins than silver coins. If she had 70 gold coins, how many coins did Gretchen have in total?","Gretchen has 70-30=<<70-30=40>>40 silver coins.
+She has 70+40=<<70+40=110>>110 coins.
+#### 110",110

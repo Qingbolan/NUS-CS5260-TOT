@@ -1,0 +1,178 @@
+index,prediction,ground_truth,question,truth,issue
+val_94,37.8,36,"Lee used to be able to run the 400-meter hurdles two seconds faster than Gerald would run the 400-meter hurdles.  But Gerald changed his diet, which improved his speed by 10%.  If Lee runs the 400-meter hurdles in 38 seconds, how fast can Gerald, with his improved diet, run the 400-meter hurdles, in seconds?","If Lee runs the 400-meter hurdles in 38 seconds, which was two seconds faster than Gerald used to run the 400-meter hurdles, then Gerald initially would run the 400-meter hurdles in 38+2=<<38+2=40>>40 seconds.
+10% of 40 seconds is 40*0.1=<<40*0.1=4>>4 seconds.
+The improved diet reduced Gerald's race time to 40-4=<<40-4=36>>36 seconds.
+#### 36","Let's break down the problem into a TOT structure to ensure all logical steps are covered.
+
+### Logical Tree
+
+1. **Base Entities:**
+   - Lee's current time: 38 seconds
+   - Gerald's original time: \(G\) seconds
+   - Gerald's improved time: \(G_{improved}\) seconds
+
+2. **Relationships and Dependencies:**
+   - Lee used to be 2 seconds faster than Gerald: \(Lee_{old} = G - 2\)
+   - Gerald's new speed is 10% faster: \(G_{improved} = 0.9 \times G\)
+   - Lee's current time: \(Lee_{current} = 38\) seconds
+
+### Branches of Thought
+
+#### Branch 1: Determine Gerald's Original Time
+- **Step 1:** Calculate Gerald's original time using the relation \(Lee_{old} = G - 2\).
+- **Step 2:** Use the fact that \(Lee_{old} = 38 + 2 = 40\) seconds.
+- **Step 3:** Therefore, \(G = 40 + 2 = 42\) seconds.
+
+#### Branch 2: Calculate Gerald's Improved Time
+- **Step 1:** Use the improved speed relationship \(G_{improved} = 0.9 \times G\).
+- **Step 2:** Substitute \(G = 42\) seconds into the equation: \(G_{improved} = 0.9 \times 42\).
+- **Step 3:** Calculate \(G_{improved} = 37.8\) seconds.
+
+### Time and Sequential Reasoning
+- **Timeline:**
+  - Time at which Gerald's speed was not improved: \(t_0\)
+  - Time at which Gerald's speed was improved: \(t_1\)
+
+### Quantity and Numerical Relationships
+- **Calculation:**
+  - \(G = 42\) seconds (Gerald's original time)
+  - \(G_{improved} = 0.9 \times 42 = 37.8\) seconds
+
+### Branching and Conditional Logic
+- **Branch 1:** Verify the original time calculation.
+- **Branch 2:** Verify the improved time calculation.
+
+### Validation and Final Answer
+- **Validation:**
+  - Lee's original time was 40 seconds, which is 2 seconds faster than Gerald's 42 seconds.
+  - With a 10% improvement, Gerald's new time is 37.8 seconds.
+
+#### Final Answer:
+Gerald, with his improved diet, can run the 400-meter hurdles in 37.8 seconds.
+
+\(\boxed{37.8 \text{ seconds}}\)"
+val_1002,20,2,"Jordan wanted to surprise her mom with a homemade birthday cake.  From reading the instructions, she knew it would take 20 minutes to make the cake batter and 30 minutes to bake the cake.  The cake would require 2 hours to cool and an additional 10 minutes to frost the cake.  If she plans to make the cake all on the same day, what is the latest time of day that Jordan can start making the cake to be ready to serve it at 5:00 pm?","1 hour is 60 minutes so we know that 2 hours to cool the cake is the same as 2*60 so <<2*60=120>>120 min
+It will take Jordan 20 min to make the batter, 30 to bake, 120 to cool and 10 to frost so the cake will take 20 +30 +120 +10 = <<20+30+120+10=180>>180 minutes total
+Jordan needs to convert 180 minutes to hours so 180/60 = <<180/60=3>>3 hours
+If the cake needs to be finished by 5:00 pm and it will take 3 hours total to make then 5-3 = <<5-3=2>>2:00 pm is the latest she can start making the cake
+#### 2","Let's construct a logical tree and explore the different reasoning branches for this problem.
+
+### Logical Tree Construction
+
+1. **Base Entities and Relationships:**
+   - **Entity 1:** Jordan
+   - **Entity 2:** Time required to make and bake the cake
+   - **Entity 3:** Cooling and frosting time
+   - **Entity 4:** Desired completion time: 5:00 pm
+
+2. **Relationships and Dependencies:**
+   - **Relationship 1:** Total time required to make the cake = 20 minutes (baking) + 30 minutes (cooling and frosting) + 2 hours (cooling) + 10 minutes (frosting)
+   - **Relationship 2:** Jordan needs to finish the cake by 5:00 pm
+   - **Relationship 3:** Cooling and frosting need to be done sequentially after baking
+
+3. **Time and Sequential Reasoning:**
+   - Event A: Start making the cake
+   - Event B: Cake is baked
+   - Event C: Cake cools (2 hours)
+   - Event D: Cake is frosted
+   - Event E: Cake is ready
+
+### Branching and Conditional Logic
+
+#### Branch 1: Direct Calculation
+- **Step 1:** Calculate the total time required to make the cake.
+  - Baking: 30 minutes
+  - Cooling: 2 hours = 120 minutes
+  - Frosting: 10 minutes
+  - Total time = 30 + 120 + 10 = 160 minutes
+
+- **Step 2:** Convert the total time into hours and minutes.
+  - 160 minutes = 2 hours and 40 minutes
+
+- **Step 3:** Determine the latest time Jordan can start.
+  - Desired completion time: 5:00 pm
+  - Subtract the total time required from the desired completion time.
+  - 5:00 pm - 2 hours 40 minutes = 2:20 pm
+
+- **Step 4:** Verify the calculation.
+  - If she starts at 2:20 pm, she will finish at:
+    - 2:20 pm + 30 minutes (baking) = 3:50 pm
+    - 3:50 pm + 2 hours (cooling) = 5:50 pm (not possible, so we need to adjust)
+
+#### Branch 2: Considering the Cooling Time
+- **Step 1:** Start with the desired completion time.
+  - 5:00 pm
+
+- **Step 2:** Subtract the cooling time (2 hours).
+  - 5:00 pm - 2 hours = 3:00 pm
+
+- **Step 3:** Subtract the baking time (30 minutes).
+  - 3:00 pm - 30 minutes = 2:30 pm
+
+- **Step 4:** Subtract the frosting time (10 minutes).
+  - 2:30 pm - 10 minutes = 2:20 pm
+
+- **Step 5:** Verify the calculation.
+  - If she starts at 2:20 pm, she will have:
+    - 2:20 pm + 30 minutes (baking) = 3:50 pm
+    - 3:50 pm + 2 hours (cooling) = 5:50 pm (still not possible, so we need to adjust)
+
+#### Branch 3: Adjusting for Practical Constraints
+- **Step 1:** Consider practical constraints (e.g., not starting too late in the day).
+- **Step 2:** Adjust the start time to ensure the cake is ready by 5:00 pm.
+- **Step 3:** Start at 2:20 pm and adjust based on practical constraints.
+
+### Final Answer
+After evaluating all branches and ensuring the time constraints are met, the latest time Jordan can start making the cake is **2:20 pm**.
+
+#### Final Answer: 2:20 pm"
+val_1126,10,90,John packs M&M in small bags to eat.  He buys 3 large bags weighing 10 ounces each.  If an ounce of M&M has 30 M&M in it how many small bags can he make if he puts 10 in each small bag?,"He bought 3*10=<<3*10=30>>30 ounces of M&M
+That means he got 30*30=<<30*30=900>>900 M&Ms
+So he can make 900/10=<<900/10=90>>90 bags
+#### 90","Let's construct the Logical Tree and explore the different branches for the given problem.
+
+### Logical Tree Construction
+
+1. **Base Entities:**
+   - John
+   - Large bags of M&M (3 bags, each 10 ounces)
+   - Small bags (10 M&M per bag)
+   - M&M per ounce (30 M&M per ounce)
+
+2. **Relationships and Dependencies:**
+   - Total ounces of M&M = 3 bags * 10 ounces/bag
+   - Total M&M = Total ounces * 30 M&M/ounce
+   - Number of small bags = Total M&M / 10 M&M per small bag
+
+### Branching and Conditional Logic
+
+#### Branch 1: Direct Calculation of Total Ounces and M&M
+1. **Calculate total ounces of M&M:**
+   - Total ounces = 3 bags * 10 ounces/bag = 30 ounces
+
+2. **Calculate total M&M:**
+   - Total M&M = 30 ounces * 30 M&M/ounce = 900 M&M
+
+3. **Calculate number of small bags:**
+   - Number of small bags = 900 M&M / 10 M&M per small bag = 90 small bags
+
+#### Branch 2: Validation and Reverse Verification
+1. **Reverse Verification:**
+   - If John makes 90 small bags, each containing 10 M&M:
+     - Total M&M = 90 small bags * 10 M&M per small bag = 900 M&M
+   - Check if this is consistent with the total ounces:
+     - Ounces from 900 M&M = 900 M&M / 30 M&M/ounce = 30 ounces
+
+#### Branch 3: Consideration of Different Small Bag Sizes
+1. **Explore if different small bag sizes are mentioned:**
+   - If the question stated different small bag sizes, we would repeat the calculation for each size.
+   - For example, if each small bag held 15 M&M:
+     - Number of small bags = 900 M&M / 15 M&M per small bag = 60 small bags
+
+### Final Answer
+
+After exploring all branches and validating the calculations, the final answer is:
+
+#### 90 small bags
+
+This is the number of small bags John can make if he puts 10 M&M in each small bag."

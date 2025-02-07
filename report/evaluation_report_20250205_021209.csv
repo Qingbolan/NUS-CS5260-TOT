@@ -1,0 +1,54 @@
+index,prediction,ground_truth,question,truth,issue
+val_210,200,145,Twenty dozen cups cost $1200 less than the total cost of half a dozen plates sold at $6000 each. Calculate the total cost of buying each cup.,"Since a dozen has 12 items, half a dozen plates are 12/2 = <<6=6>>6
+Half a dozen plates sold at $6000 each cost 6*$6000 = $<<6*6000=36000>>36000
+Twenty dozen cups cost $1200 less than the total cost of half a dozen plates, meaning the twenty dozen cups cost a total of $36000-$1200 = 34800
+Since a dozen has 12 items, twenty dozen cups are 20*12 = <<20*12=240>>240 cups.
+If the twenty dozen cups cost $34800, each cup costs $34800/240=$<<34800/240=145>>145
+#### 145","### 候选方案1：直接计算杯子的价格
+**思路：**
+1. **理解题意：**
+   - 24个杯子（2打）的成本比36个盘子（半打）的成本少1200元。
+   - 一个盘子的成本是6000元，所以半打盘子（18个盘子）的成本是6000元。
+2. **计算半打盘子的成本：**
+   - 1个盘子的成本 = $6000
+   - 半打盘子的成本 = $6000
+3. **计算24个杯子的成本：**
+   - 24个杯子的成本 = 半打盘子的成本 - 1200元
+   - 24个杯子的成本 = $6000 - $1200 = $4800
+4. **计算每个杯子的成本：**
+   - 每个杯子的成本 = 24个杯子的成本 / 24
+   - 每个杯子的成本 = $4800 / 24 = $200
+
+**最终答案：**
+FINAL ANSWER: 200
+
+### 候选方案2：代数方程求解
+**思路：**
+1. **定义变量：**
+   - 设每个杯子的价格为 \( x \) 元。
+2. **建立等式：**
+   - 24个杯子的成本 = 24x。
+   - 18个盘子的成本 = $6000。
+   - 根据题意，24个杯子的成本比18个盘子的成本少1200元。
+   - 因此，24x = 6000 - 1200。
+3. **求解方程：**
+   - 24x = 4800
+   - x = 4800 / 24
+   - x = 200
+
+**最终答案：**
+FINAL ANSWER: 200
+
+### 候选方案3：比例关系求解
+**思路：**
+1. **理解题意：**
+   - 24个杯子的成本比18个盘子的成本少1200元。
+   - 18个盘子的成本是6000元。
+2. **计算成本差：**
+   - 24个杯子的成本 = 6000 - 1200 = 4800元。
+3. **计算每个杯子的成本：**
+   - 每个杯子的成本 = 4800 / 24
+   - 每个杯子的成本 = 200元
+
+**最终答案：**
+FINAL ANSWER: 200"

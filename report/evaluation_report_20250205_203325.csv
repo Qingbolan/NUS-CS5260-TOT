@@ -1,0 +1,91 @@
+index,prediction,ground_truth,question,truth,issue
+val_299,400,500,"Carmen goes to an auction to win an antique desk. She accepts the opening bid of $200 and continues bidding until she wins. The bids on the desk rise by $50 each time and 3 other people each bid once. Carmen bids after each of the 3 other people and eventually wins. How much money, in dollars, does the desk cost her?","3 other people are bidding on the desk so there are 3 bids * $50 per bid = $<<3*50=150>>150 added to the cost of the desk by other people.
+Carmen also has to bid against each person, so she also adds 3 bids * $50 per bid = $<<3*50=150>>150 to the overall cost.
+So in these bids, there has been a total of $150 + $150 = $<<150+150=300>>300 added to the initial cost of the desk.
+The desk therefore costs $200 opening bid + $300 added cost = $<<200+300=500>>500.
+#### 500","Let's break down the problem step-by-step and calculate the final cost of the antique desk that Carmen bids for.
+
+1. **Understanding the Problem:**
+   - The auction starts with an opening bid of $200.
+   - Each bid rises by $50.
+   - There are 3 other bidders, and Carmen bids after each of them.
+   - Carmen is the last to bid and wins the auction.
+
+2. **Calculating the Bids:**
+   - The first bid is $200.
+   - The second bid (by the first other bidder) is $200 + $50 = $250.
+   - The third bid (by the second other bidder) is $250 + $50 = $300.
+   - The fourth bid (by the third other bidder) is $300 + $50 = $350.
+   - Carmen's bid is $350 + $50 = $400.
+
+3. **Step-by-Step Calculation:**
+   - Start with the opening bid: $200.
+   - First other bidder: $200 + $50 = $250.
+   - Second other bidder: $250 + $50 = $300.
+   - Third other bidder: $300 + $50 = $350.
+   - Carmen's final bid: $350 + $50 = $400.
+
+4. **Arithmetic Check:**
+   - Bid 1: $200.
+   - Bid 2: $250.
+   - Bid 3: $300.
+   - Bid 4: $350.
+   - Carmen's bid: $400.
+
+Each calculation is consistent with the given increments.
+
+5. **Final Answer:**
+   - The total cost of the antique desk that Carmen wins is when she makes her final bid of $400.
+   
+   FINAL ANSWER: 400"
+val_440,7,17,"Wayne and Bernadette are movie stars heading to the premiere of their latest film. Bernadette wants to arrive 5 minutes before Wayne. Wayne is staying at a hotel close to the premiere theater, and Bernadette is staying at her high-rise apartment in the same city. The drive from Bernadette’s apartment takes four times as long as the drive from Wayne’s hotel. If it takes Wayne four minutes to be driven to the theater, how much earlier should Bernadette leave than Wayne to get to the theater first?","Bernadette takes 4 * 4 = <<4*4=16>>16 minutes to get to the theater.
+Her ride takes 16 - 4 = <<16-4=12>>12 minutes longer than Wayne’s to get to the theater.
+Thus, she should leave 12 + 5 = <<12+5=17>>17 minutes before Wayne to get to the theater 5 minutes sooner than he does.
+#### 17","### Understanding the Problem
+The problem involves determining how much earlier Bernadette should leave than Wayne to arrive at the theater first, given that it takes Bernadette four times as long to drive to the theater as it does Wayne. It is stated that Wayne's drive takes 4 minutes.
+
+### Step-by-Step Solution
+1. **Determine Wayne's travel time:**
+   - Wayne’s travel time = 4 minutes.
+
+2. **Calculate Bernadette’s travel time:**
+   - Bernadette’s travel time = 4 times Wayne’s travel time.
+   - Bernadette’s travel time = 4 * 4 = 16 minutes.
+
+3. **Determine the time difference needed for Bernadette to arrive 5 minutes before Wayne:**
+   - Bernadette needs to arrive 5 minutes before Wayne.
+   - To achieve this, Bernadette needs to start her journey 16 - 4 - 5 = 7 minutes earlier than Wayne.
+
+### Checking Consistency
+- Wayne's travel time: 4 minutes.
+- Bernadette's travel time: 16 minutes.
+- Difference in travel times: 16 - 4 = 12 minutes.
+- Additional time for Bernadette to arrive 5 minutes early: 12 - 5 = 7 minutes.
+
+### Final Answer
+The calculations and steps are consistent, and Bernadette needs to leave 7 minutes earlier than Wayne.
+
+FINAL ANSWER: 7"
+val_455,240,150,Marin and his neighbor Nancy each eat 4 apples a day. How many apples do they eat in 30 days?,"In one day, Marin and Nancy eat 4 + 1 = <<4+1=5>>5 apples.
+In 30 days, they eat 30 * 5 = <<30*5=150>>150 apples.
+#### 150","### Understanding the Problem
+The problem asks how many apples Marin and Nancy consume in 30 days, given that each of them eats 4 apples per day. There are no additional complexities or phases to consider.
+
+### Step-by-Step Solution
+1. **Daily Consumption:**
+   - Marin eats 4 apples a day.
+   - Nancy eats 4 apples a day.
+   - Combined daily consumption = 4 (Marin) + 4 (Nancy) = 8 apples per day.
+
+2. **Total Consumption Over 30 Days:**
+   - Total apples consumed in 30 days = Daily consumption * Number of days.
+   - Total apples = 8 apples/day * 30 days = 240 apples.
+
+### Arithmetic Check
+- Daily consumption: 4 (Marin) + 4 (Nancy) = 8.
+- Total for 30 days: 8 * 30 = 240.
+
+### Final Answer
+The calculations are consistent and correct.
+
+FINAL ANSWER: 240"

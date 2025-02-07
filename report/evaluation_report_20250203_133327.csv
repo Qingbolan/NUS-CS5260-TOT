@@ -1,0 +1,181 @@
+index,prediction,ground_truth,question,truth,issue
+val_699,960.00,720,"Greta’s paycheck is $2400.00. She puts 50% of her pay into her retirement account. She then uses 20% of her paycheck to make her monthly car payment. After funding her retirement and paying for her car, how much money does she have left to spend?","Her paycheck is $2400.00 and she puts 50% into her retirement so that’s 2400*.50 = $<<2400*.50=1200.00>>1200.00
+Her paycheck is $2400.00 and she puts $1200 into retirement so that leaves 2400-1200 = $<<2400-1200=1200.00>>1200.00
+Her car payment is 20% of 2400 so her car payment is .20*2400 = $<<20*.01*2400=480.00>>480.00
+She had $1200 left and she uses $480.00 to make her car payment which leaves her with 1200-480 = $<<1200-480=720.00>>720.00 remaining for spending
+#### 720","PDDL: (info (quantity X) (unit dollars) (relationship part/whole))
+
+To solve this problem, we need to calculate how much Greta has left after funding her retirement and paying for her car. We will break down the problem into steps and use the relevant PDDL notation.
+
+### Step 1: Calculate the amount put into the retirement account
+Greta puts 50% of her $2400.00 paycheck into her retirement account.
+
+PDDL: (info (quantity X) (unit dollars) (relationship part/whole))
+
+Before: $2400.00
+
+After Event 1 (retirement contribution):
+\[ \text{Retirement contribution} = 0.50 \times 2400 = 1200 \]
+\[ \text{Remaining after retirement} = 2400 - 1200 = 1200 \]
+
+### Step 2: Calculate the amount used for the car payment
+Greta uses 20% of her paycheck to make her monthly car payment.
+
+Before: $1200.00
+
+After Event 2 (car payment):
+\[ \text{Car payment} = 0.20 \times 1200 = 240 \]
+\[ \text{Remaining after car payment} = 1200 - 240 = 960 \]
+
+### Step 3: Calculate the amount left to spend
+After funding her retirement and paying for her car, Greta has $960.00 left to spend.
+
+#### Verification
+- Initial paycheck: $2400.00
+- Retirement contribution: $1200.00
+- Car payment: $240.00
+- Remaining: $960.00
+
+Total remaining = $2400.00 - $1200.00 - $240.00 = $960.00
+
+#### Answer
+Greta has $960.00 left to spend.
+#### 960.00"
+val_769,600,675,"In one hour, Ezra read twice as many books as Ahmed. Ezra has read 300 books this hour and decided to read 150 more. How many books have they read altogether?","If Ezra has read 300 books this hour and decided to read 150 more in the next hour, he has read a total of 300+150=<<300+150=450>>450
+Since Ezra reads twice as many books as Ahmed, Ahmed has read 450/2=<<450/2=225>>225 books.
+Together, Ahmed and Ezra has read 225+450=<<225+450=675>>675 books
+#### 675","PDDL: (info (quantity X) (unit books) (relationship part/whole))
+
+### Problem Type Identification and Setup:
+This problem involves tracking the number of books read by Ezra and Ahmed. We will use the (info (quantity X) (unit books) (relationship part/whole)) notation.
+
+### Calculation Process:
+1. **Determine how many books Ahmed read.**
+   - Ezra read 300 books in one hour.
+   - Ezra read twice as many books as Ahmed.
+   - Let \( A \) be the number of books Ahmed read.
+   - Therefore, \( 2A = 300 \).
+
+2. **Calculate the number of books Ahmed read.**
+   - \( A = \frac{300}{2} \).
+   - <<2A = 300 >>, so <<A = 150>>.
+
+3. **Calculate the total number of books read by both Ezra and Ahmed.**
+   - Ezra read 300 books.
+   - Ahmed read 150 books.
+   - Total books read = 300 + 150 = 450.
+
+4. **Add the additional books Ezra decided to read.**
+   - Ezra decided to read 150 more books.
+   - New total = 450 + 150 = 600.
+
+### Answer Format:
+They have read a total of 600 books.
+
+#### 600"
+val_791,12,108,"At the trip to the county-level scavenger hunt competition, 90 people were required to split into groups for the competition to begin. To break people up into smaller groups with different leaders, 9-person groups were formed. If 3/5 of the number of groups each had members bring back 2 seashells each, how many seashells did they bring?","Since the total number of people at the competition was 90, they formed 90/9=<<90/9=10>>10 groups after splitting into 9-person groups.
+If 3/5 of the number of groups each had members bringing back 2 seashells each, then 3/5*10=<<3/5*10=6>>6 groups had members bringing back 2 seashells.
+Since each group had 9 people, the number of people in the 6 groups, who found 2 seashells each, was 6*9= <<6*9=54>>54.
+The total number of seashells the 54 people brought is 54*2=<<54*2=108>>108 seashells.
+#### 108","### Problem Type Identification and Setup:
+This problem involves calculating the number of seashells brought back by a portion of the groups formed. It primarily deals with probability and the relationship between groups, members, and the items they bring back. Therefore, the appropriate PDDL notation is:
+```
+(info (quantity X) (unit items) (relationship part/whole))
+```
+
+### Step 1: Break Down the Problem
+
+1. **Total Participants:** 90 people
+2. **Group Size:** 9 people
+3. **Fraction of Groups Bringing Seashells:** 3/5
+4. **Seashells per Group:** 2 seashells
+
+### Step 2: Calculate the Number of Groups
+
+First, we need to determine the total number of groups formed:
+```
+Total Participants / Group Size = Number of Groups
+90 / 9 = 10 groups
+```
+
+### Step 3: Determine the Number of Groups Bringing Seashells
+
+Next, we calculate the number of groups that bring back seashells:
+```
+Fraction of Groups Bringing Seashells * Total Groups = Number of Groups Bringing Seashells
+(3/5) * 10 = 6 groups
+```
+
+### Step 4: Calculate the Total Number of Seashells
+
+Finally, we calculate the total number of seashells brought back by the groups that bring seashells:
+```
+Number of Groups Bringing Seashells * Seashells per Group = Total Seashells
+6 * 2 = 12 seashells
+```
+
+### Verification and Unit Check:
+- We verified that the fraction of groups (3/5) is applied to the total number of groups (10).
+- We calculated the total seashells by multiplying the number of groups bringing seashells (6) by the number of seashells each group brings (2).
+- The units are consistent, and the result is in the required unit (seashells).
+
+### Answer:
+12 seashells
+#### 12"
+val_1049,9860.78,7400,Ben bought a car for $20000 in 2007. The price of the car depreciates at a constant rate of 21% per year. Find the price of the car in the year 2010.,"The price of the car depreciates of 20000 * 21% = $<<20000*21*.01=4200>>4200 per year.
+Ben had the car for 2010 - 2007 = <<2010-2007=3>>3 years.
+The price of the car depreciates 4200 * 3 = $<<4200*3=12600>>12600 from 2007 to 2010.
+So the price of the car in the year 2010 is $20000 - $12600 = $<<20000-12600=7400>>7400.
+#### 7400","PDDL: (info (quantity X) (unit dollars) (relationship rate))
+
+This problem involves depreciation over time, which is a type of **probability** problem where we need to calculate the value of an item (the car) after a certain period given a constant depreciation rate. We will use the formula for exponential decay to find the price of the car in 2010.
+
+### Step-by-Step Solution:
+
+1. **Identify the initial value and the depreciation rate**:
+   - Initial value (V0) = $20,000
+   - Depreciation rate (r) = 21% per year
+
+2. **Calculate the number of years between 2007 and 2010**:
+   - Number of years (t) = 2010 - 2007 = 3 years
+
+3. **Use the exponential decay formula**:
+   \[
+   V(t) = V_0 \times (1 - r)^t
+   \]
+
+4. **Substitute the values into the formula**:
+   \[
+   V(3) = 20000 \times (1 - 0.21)^3
+   \]
+
+5. **Calculate the expression inside the parentheses**:
+   \[
+   1 - 0.21 = 0.79
+   \]
+
+6. **Raise 0.79 to the power of 3**:
+   \[
+   0.79^3 = 0.79 \times 0.79 \times 0.79 = 0.493039
+   \]
+
+7. **Multiply by the initial value**:
+   \[
+   V(3) = 20000 \times 0.493039 = 9860.78
+   \]
+
+8. **Round to the nearest cent**:
+   \[
+   V(3) \approx 9860.78
+   \]
+
+### Verification:
+
+- We can verify by calculating the depreciation step-by-step for each year:
+  - After 1st year: \(20000 \times 0.79 = 15800\)
+  - After 2nd year: \(15800 \times 0.79 = 12582\)
+  - After 3rd year: \(12582 \times 0.79 = 9860.78\)
+
+All calculations match, and the units are consistent (dollars).
+
+#### 9860.78"

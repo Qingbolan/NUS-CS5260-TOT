@@ -1,0 +1,147 @@
+index,prediction,ground_truth,question,truth,issue
+val_440,15,17,"Wayne and Bernadette are movie stars heading to the premiere of their latest film. Bernadette wants to arrive 5 minutes before Wayne. Wayne is staying at a hotel close to the premiere theater, and Bernadette is staying at her high-rise apartment in the same city. The drive from Bernadette’s apartment takes four times as long as the drive from Wayne’s hotel. If it takes Wayne four minutes to be driven to the theater, how much earlier should Bernadette leave than Wayne to get to the theater first?","Bernadette takes 4 * 4 = <<4*4=16>>16 minutes to get to the theater.
+Her ride takes 16 - 4 = <<16-4=12>>12 minutes longer than Wayne’s to get to the theater.
+Thus, she should leave 12 + 5 = <<12+5=17>>17 minutes before Wayne to get to the theater 5 minutes sooner than he does.
+#### 17","Let's break down the problem step by step and validate each calculation.
+
+### Step 1: Identify the drives' durations
+- Wayne's drive time: 4 minutes
+- Bernadette's drive time is four times Wayne's drive time.
+
+PDDL: (info (quantity 4) (unit minutes) (relationship drive-time-Wayne))
+PDDL: (info (quantity 16) (unit minutes) (relationship 4 × drive-time-Wayne = drive-time-Bernadette))
+
+### Step 2: Determine the total time Bernadette needs to arrive 5 minutes before Wayne
+- Wayne's total travel time: 4 minutes
+- Bernadette needs to be 5 minutes earlier than Wayne.
+
+Total time Bernadette needs: 4 minutes (Wayne's travel time) - 5 minutes (earlier arrival) + 16 minutes (Bernadette's travel time)
+
+PDDL: (info (quantity 15) (unit minutes) (relationship total-time-Bernadette = drive-time-Wayne + drive-time-Bernadette - 5))
+
+### Step 3: Calculate the total time Bernadette needs to arrive 5 minutes before Wayne
+Calculating the total time Bernadette needs:
+- Total time Bernadette = 4 minutes (Wayne's travel time) + 16 minutes (Bernadette's travel time) - 5 minutes
+
+PDDL: (info (quantity 15) (unit minutes) (relationship total-time-Bernadette = 4 + 16 - 5))
+
+<<4 + 16 - 5 = 15>> minutes
+
+### Step 4: Verify the calculation
+- Verify by adding and subtracting step-by-step:
+  - 4 + 16 = 20 (total drive time)
+  - 20 - 5 = 15 (total time Bernadette needs)
+
+### Reality Check
+- This makes sense because Bernadette's drive takes 16 minutes, and she needs to arrive 5 minutes before Wayne's 4-minute drive.
+
+### Final Answer Validation
+- Units match the question requirements (minutes).
+- The value is within a reasonable range.
+- All calculations are double-checked.
+
+#### 15 minutes"
+val_1019,18,60,"It takes James 10 minutes to read 3 pages of his book before he goes to bed. He reads 18 pages of his book and then decides to go to sleep. How long does James spend reading, in minutes?","James would take 18 ÷ 3 = <<18/3=6>>6 times longer if he read all 18 pages.
+This means James would spend 6 × 10 = <<6*10=60>>60 minutes reading.
+#### 60","Let's break down the problem step by step.
+
+### Step 1: Determine the Reading Rate
+First, we need to find out how long it takes James to read one page.
+
+- James reads 3 pages in 10 minutes.
+- Reading rate: \(\frac{10 \text{ minutes}}{3 \text{ pages}}\)
+
+PDDL: (info (quantity 10) (unit minutes) (relationship / 3) (unit pages))
+
+### Step 2: Calculate Time for 18 Pages
+Next, we need to find out how long it takes to read 18 pages.
+
+- We know the reading rate is \(\frac{10 \text{ minutes}}{3 \text{ pages}}\).
+- To find the time for 18 pages, we multiply the time for 3 pages by 6 (since 18 pages is 6 times 3 pages).
+
+PDDL: (info (quantity 18) (unit pages) (relationship ×) (unit pages) (quantity 6) (unit 1))
+
+#### Calculation
+- Time for 18 pages: \(10 \text{ minutes} \times 6 = 60 \text{ minutes}\)
+
+<<10 * 6 = 60>>
+<<60 / 6 = 10>>
+
+This makes sense because 18 pages is 6 times 3 pages, so the time should be 6 times 10 minutes.
+
+### Final Answer
+James spends \(\boxed{60}\) minutes reading 18 pages."
+val_1051,1630,655,"It is approximately 1955 kilometers from San Diego, California to New York City, New York. If Bernice drove 325 kilometers for 4 days, how many kilometers will she still need to drive?","325 * 4 = <<325*4=1300>>1300 km
+1955 - 1300 = <<1955-1300=655>>655 km
+Bernice will still have 655 kilometers to travel.
+#### 655","### Step-by-Step Calculation with Validation
+
+1. **Identify Total Distance and Distance Already Driven:**
+   - Total distance from San Diego to New York: 1955 kilometers
+   - Distance driven in 4 days: 325 kilometers
+
+2. **Calculate Remaining Distance:**
+   - Purpose: Calculating the remaining distance Bernice needs to drive.
+   - Equation: Remaining distance = Total distance - Distance already driven
+   - <<1955 - 325 = 1630>>
+   - Alternative Method: 1955 - 325 = 1630
+   - Reality Check: This makes sense because 1955 - 325 = 1630, and 1630 is less than 1955, which is logical.
+
+### Final Answer Validation
+- Units match the question requirements (kilometers)
+- Value is within a reasonable range (1630 km is less than 1955 km, which is logical)
+- Double-check all calculations: 1955 - 325 = 1630
+- End with #### followed by answer
+
+#### 1630"
+val_1095,28.57,25,"Ellen decided to play a prank on her friend. She got a case of 12 sodas and shook 3 of them up. Then she took 1 unshaken soda for herself and left. Ellen's brother stopped by and took 1 of the shaken sodas and 2 of the unshaken sodas, then Ellen's friend came along. What is the likelihood, expressed as a percentage, that Ellen's friend gets sprayed with soda from a shaken can?","First figure out how many unshaken sodas were in the case when Ellen left the room: 12 total sodas - 3 shaken sodas - 1 taken soda = <<12-3-1=8>>8 unshaken sodas.
+Next, figure out how many unshaken sodas were left after Ellen's brother came: 8 - 2 = <<8-2=6>>6 unshaken sodas.
+Then figure out how many shaken sodas were left after Ellen's brother came: 3 - 1 = <<3-1=2>>2 shaken sodas.
+Now add the number of shaken and unshaken sodas to find the total number of sodas left when Ellen's friend came along: 2 + 6 = <<2+6=8>>8 sodas
+Now divide the number of shaken sodas by the total number of sodas to find the decimal probability Ellen's friend gets sprayed: 2/8 = <<2/8=0.25>>0.25
+Now multiply the decimal probability by 100 to express it as a percentage: .25 * 100 = <<.25*100=25>>25%
+#### 25","Let's break down the problem step by step and validate each calculation.
+
+### Step 1: Initial Setup
+- Ellen starts with a case of 12 sodas.
+- She shakes 3 of them.
+- She takes 1 unshaken soda for herself.
+
+#### Initial Quantities:
+- **Shaken Sodas:** 3
+- **Unshaken Sodas:** 12 - 3 - 1 = 8
+- **Total Sodas:** 12
+
+### Step 2: Ellen's Brother's Action
+- Ellen's brother takes 1 shaken soda and 2 unshaken sodas.
+
+#### After Brother's Action:
+- **Shaken Sodas:** 3 - 1 = 2
+- **Unshaken Sodas:** 8 - 2 = 6
+- **Total Sodas:** 2 + 6 = 8
+
+### Step 3: Ellen's Friend's Action
+- Ellen's friend comes along and takes a soda.
+
+#### After Friend's Action:
+- **Total Sodas Remaining:** 8 - 1 = 7
+
+### Step 4: Calculate the Likelihood
+- Ellen's friend takes 1 soda from the remaining 7 sodas.
+- The number of shaken sodas left is 2.
+
+#### Likelihood Calculation:
+- **Probability of getting a shaken soda:** \( \frac{\text{Number of Shaken Sodas}}{\text{Total Sodas Remaining}} = \frac{2}{7} \)
+
+#### Convert to Percentage:
+- \( \frac{2}{7} \times 100 = 28.57\% \)
+
+### Final Answer:
+The likelihood that Ellen's friend gets sprayed with soda from a shaken can is **28.57%**.
+
+#### Validation:
+- **Units match question requirements:** Percentage is appropriate.
+- **Value within reasonable range:** 28.57% is a reasonable probability.
+- **Double-check all calculations:** All steps are verified.
+- **End with ####:**
+#### 28.57%"

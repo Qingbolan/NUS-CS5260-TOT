@@ -1,0 +1,70 @@
+index,prediction,ground_truth,question,truth,issue
+val_424,6,8,"Cole wanted to buy new jeans for a dance contest. At the store, he couldn't decide between tattered jeans and jogger jeans. Since the jeans were on sale, he decided to buy them both. The tattered jeans cost $28 while the jogger jeans cost $6 less than the tattered jeans. He saved a total of $6. If he saved 1/3 of the total savings from the jogger jeans and the rest from the tattered jeans, how much more do jogger jeans originally cost than the tattered jeans?","Cole saved $6 x 1/3 = $<<6*1/3=2>>2 on the jogger jeans.
+So, he saved $6 - $2 = $<<6-2=4>>4 on the tattered jeans.
+The original price of the jogger jeans is $22 + $2 = $<<22+2=24>>24.
+Cole bought the tattered jeans for $<<28=28>>28
+Hence, the original price of the tattered jeans is $28 + $4 = $<<28+4=32>>32.
+Therefore, jogger jeans originally cost $32 - $24 = $<<32-24=8>>8 more than the tattered jeans.
+#### 8","### 候选方案一：直接计算节省金额
+**思路：**
+1. tattered jeans的价格是$28。
+2. jogger jeans的价格是tattered jeans价格减去$6，即$28 - $6 = $22。
+3. Cole购买了两件裤子，共节省了$6。
+4. 他从jogger jeans节省的金额是总节省金额的1/3，即$6 * 1/3 = $2。
+5. 他从tattered jeans节省的金额是$6 - $2 = $4。
+6. 通过计算，我们来验证这些条件是否满足。
+
+**具体计算步骤：**
+1. tattered jeans现价 = $28 - $4 = $24。
+2. jogger jeans现价 = $22 - $2 = $20。
+3. Cole总共节省 = ($28 - $24) + ($22 - $20) = $4 + $2 = $6。
+
+**验证：**
+- 从jogger jeans节省$2，占总节省的1/3。
+- 从tattered jeans节省$4，占总节省的2/3。
+
+**最终答案：**
+FINAL ANSWER: 6
+
+### 候选方案二：通过原价和现价的关系
+**思路：**
+1. 设jogger jeans的原价为x，则tattered jeans的原价为x + 6。
+2. tattered jeans现价 = $28 - $4 = $24，因此tattered jeans原价 = $24 + $4 = $28。
+3. jogger jeans现价 = $22 - $2 = $20，因此jogger jeans原价 = $20 + $2 = $22。
+4. 验证jogger jeans原价和tattered jeans原价的关系。
+
+**具体计算步骤：**
+1. tattered jeans原价 = $28。
+2. jogger jeans原价 = $22。
+3. tattered jeans现价 = $24。
+4. jogger jeans现价 = $20。
+5. 验证：tattered jeans原价 - jogger jeans原价 = $28 - $22 = $6。
+
+**最终答案：**
+FINAL ANSWER: 6
+
+### 候选方案三：通过比例关系反推原价
+**思路：**
+1. 根据题意，Cole总共节省了$6，他从jogger jeans节省了1/3，从tattered jeans节省了2/3。
+2. 设jogger jeans的原价为x，则tattered jeans的原价为x + 6。
+3. 通过比例关系计算原价。
+
+**具体计算步骤：**
+1. 他从jogger jeans节省了$2，占总节省的1/3，即2 = 1/3 * (x - 22)。
+2. 他从tattered jeans节省了$4，占总节省的2/3，即4 = 2/3 * (x + 6 - 28)。
+3. 解这两个方程。
+
+**解方程：**
+1. \(2 = \frac{1}{3} \times (x - 22)\)
+   - \(2 \times 3 = x - 22\)
+   - \(6 = x - 22\)
+   - \(x = 28\)
+
+2. \(4 = \frac{2}{3} \times (x + 6 - 28)\)
+   - \(4 = \frac{2}{3} \times (x - 22)\)
+   - \(4 \times \frac{3}{2} = x - 22\)
+   - \(6 = x - 22\)
+   - \(x = 28\)
+
+**最终答案：**
+FINAL ANSWER: 6"

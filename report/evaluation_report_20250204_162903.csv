@@ -1,0 +1,102 @@
+index,prediction,ground_truth,question,truth,issue
+val_413,30,5,Shannon makes her own madeleine cookies and eats 2 a night as a treat.  She wants to make enough cookies to last her for 30 days by storing them in the freezer. Her recipe makes 1 dozen madeleine cookies.  How many dozens of cookies will she need to make so she has enough for 30 days?,"She eats 2 cookies a night so for 30 nights she needs 2*30 = <<2*30=60>>60 cookies
+Her recipe makes 12 cookies and she needs to make 60 cookies so that's 60/12 = <<60/12=5>>5 dozen
+#### 5","### Constructing a Logical Tree
+
+To solve this problem, let's first identify the base entities and their relationships:
+- **Base Entity 1:** Shannon's cookie consumption rate (2 cookies per night).
+- **Base Entity 2:** The duration for which Shannon wants to have enough cookies (30 days).
+- **Base Entity 3:** The yield of Shannon's madeleine cookie recipe (1 dozen cookies per batch).
+- **Relationship:** The total number of cookies needed for 30 days must be greater than or equal to the total number of cookies Shannon will consume over that period.
+
+### Time and Sequential Reasoning
+
+Given that Shannon wants cookies to last for 30 days and she eats 2 cookies a night:
+- **Temporal Reference Point 1:** Present - Shannon deciding to make cookies.
+- **Temporal Reference Point 2:** Future (30 days from the present) - When Shannon would have consumed all the cookies she intends to make.
+- **Sequence:** Make cookies → Store in freezer → Consume over 30 days.
+
+### Quantity and Numerical Relationships
+
+1. Calculate the total number of cookies Shannon will eat over 30 days:
+   - **Calculation:** 2 cookies/night * 30 nights = 60 cookies.
+2. Determine how many batches (dozens) of cookies Shannon needs to make to have at least 60 cookies:
+   - Since each batch yields 1 dozen (12) cookies, we divide the total cookies needed by the number of cookies per batch.
+   - **Calculation:** 60 cookies / 12 cookies/batch = 5 batches.
+
+### Branching and Conditional Logic
+
+#### Branch 1: Considering Only the Minimum Requirement
+- **Proposal:** Make exactly 5 batches of cookies to meet the minimum requirement of 60 cookies.
+- **Evaluation:** This would provide Shannon with exactly 60 cookies (5 batches * 12 cookies/batch), which is just enough for 30 days but does not account for any potential mishaps or desire for extra cookies.
+
+#### Branch 2: Accounting for Potential Extras
+- **Proposal:** Consider making extra batches in case some cookies are wasted or Shannon decides to eat more than 2 per night occasionally.
+- **Evaluation:** Making an additional batch or two could provide a buffer against unforeseen circumstances. However, this is speculative and depends on Shannon's preferences and habits.
+
+#### Branch 3: Exploring Efficiency in Batching
+- **Proposal:** Investigate if making larger batches is possible and more efficient.
+- **Evaluation:** If the recipe can be easily scaled up, making larger batches could reduce the overall time and effort required. However, this branch requires more information about the scalability of the recipe.
+
+### Validation and Final Answer
+
+Given the primary goal is to ensure Shannon has enough cookies for 30 days without considering potential extras or batching efficiencies:
+- **Forward Calculation:** 60 cookies needed / 12 cookies per batch = 5 batches.
+- **Reverse Verification:** 5 batches * 12 cookies per batch = 60 cookies, which meets the requirement.
+- **Cross-Check:** This calculation directly addresses the problem statement without assuming additional needs or complexities.
+
+#### Final Answer
+#### Shannon needs to make 5 dozens of cookies to have enough for 30 days."
+val_963,600,1000,"Jen decides to travel to 3 different countries.  He has to pay $400 for the supplies he needs, in total.  The tickets for travel cost, in total, 50% more than the supplies.  How much does travel cost?","He pays 400*.5=$<<400*.5=200>>200 more for tickets than supplies
+That means the tickets cost 400+200=$<<400+200=600>>600
+So it cost 600+400=$<<600+400=1000>>1000 in total.
+#### 1000","### Constructing the Logical Tree
+
+To solve this problem, we first identify the base entities and their relationships:
+- Base entity: Cost of supplies = $400
+- Relationship: The total cost of tickets is 50% more than the cost of supplies.
+- Target entity: Total cost of travel (tickets)
+
+The logical tree can be represented as follows:
+```
+PDDL: 
+(info (base_entity: ""Cost of supplies"") (value: $400) (relationship: ""50% more for tickets"") (target_entity: ""Total cost of travel""))
+```
+
+### Time and Sequential Reasoning
+
+Since the problem does not involve events over time but rather a direct calculation, our timeline is straightforward:
+- Initial condition: Supplies cost $400.
+- Action: Calculate the cost of tickets based on the supplies cost.
+- Outcome: Determine the total cost of travel.
+
+### Quantity and Numerical Relationships
+
+We know the cost of supplies and the relationship between the cost of supplies and tickets. The calculation for the cost of tickets is as follows:
+- If supplies cost $400, then tickets cost 50% more than $400.
+- Calculation: Tickets cost = $400 + (50% of $400)
+- Since 50% of $400 = 0.5 * $400 = $200, the tickets cost $400 + $200 = $600.
+
+### Branching and Conditional Logic
+
+Let's explore different reasoning branches to ensure our calculation is correct:
+
+#### Branch 1: Direct Calculation
+- Start with the cost of supplies: $400.
+- Apply the 50% increase to find the cost of tickets: $400 * 1.5 = $600.
+- Conclusion: The cost of travel (tickets) is $600.
+
+#### Branch 2: Alternative Calculation Method
+- Consider the increase as an addition of 50% of the supply cost to the supply cost itself.
+- Calculation: $400 (supplies) + $200 (50% of $400) = $600.
+- Conclusion: This matches the direct calculation, reinforcing our answer.
+
+#### Branch 3: Verification
+- Assume the cost of tickets is X.
+- We know X = $400 + 50% of $400.
+- Solving for X gives us X = $400 + $200 = $600, confirming our previous conclusions.
+
+### Validation and Final Answer
+
+After exploring different branches and verifying our calculations, the conclusion is consistent across all methods:
+#### The final answer is: $600"

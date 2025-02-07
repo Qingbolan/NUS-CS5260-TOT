@@ -1,0 +1,122 @@
+index,prediction,ground_truth,question,truth,issue
+val_590,2.5,15,"If Martin eats Cheerios every day for breakfast, he'll lose 1.25 pounds/week. If he eats donuts every day for breakfast, he'll gain 1.75 pounds/week. What will be the difference in his weight at the end of 5 weeks between the two breakfast options?","First find the difference in weight gain per week: 1.75 pounds/week - ( -1.25 pounds/week) = 1.75 pounds/week + 1.25 pounds/week = <<1.75-(-1.25)=3>>3 pounds/week
+Then multiply the weight gain per week by the number of weeks to find the total difference at the end of 5 weeks: 5 weeks * 3 pounds/week = <<5*3=15>>15 pounds
+#### 15","候选方案一：
+1. 计算吃Cheerios 5周后的体重变化：1.25磅/周 * 5周 = 6.25磅
+2. 计算吃donuts 5周后的体重变化：1.75磅/周 * 5周 = 8.75磅
+3. 计算两种早餐选项的体重变化差异：8.75磅 - 6.25磅 = 2.5磅
+最终答案：2.5
+
+候选方案二：
+1. 首先确定每周的体重变化差异：1.75磅 - 1.25磅 = 0.5磅
+2. 然后计算5周的体重变化差异：0.5磅/周 * 5周 = 2.5磅
+最终答案：2.5
+
+候选方案三：
+1. 列出公式：体重变化差异 = (donuts每周变化 - Cheerios每周变化) * 周数
+2. 代入数值：体重变化差异 = (1.75 - 1.25) * 5 = 0.5 * 5 = 2.5磅
+最终答案：2.5
+
+FINAL ANSWER: 2.5"
+val_716,38500,385000,"A company wanted to buy 500 computers and had $700 for each computer. However, when they went to order, they realized the price of each computer was 10% higher than they had planned for. Calculate the total amount of money they paid to buy the computers at the new prices.","When they went to order, the company realized the prices of each computer had increased by 10/100*700 = $<<10/100*700=70>>70
+The total buying price at the new prize is $700+$70 = $<<700+70=770>>770
+Since they wanted to buy 500 computers, they paid a total of $770*500 = $<<770*500=385000>>385000
+#### 385000","候选方案一：
+1. 首先计算原计划每台电脑的价格：$700
+2. 计算新价格，新价格是原计划价格的110%（因为提高了10%）：$700 * 1.10
+3. 计算500台电脑的新总价：500 * ($700 * 1.10)
+
+候选方案二：
+1. 将原计划的每台电脑价格设为x，则x=$700
+2. 新价格为1.1x，即1.1*$700
+3. 总共购买500台电脑，因此总费用为500 * 1.1*$700
+
+候选方案三：
+1. 将原计划每台电脑的价格设为700美元
+2. 新价格为原价格的110%，即1.1*700
+3. 买500台电脑，所以总费用为500 * 1.1*700
+
+最终答案：
+FINAL ANSWER: 38500"
+val_755,134,89,Lorraine and Colleen are trading stickers for buttons. Each large sticker is worth a large button or three small buttons. A small sticker is worth one small button. A large button is worth three small stickers. Lorraine starts with 30 small stickers and 40 large stickers. She trades 90% of her small stickers for large buttons. She trades 50% of her large stickers for large buttons and trades the rest of them for small buttons. How many buttons does she have by the end?,"She trades 27 small stickers because 30 x .9 = <<27=27>>27
+She gets 9 large buttons for these because 27 / 3 = <<27/3=9>>9
+She trades 20 large stickers for large buttons because 40 x .5 = 20
+She gets 20 large buttons for these because 20 / 1 = <<20/1=20>>20
+She trades 50% of her large stickers for small buttons because 100 - 50 = <<100-50=50>>50
+She trades 20 large stickers for small buttons because 40 x .5 = 20
+She gets 60 small buttons because 20 x 3 = <<20*3=60>>60
+She has 89 buttons at the end because 9 + 20 + 60 = <<9+20+60=89>>89
+#### 89","候选方案一：
+1. 计算Lorraine的初始库存：
+   - 小型贴纸：30个
+   - 大型贴纸：40个
+
+2. Lorraine用90%的小型贴纸换大型按钮：
+   - 90%的30个小型贴纸 = 27个小型贴纸
+   - 27个小型贴纸 = 27个大型按钮
+
+3. Lorraine用50%的大型贴纸换大型按钮：
+   - 50%的40个大型贴纸 = 20个大型贴纸
+   - 20个大型贴纸 = 20个大型按钮
+
+4. Lorraine剩余的大型贴纸换小型按钮：
+   - 剩余的大型贴纸 = 40 - 20 = 20个
+   - 20个大型贴纸 = 20 * 3 = 60个小按钮
+
+5. Lorraine用27个大型按钮换小型按钮：
+   - 27个大型按钮 = 27个小按钮
+
+6. 计算总按钮数量：
+   - 大型按钮 = 27 + 20 = 47个
+   - 小型按钮 = 60 + 27 = 87个
+   - 总按钮数 = 47 + 87 = 134个
+
+候选方案二：
+1. 重新计算Lorraine初始库存：
+   - 小型贴纸：30个
+   - 大型贴纸：40个
+
+2. Lorraine用90%的小型贴纸换大型按钮：
+   - 90%的30个小型贴纸 = 27个小型贴纸
+   - 27个小型贴纸 = 27个大型按钮
+
+3. Lorraine用50%的大型贴纸换大型按钮：
+   - 50%的40个大型贴纸 = 20个大型贴纸
+   - 20个大型贴纸 = 20个大型按钮
+
+4. Lorraine剩余20个大型贴纸换小型按钮：
+   - 20个大型贴纸 = 20 * 3 = 60个小按钮
+
+5. Lorraine用27个大型按钮换小型按钮：
+   - 27个大型按钮 = 27个小按钮
+
+6. 计算总按钮数量：
+   - 大型按钮 = 27 + 20 = 47个
+   - 小型按钮 = 60 + 27 = 87个
+   - 总按钮数 = 47 + 87 = 134个
+
+候选方案三：
+1. 重复初始步骤：
+   - 小型贴纸：30个
+   - 大型贴纸：40个
+
+2. Lorraine用90%的小型贴纸换大型按钮：
+   - 90%的30个小型贴纸 = 27个小型贴纸
+   - 27个小型贴纸 = 27个大型按钮
+
+3. Lorraine用50%的大型贴纸换大型按钮：
+   - 50%的40个大型贴纸 = 20个大型贴纸
+   - 20个大型贴纸 = 20个大型按钮
+
+4. Lorraine剩余20个大型贴纸换小型按钮：
+   - 20个大型贴纸 = 20 * 3 = 60个小按钮
+
+5. Lorraine用27个大型按钮换小型按钮：
+   - 27个大型按钮 = 27个小按钮
+
+6. 计算总按钮数量：
+   - 大型按钮 = 27 + 20 = 47个
+   - 小型按钮 = 60 + 27 = 87个
+   - 总按钮数 = 47 + 87 = 134个
+
+FINAL ANSWER: 134"

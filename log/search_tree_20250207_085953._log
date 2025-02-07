@@ -1,0 +1,50 @@
+TOT Search Tree (Final Best Score: 1.05)
+└── Round 1
+    ├── Generated Candidate Thoughts
+    │   ├── Candidate 1: ### Problem Understanding
+    │   │   The problem states that Gretchen has some coins, with 30 more gold coins than silver coins. It is given that she has 70 gold coins. The goal is to find
+    │   │   the total number of co... (Score: 1.05)
+    │   ├── Candidate 2: Problem Understanding:
+    │   │   - Gretchen has some coins.
+    │   │   - There are 30 more gold coins than silver coins.
+    │   │   - She has 70 gold coins.
+    │   │   - We need to find the total number of coins.
+    │   │   
+    │   │   Step-by-Step Solution:
+    │   │   1. Det... (Score: 0.42)
+    │   └── Candidate 3: Understanding the problem:
+    │       - Gretchen has some coins.
+    │       - There are 30 more gold coins than silver coins.
+    │       - She has 70 gold coins.
+    │       - We need to find the total number of coins.
+    │       
+    │       Step-by-step solution:
+    │       1.... (Score: 0.42)
+    ├── Calculation Issues
+    │   ├── Candidate 1 Issue: ["There may be a problem, I can't find it. The provided solution appears to be correct based on the given information. The candidate
+    │   │   answer properly uses the given relationship between the number of gold and silver coins and accurately calculates the total number of coins Gretchen 
+    │   │   has."]
+    │   ├── Candidate 2 Issue: ["There may be a problem, I can't find it.\n\nThe provided candidate answer correctly identifies the relationship between the number
+    │   │   of gold and silver coins and accurately calculates the total number of coins. The steps are logically sound and the arithmetic is correct. There are no
+    │   │   apparent errors in the solution."]
+    │   └── Candidate 3 Issue: ["There may be a problem, I can't find it.\n\nThe provided candidate answer correctly identifies and solves the problem 
+    │       step-by-step. The logic and arithmetic are sound. The candidate starts by setting up an equation based on the information given, solves for the number 
+    │       of silver coins, and then calculates the total number of coins. The arithmetic checks out (40 silver coins + 70 gold coins = 110 total coins). 
+    │       Therefore, no issues are found with the provided answer."]
+    ├── Refutation Feedback
+    │   └── Candidate 1 Refutation: ### Refutation Points and Improvements
+    │       
+    │       #### 1. Problem Understanding
+    │       - **Candidate Thought:** The candidate correctly identifies the problem and the given information, including the number of gold co...
+    ├── Revised Candidate Thoughts
+    │   └── Candidate 1 Revised: ### Problem Understanding
+    │       The problem states that Gretchen has some coins, with 30 more gold coins than silver coins. It is given that she has 70 gold coins. The goal is to find
+    │       the total number of co...
+    ├── Evaluation Scores
+    │   ├── Candidate 1 Score: 1.05
+    │   ├── Candidate 2 Score: 0.42
+    │   └── Candidate 3 Score: 0.42
+    └── Selected Candidates for Next Round
+        └── Candidate 1: ### Problem Understanding
+            The problem states that Gretchen has some coins, with 30 more gold coins than silver coins. It is given that she has 70 gold coins. The goal is to find
+            the total number of co...

@@ -1,0 +1,45 @@
+TOT Search Tree (Final Best Score: 1.05)
+└── Round 1
+    ├── Generated Candidate Thoughts
+    │   ├── Candidate 1: Let's break down the problem and solve it step-by-step.
+    │   │   
+    │   │   ### Step 1: Understand the Problem
+    │   │   Rozanne is making eggnog, and she needs to determine how many trays she can put out based on the total numbe... (Score: 0.36)
+    │   ├── Candidate 2: Let's break down the problem into steps and solve it.
+    │   │   
+    │   │   1. **Determine the total number of eggs Rozanne has:**
+    │   │      - Rozanne uses 4 dozen eggs.
+    │   │      - 1 dozen = 12 eggs.
+    │   │      - 4 dozen = 4 * 12 = 48 eggs.
+    │   │    ... (Score: 0.81)
+    │   └── Candidate 3: ### Understanding the Problem
+    │       Rozanne is making eggnog using eggs. The total number of eggs she uses can be calculated from the dozens she has and the additional loose eggs. Each 
+    │       glass of eggnog requi... (Score: 1.05)
+    ├── Calculation Issues
+    │   ├── Candidate 1 Issue: ["The candidate answer provided does not contain any obvious errors in the calculations or reasoning. The steps are logically sound,
+    │   │   and the final answer of 2 trays is correct given the problem statement. \n\nTherefore, the response is:\n```\nThere may be a problem, I can't find 
+    │   │   it.\n```"]
+    │   ├── Candidate 2 Issue: ["There may be a problem, I can't find it.\nThe provided candidate answer correctly calculates the total number of eggs and then 
+    │   │   determines how many glasses and trays of eggnog can be made. The arithmetic is consistent and the steps are logically sound. There appears to be no 
+    │   │   error in the given answer."]
+    │   └── Candidate 3 Issue: ["There may be a problem, I can't find it.\n\nThe candidate answer provided is logically consistent with the given information and 
+    │       correctly calculates the number of trays Rozanne can put out. The steps are clearly outlined, and the arithmetic is correct. The total number of eggs 
+    │       (50), the number of glasses that can be made (10), and the number of trays that can be filled (2) are all derived correctly from the given data."]
+    ├── Refutation Feedback
+    │   └── Candidate 1 Refutation: ### Refutation Points
+    │       
+    │       1. **Understanding the Problem:**
+    │          - **Aspect:** Does the candidate fully understand the original question, including any time-phased changes or special pricing rules?
+    │          - **...
+    ├── Revised Candidate Thoughts
+    │   └── Candidate 1 Revised: ### Understanding the Problem
+    │       Rozanne is making eggnog using eggs. The total number of eggs she uses can be calculated from the dozens she has and the additional loose eggs. Each 
+    │       glass of eggnog requi...
+    ├── Evaluation Scores
+    │   ├── Candidate 1 Score: 0.36
+    │   ├── Candidate 2 Score: 0.81
+    │   └── Candidate 3 Score: 1.05
+    └── Selected Candidates for Next Round
+        └── Candidate 1: ### Understanding the Problem
+            Rozanne is making eggnog using eggs. The total number of eggs she uses can be calculated from the dozens she has and the additional loose eggs. Each 
+            glass of eggnog requi...

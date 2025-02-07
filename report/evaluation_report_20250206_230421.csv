@@ -1,0 +1,115 @@
+index,prediction,ground_truth,question,truth,issue
+val_410,42000,168000,"Carolyn works for a delivery service company that hires on a contract basis. In May, they hired 40 employees, paying each employee $15 per hour for a 40-hour workweek. In June, 1/4 of the employees' contracts expired. Calculate the total amount of money the company paid to the employees in the two months.","When hired, each employee is paid $15*40 = $<<15*40=600>>600 per week.
+The total earnings of a contracted employee in a month are 4 weeks * $600 per week = $<<4*600=2400>>2400
+Paying 40 employees, the company paid 40*$2400= $<<40*2400=96000>>96000 to all of its contract employees in May.
+In June, 1/4 of the employees' contracts expired, that is 1/4*40 = <<1/4*40=10>>10 employees.
+The total number of employees whose contracts were valid in June was 40-10 = <<40-10=30>>30 employees.
+The total amount of money paid to the contracted employees in June is 30*$2400 = $<<30*2400=72000>>72000
+In the two months, the company paid a total of $72000+$96000 = $<<72000+96000=168000>>168000
+#### 168000","Revised Candidate Thought:
+Understanding the problem:
+- In May, 40 employees were hired, each paid $15 per hour for a 40-hour workweek.
+- In June, 1/4 of the employees' contracts expired, meaning 3/4 of the employees remained.
+- We need to calculate the total amount of money paid to the employees over the two months.
+
+Step-by-step solution:
+
+1. Calculate the weekly pay for one employee in May:
+   - Hourly wage: $15
+   - Hours worked per week: 40
+   - Weekly pay: $15 * 40 = $600
+
+2. Calculate the total pay for all employees in May:
+   - Number of employees: 40
+   - Total pay: 40 * $600 = $24,000
+
+3. Calculate the number of employees remaining in June:
+   - 1/4 of employees left, so 3/4 remained
+   - Number of employees remaining: 40 * (3/4) = 30
+
+4. Calculate the weekly pay for one employee in June:
+   - The same rate applies: $15 * 40 = $600
+
+5. Calculate the total pay for the remaining employees in June:
+   - Number of employees: 30
+   - Total pay: 30 * $600 = $18,000
+
+6. Add the total pay for May and June:
+   - Total pay for May: $24,000
+   - Total pay for June: $18,000
+   - Combined total pay: $24,000 + $18,000 = $42,000
+
+Final Answer: 42000"
+val_676,21,33,"James needs to get more toys for his doggie shelter. Each dog needs one toy. James currently has 4 toys on hand for 4 dogs, but there are 8 more dogs in the shelter now. After buying the toys, he went back to see that there are twice as many more dogs than when he left so he had to buy some more toys. When James came back yet again, 3 dogs were gone so he no longer needed those toys. How many toys in total does James need?","James has 4+8=<<4+8=12>>12 toys.
+There were 12*2=<<12*2=24>>24 dogs.
+James needed to buy 24-12=<<24-12=12>>12 more toys.
+There are 36 total toys.
+36-3=<<36-3=33>>33 toys are now needed.
+#### 33","Revised Candidate Thought:
+Understanding:
+- Initially, James has 4 toys for 4 dogs.
+- There are 8 more dogs, so the total number of dogs is 4 + 8 = 12.
+- After buying toys for these 12 dogs, the number of dogs doubles, meaning there are 12 * 2 = 24 dogs.
+- Then, 3 dogs are gone, so the number of dogs becomes 24 - 3 = 21.
+
+Reasoning:
+1. Initial toys for 4 dogs: 4 toys.
+2. For the additional 8 dogs, James needs 8 more toys. Total toys after this purchase: 4 + 8 = 12 toys.
+3. Now, there are 12 dogs, and the number doubles, so James needs to buy more toys for 12 * 2 = 24 dogs. Total toys needed at this point: 12 + 24 = 36 toys.
+4. After the second visit, 3 dogs leave, meaning there are now 24 - 3 = 21 dogs. Therefore, the number of toys needed is 21 (since each dog needs one toy).
+
+Final Answer: 21"
+val_755,90,89,Lorraine and Colleen are trading stickers for buttons. Each large sticker is worth a large button or three small buttons. A small sticker is worth one small button. A large button is worth three small stickers. Lorraine starts with 30 small stickers and 40 large stickers. She trades 90% of her small stickers for large buttons. She trades 50% of her large stickers for large buttons and trades the rest of them for small buttons. How many buttons does she have by the end?,"She trades 27 small stickers because 30 x .9 = <<27=27>>27
+She gets 9 large buttons for these because 27 / 3 = <<27/3=9>>9
+She trades 20 large stickers for large buttons because 40 x .5 = 20
+She gets 20 large buttons for these because 20 / 1 = <<20/1=20>>20
+She trades 50% of her large stickers for small buttons because 100 - 50 = <<100-50=50>>50
+She trades 20 large stickers for small buttons because 40 x .5 = 20
+She gets 60 small buttons because 20 x 3 = <<20*3=60>>60
+She has 89 buttons at the end because 9 + 20 + 60 = <<9+20+60=89>>89
+#### 89","Revised Candidate Thought:
+Understanding the problem:
+- Lorraine starts with 30 small stickers and 40 large stickers.
+- She trades 90% of her small stickers for large buttons.
+- She trades 50% of her large stickers for large buttons and the rest for small buttons.
+- We need to calculate the total number of buttons she ends up with.
+
+Step-by-step solution:
+
+1. **Calculate the number of small stickers traded for large buttons:**
+   - Lorraine starts with 30 small stickers.
+   - 90% of 30 small stickers = 0.90 * 30 = 27 small stickers.
+   - Therefore, she trades 27 small stickers for large buttons.
+
+2. **Convert the traded small stickers to large buttons:**
+   - Each small sticker is worth 1 small button.
+   - Thus, 27 small stickers = 27 small buttons.
+
+3. **Calculate the remaining small stickers:**
+   - Lorraine starts with 30 small stickers and trades 27.
+   - Remaining small stickers = 30 - 27 = 3 small stickers.
+
+4. **Calculate the number of large stickers traded for large buttons:**
+   - Lorraine starts with 40 large stickers.
+   - 50% of 40 large stickers = 0.50 * 40 = 20 large stickers.
+   - Therefore, she trades 20 large stickers for large buttons.
+
+5. **Convert the traded large stickers to large buttons:**
+   - Each large sticker is worth 3 small buttons.
+   - Thus, 20 large stickers = 20 * 3 = 60 large buttons.
+
+6. **Calculate the remaining large stickers:**
+   - Lorraine starts with 40 large stickers and trades 20.
+   - Remaining large stickers = 40 - 20 = 20 large stickers.
+
+7. **Convert the remaining large stickers to small buttons:**
+   - Each large sticker is worth 3 small buttons.
+   - Thus, 20 large stickers = 20 * 3 = 60 small buttons.
+
+8. **Sum up all the buttons:**
+   - Small buttons from remaining large stickers = 60.
+   - Small buttons from traded small stickers = 27.
+   - Small buttons from remaining small stickers = 3.
+   - Total buttons = 60 + 27 + 3 = 90.
+
+Final Answer: 90"

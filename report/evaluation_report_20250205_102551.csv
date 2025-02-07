@@ -1,0 +1,35 @@
+index,prediction,ground_truth,question,truth,issue
+val_769,600,675,"In one hour, Ezra read twice as many books as Ahmed. Ezra has read 300 books this hour and decided to read 150 more. How many books have they read altogether?","If Ezra has read 300 books this hour and decided to read 150 more in the next hour, he has read a total of 300+150=<<300+150=450>>450
+Since Ezra reads twice as many books as Ahmed, Ahmed has read 450/2=<<450/2=225>>225 books.
+Together, Ahmed and Ezra has read 225+450=<<225+450=675>>675 books
+#### 675","To determine the total number of books read by Ezra and Ahmed, we need to follow these steps:
+
+1. **Determine how many books Ahmed read:**
+   - According to the problem, Ezra read twice as many books as Ahmed.
+   - Let \( A \) represent the number of books Ahmed read.
+   - Given that Ezra read 300 books, we can set up the equation:
+     \[
+     2A = 300
+     \]
+   - Solving for \( A \):
+     \[
+     A = \frac{300}{2} = 150
+     \]
+
+2. **Calculate the total number of books Ezra read:**
+   - initially, Ezra read 300 books.
+   - Then, Ezra decided to read 150 more books.
+   - Therefore, the total number of books Ezra read is:
+     \[
+     300 + 150 = 450
+     \]
+
+3. **Find the total number of books read by both Ezra and Ahmed:**
+   - Ahmed read 150 books.
+   - Ezra read 450 books.
+   - Adding these together gives:
+     \[
+     150 + 450 = 600
+     \]
+
+Thus, the total number of books read by both Ezra and Ahmed is \(\boxed{600}\)."

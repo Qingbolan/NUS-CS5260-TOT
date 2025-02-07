@@ -1,0 +1,93 @@
+index,prediction,ground_truth,question,truth,issue
+val_411,1.50,3,"Sally went to the seashore for vacation.  Her parents gave her $10 to buy whatever she wanted.  At the trinket shop, taffy was on sale for ""Buy 1 pound at $3, get 1 pound 1/2 off.""  She scooped up 2 pounds.  She also bought a mixed bag of seashells for $1.50 and 4 magnets that were $0.25 each.  How much money does Sally have left?","Taffy is buying 1 pound for $3 and gets 1 pound half off. So 1/2 off of 1 pound is $3/2 = $1.50+$3.00=$4.50
+4 magnets at $0.25 each is 4*.25=$<<4*0.25=1.00>>1.00
+When you add all her purchases, $4.50+$1.50+$1.00 = $<<4.5+1.5+1=7.00>>7.00
+She had $10 and spent $7 so she had $10-$7 = $<<10-7=3.00>>3.00 left over
+#### 3","### Revised Candidate Thought:
+
+Let's break down the problem into phases and solve it step-by-step.
+
+1. **Determine the cost of taffy:**
+   - Sally buys ""Buy 1 pound at $3, get 1 pound 1/2 off."" This means for every 1.5 pounds of taffy, she pays $4.50 (3 + 1.5 = 4.5).
+   - Sally scoops up 2 pounds of taffy. We need to calculate the cost for 2 pounds.
+   - Cost for 1.5 pounds = $4.50.
+   - Cost for 1 pound = $3.
+   - Cost for 2 pounds = 2 * $3 = $6.
+
+2. **Calculate the cost of seashells:**
+   - The mixed bag of seashells costs $1.50.
+
+3. **Calculate the cost of magnets:**
+   - Each magnet costs $0.25.
+   - Sally buys 4 magnets.
+   - Total cost for magnets = 4 * $0.25 = $1.
+
+4. **Calculate the total cost:**
+   - Total cost = Cost of taffy + Cost of seashells + Cost of magnets = $6 + $1.50 + $1 = $8.50.
+
+5. **Determine the remaining money:**
+   - Sally started with $10.
+   - Total spent = $8.50.
+   - Money left = $10 - $8.50 = $1.50.
+
+### Final Answer:
+**Remaining Money: 1.5**
+
+The problem does not involve any time-phased changes, so this aspect is not relevant here. The calculations are accurate, and the final remaining money is $1.50."
+val_1032,9,5,"Apple High School is holding graduation in their Fine Arts Center this year which has space for 6000 people.  After accounting for 950 seats for graduates and 300 seats for faculty attending, how many tickets would each graduate receive to give to their friends and family if the tickets are split equally?","Add graduate and faculty seats together. 950 + 300 = <<950+300=1250>>1250 seats for faculty and graduates
+Minus seats for faculty and graduates from total seats allowed. 6000 - 1250 = <<6000-1250=4750>>4750 remaining seats.
+Divide amount of graduates by remaining seats. 4750/950 = <<4750/950=5>>5 tickets
+#### 5","To solve the problem, let's break it down into clear steps and calculations.
+
+### Step 1: Determine Total Available Seats
+The Fine Arts Center has space for 6000 people.
+
+### Step 2: Account for Occupied Seats
+- 950 seats are reserved for graduates.
+- 300 seats are reserved for faculty.
+
+So, the total number of seats already occupied is:
+\[ 950 + 300 = 1250 \]
+
+### Step 3: Calculate Available Seats for Friends and Family
+The total number of available seats for friends and family is:
+\[ 6000 - 1250 = 4750 \]
+
+### Step 4: Determine the Number of Graduates
+The problem does not specify the exact number of graduates, but we are told to assume the tickets are split equally among the graduates.
+
+### Step 5: Calculate Tickets Per Graduate
+If we assume there are \( G \) graduates, then each graduate would receive:
+\[ \frac{4750}{G} \]
+
+However, since the number of graduates is not provided, let's assume the most common scenario where the number of graduates is a factor of 4750. For simplicity, let's assume there are 500 graduates (a reasonable number for a high school).
+
+### Step 6: Calculate the Number of Tickets Each Graduate Receives
+If there are 500 graduates, each graduate would receive:
+\[ \frac{4750}{500} = 9.5 \]
+
+Since the number of tickets must be a whole number, and assuming equal distribution, we can say each graduate would receive 9 tickets, with some possibly receiving an extra ticket due to the fractional part.
+
+### Final Answer:
+Assuming 500 graduates, the number of tickets each graduate would receive is:
+\[ \boxed{9} \]"
+val_1051,1630,655,"It is approximately 1955 kilometers from San Diego, California to New York City, New York. If Bernice drove 325 kilometers for 4 days, how many kilometers will she still need to drive?","325 * 4 = <<325*4=1300>>1300 km
+1955 - 1300 = <<1955-1300=655>>655 km
+Bernice will still have 655 kilometers to travel.
+#### 655","**Understanding the Problem:**
+
+The problem states that the distance from San Diego, California, to New York City, New York, is approximately 1955 kilometers. Bernice has already driven 325 kilometers. We need to calculate how many kilometers she still needs to drive to complete her journey.
+
+**Step-by-Step Solution:**
+
+1. **Identify the total distance to be traveled:** 1955 kilometers.
+2. **Identify the distance already traveled by Bernice:** 325 kilometers.
+3. **Calculate the remaining distance:** We need to subtract the distance already traveled from the total distance.
+
+\[ \text{Remaining distance} = \text{Total distance} - \text{Distance already traveled} \]
+\[ \text{Remaining distance} = 1955 \text{ kilometers} - 325 \text{ kilometers} \]
+\[ \text{Remaining distance} = 1630 \text{ kilometers} \]
+
+**Final Answer:**
+
+FINAL ANSWER: 1630"
